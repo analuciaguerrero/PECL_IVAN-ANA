@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.ed.proyectofinal.pecl_ivanana;
+package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

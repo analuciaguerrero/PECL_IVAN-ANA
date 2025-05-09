@@ -3,6 +3,6 @@ module es.uah.matcomp.mp.ed.proyectofinal.pecl_ivanana {
     requires javafx.fxml;
 
 
-    opens es.uah.matcomp.mp.ed.proyectofinal.pecl_ivanana to javafx.fxml;
-    exports es.uah.matcomp.mp.ed.proyectofinal.pecl_ivanana;
+    opens es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana to javafx.fxml;
+    exports es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 }
