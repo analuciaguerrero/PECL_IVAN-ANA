@@ -1,59 +1,62 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import javafx.scene.control.TextField;
 
-/**
- * Clase ApocalipsisLogger
- *
- * Funciona como un logger compartido para registrar eventos en un archivo
- * durante la simulación de la apocalipsis, garantizando que la escritura
- * en el archivo sea segura para los hilos concurrentes.
- *
- * Utiliza un mecanismo de sincronización para asegurar que los hilos no
- * escriban al mismo tiempo en el archivo y evitar la mezcla de mensajes.
- */
 public class ApocalipsisLogger {
-    private final PrintWriter escritor; // Para escribir en el archivo de log
+    private static ApocalipsisLogger instancia; // <-- Singleton
+    private final PrintWriter escritorArchivo;
     private final DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
+    private TextField[] zonasTxtField;
+    private TextField cantidadComida;
+    private TextField[] zombiesTxtField;
 
-    /**
-     * Constructor de ApocalipsisLogger
-     *
-     * @param nombreArchivo Nombre del archivo donde se almacenarán los logs.
-     * @throws IOException Si ocurre algún error al abrir el archivo.
-     */
-    public ApocalipsisLogger(String nombreArchivo) throws IOException {
-        // Inicialización del escritor con el archivo en modo de anexado (append)
-        // y auto-flush activado para escribir inmediatamente después de cada mensaje.
-        this.escritor = new PrintWriter(new FileWriter(nombreArchivo, true), true);
+    private ApocalipsisLogger() throws IOException {
+        File carpeta = new File("logs");
+        if (!carpeta.exists() && !carpeta.mkdirs()) {
+            throw new IOException("No se pudo crear la carpeta de logs.");
+        }
+
+        File archivoLog = new File(carpeta, "apocalipsis.txt");
+        try {
+            this.escritorArchivo = new PrintWriter(new FileWriter(archivoLog, true), true);
+        } catch (IOException e) {
+            throw new IOException("Error al abrir el archivo de log.", e);
+        }
     }
 
-    /**
-     * Metodo para registrar un mensaje en el archivo de logs.
-     * Este metodo está sincronizado para garantizar que solo un hilo pueda escribir
-     * a la vez, evitando la mezcla de mensajes de múltiples hilos.
-     *
-     * @param mensaje El mensaje a registrar en el log.
-     */
+    public static synchronized ApocalipsisLogger getInstancia() throws IOException {
+        if (instancia == null) {
+            instancia = new ApocalipsisLogger();
+        }
+        return instancia;
+    }
+
     public synchronized void log(String mensaje) {
-        // Obtener la hora actual formateada como HH:mm:ss
         String tiempo = LocalDateTime.now().format(formatoHora);
-        // Escribir el mensaje con la hora de registro
-        escritor.println("[" + tiempo + "] " + mensaje);
+        String linea = "[" + tiempo + "] " + mensaje;
+
+        escritorArchivo.println(linea);
+        System.out.println(linea);
+
+        if (zonasTxtField != null) {
+            for (TextField zona : zonasTxtField) {
+                zona.appendText(linea + "\n");
+            }
+        }
     }
 
-    /**
-     * Metodo para cerrar el escritor de logs.
-     * Es importante liberar los recursos al final de la ejecución.
-     */
+    public void setInterfaz(TextField[] zonas, TextField cantidadComida, TextField[] zombies) {
+        this.zonasTxtField = zonas;
+        this.cantidadComida = cantidadComida;
+        this.zombiesTxtField = zombies;
+    }
+
     public void cerrar() {
-        if (escritor != null) {
-            escritor.close();
+        if (escritorArchivo != null) {
+            escritorArchivo.close();
         }
     }
 }
-

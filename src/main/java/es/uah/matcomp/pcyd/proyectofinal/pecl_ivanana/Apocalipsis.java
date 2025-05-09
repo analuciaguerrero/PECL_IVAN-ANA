@@ -1,64 +1,38 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
+import javafx.scene.control.TextField;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Apocalipsis {
+    private List<AreaRiesgo> zonas;
+    private Refugio refugio;
+    private ApocalipsisLogger logger;
 
-    public static void iniciarSimulacion() {
-        ApocalipsisLogger logger = null;
-        try {
-            logger = new ApocalipsisLogger("logs/apocalipsis.txt");
-        } catch (IOException e) {
-            System.err.println("Error al inicializar el logger: " + e.getMessage());
-            return;
+    public Apocalipsis(TextField[] zonasText, TextField cantidadComida, TextField[] zombiesText) throws IOException {
+        this.logger = ApocalipsisLogger.getInstancia();
+        this.zonas = new ArrayList<>();
+
+        // Crear zonas de riesgo
+        for (int i = 0; i < 4; i++) {
+            zonas.add(new AreaRiesgo("Zona-" + i));
         }
 
-        Pause simulacionPausa = new Pause();
+        // Crear refugio
+        this.refugio = new Refugio(6, logger); // Capacidad fija de 6
+    }
 
-        List<AreaRiesgo> zonasDeRiesgo = new ArrayList<>();
-        zonasDeRiesgo.add(new AreaRiesgo("Zona riesgo 1"));
-        zonasDeRiesgo.add(new AreaRiesgo("Zona riesgo 2"));
-        zonasDeRiesgo.add(new AreaRiesgo("Zona riesgo 3"));
-        zonasDeRiesgo.add(new AreaRiesgo("Zona riesgo 4"));
+    public List<AreaRiesgo> getZonas() {
+        return zonas;  // Devuelve la lista completa de zonas
+    }
 
-        List<Tunel> tuneles = new ArrayList<>();
-        tuneles.add(new Tunel(3));
-        tuneles.add(new Tunel(4));
-        tuneles.add(new Tunel(2));
-        tuneles.add(new Tunel(5));
+    public Refugio getRefugio() {
+        return refugio;
+    }
 
-        Refugio refugio = new Refugio(10, logger);
-
-        Random random = new Random();
-        for (int i = 0; i < 10000; i++) {
-            String nombreHumano = "H" + String.format("%04d", i);
-            Humano humano = new Humano(nombreHumano, zonasDeRiesgo, refugio, logger);
-            humano.start();
-
-            try {
-                int tiempoEspera = 500 + random.nextInt(1500);
-                Thread.sleep(tiempoEspera);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        for (int i = 0; i < 1; i++) {
-            Zombie zombie = new Zombie("Z0000", zonasDeRiesgo, logger);
-            zombie.start();
-        }
-
-        simulacionPausa.actualizarEstadoPausa(true);
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        simulacionPausa.actualizarEstadoPausa(false);
+    public ApocalipsisLogger getLogger() {
+        return logger;
     }
 }
-
-

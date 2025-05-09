@@ -15,6 +15,7 @@ public class Humano extends Thread {
     private volatile boolean atacado = false;
     private volatile boolean herido = false;
 
+    private volatile boolean paused = false;  // Control de pausa
     private static final int TIEMPO_ZONA_RIESGO_MIN = 3000;
     private static final int TIEMPO_ZONA_RIESGO_EXTRA = 2000;
     private static final int TIEMPO_REFUGIO = 2500;
@@ -70,11 +71,23 @@ public class Humano extends Thread {
         return zonas.isEmpty() ? 0 : zonas.get(0).getId();  // devolvemos zona 0 si vacío
     }
 
+    // Método para pausar el hilo
+    public synchronized void pausar() throws InterruptedException {
+        while (paused) {
+            wait();  // El hilo se "duerme" hasta que se reanude
+        }
+    }
+    // Método para reanudar el hilo
+    public synchronized void reanudar() {
+        paused = false;
+        notify();  // Despierta al hilo
+    }
     @Override
     public void run() {
         try {
             while (vivo && !Thread.currentThread().isInterrupted()) {
-
+                // Pausar si es necesario
+                pausar();
                 // 1. Seleccionar zona de riesgo aleatoria
                 int indiceZona = random.nextInt(zonas.size());
                 AreaRiesgo zona = zonas.get(indiceZona);
