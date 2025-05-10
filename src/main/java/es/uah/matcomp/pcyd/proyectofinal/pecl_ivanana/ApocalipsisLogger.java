@@ -3,15 +3,19 @@ package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+import javafx.application.Platform;
 import javafx.scene.control.TextField;
 
 public class ApocalipsisLogger {
-    private static ApocalipsisLogger instancia; // <-- Singleton
+    private static ApocalipsisLogger instancia;
     private final PrintWriter escritorArchivo;
     private final DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
+
     private TextField[] zonasTxtField;
     private TextField cantidadComida;
     private TextField[] zombiesTxtField;
+    private TextField eventosGenerales;
 
     private ApocalipsisLogger() throws IOException {
         File carpeta = new File("logs");
@@ -41,17 +45,17 @@ public class ApocalipsisLogger {
         escritorArchivo.println(linea);
         System.out.println(linea);
 
-        if (zonasTxtField != null) {
-            for (TextField zona : zonasTxtField) {
-                zona.appendText(linea + "\n");
-            }
+        // ✅ Solo mostrar en el TextField de eventos generales
+        if (eventosGenerales != null) {
+            Platform.runLater(() -> eventosGenerales.appendText(linea + "\n"));
         }
     }
 
-    public void setInterfaz(TextField[] zonas, TextField cantidadComida, TextField[] zombies) {
+    public void setInterfaz(TextField[] zonas, TextField cantidadComida, TextField[] zombies, TextField eventos) {
         this.zonasTxtField = zonas;
         this.cantidadComida = cantidadComida;
         this.zombiesTxtField = zombies;
+        this.eventosGenerales = eventos;
     }
 
     public void cerrar() {

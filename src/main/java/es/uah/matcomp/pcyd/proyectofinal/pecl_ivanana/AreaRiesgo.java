@@ -16,12 +16,14 @@ public class AreaRiesgo {
     private final List<Zombie> infectados = new ArrayList<>();
     private final ReentrantLock controlAcceso = new ReentrantLock(true);
     private final Random dado = new Random();
+    private final ApocalipsisLogger logger;
 
     private static int contadorZonas = 0;
 
-    public AreaRiesgo(String nombreZona) {
+    public AreaRiesgo(String nombreZona, ApocalipsisLogger logger) {
         this.identificadorZona = nombreZona;
         this.id = contadorZonas++;
+        this.logger = logger;
     }
 
     public String getNombre() {
@@ -36,6 +38,7 @@ public class AreaRiesgo {
         controlAcceso.lock();
         try {
             habitantes.add(h);
+            logger.log(h.getNombre() + " ha entrado en " + identificadorZona);
         } finally {
             controlAcceso.unlock();
         }
@@ -45,6 +48,7 @@ public class AreaRiesgo {
         controlAcceso.lock();
         try {
             habitantes.remove(h);
+            logger.log(h.getNombre() + " ha salido de " + identificadorZona);
         } finally {
             controlAcceso.unlock();
         }
@@ -54,6 +58,7 @@ public class AreaRiesgo {
         controlAcceso.lock();
         try {
             infectados.add(z);
+            logger.log(z.getZombieId() + " ha entrado en " + identificadorZona);
         } finally {
             controlAcceso.unlock();
         }
@@ -63,6 +68,7 @@ public class AreaRiesgo {
         controlAcceso.lock();
         try {
             infectados.remove(z);
+            logger.log(z.getZombieId() + " ha salido de " + identificadorZona);
         } finally {
             controlAcceso.unlock();
         }
@@ -96,5 +102,23 @@ public class AreaRiesgo {
             controlAcceso.unlock();
         }
     }
-}
 
+    // ✅ Métodos útiles para mostrar en interfaz
+    public int getNumHumanos() {
+        controlAcceso.lock();
+        try {
+            return habitantes.size();
+        } finally {
+            controlAcceso.unlock();
+        }
+    }
+
+    public int getNumZombies() {
+        controlAcceso.lock();
+        try {
+            return infectados.size();
+        } finally {
+            controlAcceso.unlock();
+        }
+    }
+}

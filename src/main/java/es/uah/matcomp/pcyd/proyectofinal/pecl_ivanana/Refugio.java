@@ -41,6 +41,7 @@ public class Refugio {
         }
     }
 
+
     public void salirRefugio(Humano humano) {
         accesoRefugioLock.lock();
         try {
@@ -52,12 +53,14 @@ public class Refugio {
         }
     }
 
+
     public void usarZonaDescanso(Humano humano) throws InterruptedException {
         synchronized (zonaDescanso) {
             logger.log(humano.getName() + " está descansando en la zona de descanso.");
             Thread.sleep(1000 + (int)(Math.random() * 2000));  // Simula descanso
         }
     }
+
 
     public void usarZonaComun(Humano humano) throws InterruptedException {
         synchronized (zonaComun) {
@@ -88,6 +91,7 @@ public class Refugio {
         logger.log(humano.getName() + " ha salido del túnel hacia zona " + zona);
     }
 
+
     // Humano regresa desde la zona insegura al refugio por el túnel
     public void volverPorTunel(Humano humano) throws InterruptedException {
         int zona = humano.getZona();
@@ -106,6 +110,7 @@ public class Refugio {
             // Aquí podrías implementar lógica para esperar afuera, buscar otro refugio, etc.
         }
     }
+
     public boolean estaDentro(Humano humano) {
         accesoRefugioLock.lock();
         try {
@@ -114,5 +119,18 @@ public class Refugio {
             accesoRefugioLock.unlock();
         }
     }
+    public int getOcupacionActual() {
+        accesoRefugioLock.lock();
+        try {
+            return humanosDentro.size();
+        } finally {
+            accesoRefugioLock.unlock();
+        }
+    }
+
+    public int getCapacidad() {
+        return capacidadMaxima;
+    }
+
 }
 

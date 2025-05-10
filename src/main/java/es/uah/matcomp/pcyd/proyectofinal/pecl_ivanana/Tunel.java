@@ -21,17 +21,20 @@ public class Tunel {
         cerrojo.lock();
         try {
             while (ocupado) {
-                espera.await();
+                logger.log(humano.getName() + " está esperando para entrar al túnel " + id);
+                espera.await();  // El humano espera hasta que el túnel esté libre
             }
             ocupado = true;
             logger.log(humano.getName() + " ha entrado al túnel " + id);
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            // En caso de que se interrumpa mientras espera, se maneja adecuadamente
+            Thread.currentThread().interrupt();  // Restablecer el estado de interrupción
             logger.log("Interrupción: " + humano.getName() + " no pudo entrar al túnel " + id);
         } finally {
             cerrojo.unlock();
         }
     }
+
 
     // Método llamado después de cruzar el túnel (salida o llegada)
     public void salir(Humano humano) {
@@ -45,17 +48,23 @@ public class Tunel {
         }
     }
 
+
     // Método auxiliar para liberar el túnel manualmente si es necesario (opcional)
     public void liberarTunel() {
         cerrojo.lock();
         try {
-            ocupado = false;
-            espera.signalAll();
-            logger.log("Túnel " + id + " ha sido liberado manualmente.");
+            if (ocupado) {
+                logger.log("El túnel " + id + " está ocupado y será liberado manualmente.");
+                ocupado = false;
+                espera.signalAll();  // Libera a todos los hilos que esperan
+            } else {
+                logger.log("El túnel " + id + " ya está libre.");
+            }
         } finally {
             cerrojo.unlock();
         }
     }
+
 
     public int getId() {
         return id;

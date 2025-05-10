@@ -27,6 +27,9 @@ public class Humano extends Thread {
         this.logger = logger;
         setName(nombre);
     }
+    public String getNombre() {
+        return nombre;
+    }
 
     public boolean estaSiendoAtacado() {
         return atacado;
@@ -86,21 +89,16 @@ public class Humano extends Thread {
     public void run() {
         try {
             while (vivo && !Thread.currentThread().isInterrupted()) {
-                // Pausar si es necesario
-                pausar();
-                // 1. Seleccionar zona de riesgo aleatoria
+                pausar();  // pausa si corresponde
+
                 int indiceZona = random.nextInt(zonas.size());
                 AreaRiesgo zona = zonas.get(indiceZona);
 
-                // 2. Salir del refugio hacia zona peligrosa
                 refugio.cruzarTunel(this);
-                zona.añadirHumano(this);
-                logger.log(nombre + " entra en la zona de riesgo: " + zona.getNombre());
+                zona.añadirHumano(this); // <-- ya registra en log dentro de AreaRiesgo
 
-                // 3. Permanecer en la zona durante un tiempo
                 esperar(TIEMPO_ZONA_RIESGO_MIN + random.nextInt(TIEMPO_ZONA_RIESGO_EXTRA));
 
-                // 4. Si está siendo atacado, esperar a resultado (herido o muerto)
                 while (atacado && vivo) {
                     esperar(100);
                     if (Thread.interrupted()) {
@@ -109,21 +107,16 @@ public class Humano extends Thread {
                     }
                 }
 
-                // 5. Salir de la zona
-                zona.eliminarHumano(this);
-                logger.log(nombre + " ha salido de " + zona.getNombre());
+                zona.eliminarHumano(this); // <-- también registra en log
 
-                // 6. Volver al refugio
                 refugio.volverPorTunel(this);
                 if (refugio.entrarRefugio(this)) {
                     refugio.usarZonaDescanso(this);
-
                     if (herido) {
                         logger.log(nombre + " está recuperándose de sus heridas.");
                         refugio.usarZonaDescanso(this);
                         herido = false;
                     }
-
                     refugio.salirRefugio(this);
                 } else {
                     logger.log(nombre + " no pudo entrar al refugio. Esperará fuera.");
@@ -135,4 +128,5 @@ public class Humano extends Thread {
             Thread.currentThread().interrupt();
         }
     }
+
 }

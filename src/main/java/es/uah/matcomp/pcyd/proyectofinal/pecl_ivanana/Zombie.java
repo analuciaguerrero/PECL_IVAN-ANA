@@ -35,20 +35,22 @@ public class Zombie extends Thread {
         interrupt();  // Interrumpir el hilo si está en ejecución
     }
 
+
     private AreaRiesgo seleccionarZonaAleatoria() {
-        int indice = aleatorio.nextInt(zonasDeRiesgo.size());
-        return zonasDeRiesgo.get(indice);
+        return zonasDeRiesgo.get(aleatorio.nextInt(zonasDeRiesgo.size()));
     }
+
 
     private void esperarTiempoAleatorio(int base, int adicional) throws InterruptedException {
         int espera = base + (adicional > 0 ? aleatorio.nextInt(adicional + 1) : 0);
         Thread.sleep(espera);  // Pausar el hilo durante el tiempo calculado
     }
 
+
     // Metodo sincronizado para atacar a un humano
     private void atacarObjetivo(Humano humano) throws InterruptedException {
         synchronized (humano) {  // Protección contra otros hilos que puedan intentar modificar el humano al mismo tiempo
-            if (!humano.isAlive()) return;  // Si el humano ya está muerto, no hace nada
+            if (!humano.estaVivo()) return;  // Si el humano ya está muerto, no hace nada
 
             logger.log(getName() + " inicia ataque a " + humano.getName());
             humano.setSiendoAtacado(true);  // Marcar al humano como atacado
@@ -56,7 +58,7 @@ public class Zombie extends Thread {
             int tiempoAtaque = TIEMPO_MIN_ATAQUE + aleatorio.nextInt(TIEMPO_ADICIONAL_ATAQUE + 1);
             esperarTiempoAleatorio(tiempoAtaque, 0);  // Esperar el tiempo de ataque
 
-            if (humano.isAlive()) {
+            if (humano.estaVivo()) {
                 double exito = aleatorio.nextDouble();
                 if (exito > 0.66) {
                     humano.interrupt();  // Matar al humano interrumpiéndolo
@@ -71,6 +73,7 @@ public class Zombie extends Thread {
             }
         }
     }
+
 
     @Override
     public void run() {
@@ -93,11 +96,11 @@ public class Zombie extends Thread {
 
                 zonaActual.eliminarZombie(this);  // Retirar al zombi de la zona de riesgo
                 logger.log(getName() + " abandona la zona de riesgo.");
-
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();  // Propagar la interrupción
-                logger.log(getName() + " interrumpido durante la ejecución.");
+                logger.log(getName() + " ha sido interrumpido durante su ejecución.");
             }
         }
     }
+
 }
