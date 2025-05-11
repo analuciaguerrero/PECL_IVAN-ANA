@@ -1,5 +1,6 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -17,13 +18,15 @@ public class AreaRiesgo {
     private final ReentrantLock controlAcceso = new ReentrantLock(true);
     private final Random dado = new Random();
     private final ApocalipsisLogger logger;
+    private final GestorHilos visualizador;
 
     private static int contadorZonas = 0;
 
-    public AreaRiesgo(String nombreZona, ApocalipsisLogger logger) {
-        this.identificadorZona = nombreZona;
+    public AreaRiesgo(GestorHilos visualizador) throws IOException {
+        this.identificadorZona = "Zona " + contadorZonas;
         this.id = contadorZonas++;
-        this.logger = logger;
+        this.logger = ApocalipsisLogger.getInstancia();
+        this.visualizador = visualizador;
     }
 
     public String getNombre() {
@@ -38,6 +41,7 @@ public class AreaRiesgo {
         controlAcceso.lock();
         try {
             habitantes.add(h);
+            visualizador.añadir(h);
             logger.log(h.getNombre() + " ha entrado en " + identificadorZona);
         } finally {
             controlAcceso.unlock();
@@ -48,6 +52,7 @@ public class AreaRiesgo {
         controlAcceso.lock();
         try {
             habitantes.remove(h);
+            visualizador.eliminar(h);
             logger.log(h.getNombre() + " ha salido de " + identificadorZona);
         } finally {
             controlAcceso.unlock();
@@ -103,7 +108,6 @@ public class AreaRiesgo {
         }
     }
 
-    // ✅ Métodos útiles para mostrar en interfaz
     public int getNumHumanos() {
         controlAcceso.lock();
         try {

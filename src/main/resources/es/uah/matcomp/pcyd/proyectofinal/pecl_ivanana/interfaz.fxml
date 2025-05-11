@@ -23,25 +23,33 @@
                     <VBox spacing="35" alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
                         <VBox spacing="10" alignment="CENTER">
                             <Label text="Zona descanso" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
-                            <TextField fx:id="HumanosZonaDescanso" prefWidth="300" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-background-radius: 10; -fx-alignment: center;" />
+                            <StackPane prefHeight="300" prefWidth="60">
+                            <Text fx:id="HumanosZonaDescanso"
+                                  style="-fx-font-size: 20px; -fx-background-radius: 10; -fx-alignment: center;" />
+                            </StackPane>
                         </VBox>
                         <VBox spacing="10" alignment="CENTER">
                             <Label text="Comedor" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
                             <HBox spacing="15" alignment="CENTER">
-                                <TextField fx:id="HumanosComedor" prefWidth="220" prefHeight="60"
-                                           style="-fx-font-size: 20px; -fx-background-radius: 10; -fx-alignment: center;" />
+                                <StackPane prefHeight="220" prefWidth="60">
+                                <Text fx:id="HumanosComedor"
+                                      style="-fx-font-size: 20px; -fx-background-radius: 10; -fx-alignment: center;" />
+                                </StackPane>
                                 <VBox spacing="5" alignment="CENTER">
                                     <Label text="Comida" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
-                                    <TextField fx:id="HumanosComida" prefWidth="70" prefHeight="40"
-                                               style="-fx-font-size: 16px; -fx-background-radius: 6; -fx-alignment: center;" />
+                                    <StackPane prefHeight="70" prefWidth="40">
+                                    <Text fx:id="HumanosComida"
+                                          style="-fx-font-size: 16px; -fx-background-radius: 6; -fx-alignment: center;" />
+                                    </StackPane>
                                 </VBox>
                             </HBox>
                         </VBox>
                         <VBox spacing="10" alignment="CENTER">
                             <Label text="Zona común" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
-                            <TextField fx:id="HumanosZonaComun" prefWidth="300" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-background-radius: 10; -fx-alignment: center;" />
+                            <StackPane prefHeight="300" prefWidth="60">
+                            <Text fx:id="HumanosZonaComun"
+                                  style="-fx-font-size: 20px; -fx-background-radius: 10; -fx-alignment: center;" />
+                            </StackPane>
                         </VBox>
                     </VBox>
                 </VBox>
@@ -53,36 +61,60 @@
                            style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
                     <VBox spacing="30" alignment="TOP_CENTER">
                         <HBox spacing="20" alignment="CENTER">
-                            <TextField fx:id="EntradaTunel1" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
-                            <TextField fx:id="Tunel1" prefWidth="120" prefHeight="30"
-                                       style="-fx-font-size: 14px; -fx-alignment: center;" />
-                            <TextField fx:id="SalidaTunel1" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="EntradaTunel1"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="120" prefWidth="30">
+                            <Text fx:id="Tunel1"
+                                  style="-fx-font-size: 14px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="SalidaTunel1"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                         <HBox spacing="20" alignment="CENTER">
-                            <TextField fx:id="EntradaTunel2" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
-                            <TextField fx:id="Tunel2" prefWidth="120" prefHeight="30"
-                                       style="-fx-font-size: 14px; -fx-alignment: center;" />
-                            <TextField fx:id="SalidaTunel2" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="EntradaTunel2"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="120" prefWidth="30">
+                            <Text fx:id="Tunel2"
+                                  style="-fx-font-size: 14px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="SalidaTunel2"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                         <HBox spacing="20" alignment="CENTER">
-                            <TextField fx:id="EntradaTunel3" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
-                            <TextField fx:id="Tunel3" prefWidth="120" prefHeight="30"
-                                       style="-fx-font-size: 14px; -fx-alignment: center;" />
-                            <TextField fx:id="SalidaTunel3" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="EntradaTunel3"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="120" prefWidth="30">
+                            <Text fx:id="Tunel3"
+                                  style="-fx-font-size: 14px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="SalidaTunel3"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                         <HBox spacing="20" alignment="CENTER">
-                            <TextField fx:id="EntradaTunel4" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
-                            <TextField fx:id="Tunel4" prefWidth="120" prefHeight="30"
-                                       style="-fx-font-size: 14px; -fx-alignment: center;" />
-                            <TextField fx:id="SalidaTunel4" prefWidth="100" prefHeight="60"
-                                       style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="EntradaTunel4"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="120" prefWidth="30">
+                            <Text fx:id="Tunel4"
+                                  style="-fx-font-size: 14px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="100" prefWidth="60">
+                            <Text fx:id="SalidaTunel4"
+                                  style="-fx-font-size: 18px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                     </VBox>
                 </VBox>
@@ -95,28 +127,44 @@
                            style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
                     <VBox spacing="35" alignment="TOP_CENTER">
                         <HBox spacing="30" alignment="CENTER">
-                            <TextField fx:id="HumanosRiesgo1" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
-                            <TextField fx:id="ZombiesRiesgo1" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="HumanosRiesgo1"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="ZombiesRiesgo1"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                         <HBox spacing="30" alignment="CENTER">
-                            <TextField fx:id="HumanosRiesgo2" prefWidth="160" prefHeight="60"
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="HumanosRiesgo2"
                                        style="-fx-font-size: 20px; -fx-alignment: center;" />
-                            <TextField fx:id="ZombiesRiesgo2" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="ZombiesRiesgo2"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                         <HBox spacing="30" alignment="CENTER">
-                            <TextField fx:id="HumanosRiesgo3" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
-                            <TextField fx:id="ZombiesRiesgo3" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="HumanosRiesgo3"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="ZombiesRiesgo3"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                         <HBox spacing="30" alignment="CENTER">
-                            <TextField fx:id="HumanosRiesgo4" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
-                            <TextField fx:id="ZombiesRiesgo4" prefWidth="160" prefHeight="60"
-                                       style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="HumanosRiesgo4"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
+                            <StackPane prefHeight="160" prefWidth="60">
+                            <Text fx:id="ZombiesRiesgo4"
+                                  style="-fx-font-size: 20px; -fx-alignment: center;" />
+                            </StackPane>
                         </HBox>
                     </VBox>
                 </VBox>
@@ -128,4 +176,3 @@
 
     </children>
 </AnchorPane>
-

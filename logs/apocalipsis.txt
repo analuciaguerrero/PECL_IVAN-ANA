@@ -4,3 +4,752 @@
 [14:04:20] H0000 ha entrado al túnel 0
 [14:05:14] Zombie-Z0000 entra en zona de riesgo Zona-3
 [14:05:14] H0000 ha entrado al túnel 0
+[02:30:15] INICIO DE LA EJECUCIÓN
+[02:30:15] Zombie-Zombie-0 entra en zona de riesgo Zona 0
+[02:30:15] Zombie-0 ha entrado en Zona 0
+[02:30:15] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:30:15] Humano-1 ha entrado al túnel 0
+[02:30:15] Humano-2 está esperando para entrar al túnel 0
+[02:30:15] Humano-1 está cruzando el túnel hacia zona 0
+[02:30:15] Humano-3 está esperando para entrar al túnel 0
+[02:30:15] Humano-4 está esperando para entrar al túnel 0
+[02:30:16] Humano-1 ha salido del túnel 0
+[02:30:16] El túnel 0 ya está libre.
+[02:30:16] Humano-5 ha entrado al túnel 0
+[02:30:16] Humano-1 ha salido del túnel hacia zona 0
+[02:30:16] Humano-2 está esperando para entrar al túnel 0
+[02:30:16] Humano-5 está cruzando el túnel hacia zona 0
+[02:30:16] Humano-3 está esperando para entrar al túnel 0
+[02:30:16] Humano-1 ha entrado en Zona 3
+[02:30:16] Humano-4 está esperando para entrar al túnel 0
+[02:30:16] Humano-6 está esperando para entrar al túnel 0
+[02:30:17] Humano-5 ha salido del túnel 0
+[02:30:17] El túnel 0 ya está libre.
+[02:30:17] Humano-5 ha salido del túnel hacia zona 0
+[02:30:17] Humano-5 ha entrado en Zona 0
+[02:30:17] Humano-2 ha entrado al túnel 0
+[02:30:17] Humano-2 está cruzando el túnel hacia zona 0
+[02:30:17] Humano-3 está esperando para entrar al túnel 0
+[02:30:17] Humano-4 está esperando para entrar al túnel 0
+[02:30:17] Humano-6 está esperando para entrar al túnel 0
+[02:30:17] Humano-7 está esperando para entrar al túnel 0
+[02:30:18] Zombie-0 ha salido de Zona 0
+[02:30:18] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:30:18] Zombie-Zombie-0 entra en zona de riesgo Zona 3
+[02:30:18] Zombie-0 ha entrado en Zona 3
+[02:30:18] Zombie-Zombie-0 inicia ataque a Humano-1
+[02:30:18] Humano-8 está esperando para entrar al túnel 0
+[02:30:18] Humano-2 ha salido del túnel 0
+[02:30:18] Humano-3 ha entrado al túnel 0
+[02:30:18] Humano-3 está cruzando el túnel hacia zona 0
+[02:30:18] El túnel 0 está ocupado y será liberado manualmente.
+[02:30:18] Humano-2 ha salido del túnel hacia zona 0
+[02:30:18] Humano-2 ha entrado en Zona 1
+[02:30:18] Humano-4 ha entrado al túnel 0
+[02:30:18] Humano-4 está cruzando el túnel hacia zona 0
+[02:30:18] Humano-6 está esperando para entrar al túnel 0
+[02:30:18] Humano-7 está esperando para entrar al túnel 0
+[02:30:18] Humano-8 está esperando para entrar al túnel 0
+[02:30:18] Zombie-Zombie-0 solo hirió a Humano-1
+[02:30:19] Humano-9 está esperando para entrar al túnel 0
+[02:30:19] Humano-3 ha salido del túnel 0
+[02:30:19] El túnel 0 ya está libre.
+[02:30:19] Humano-3 ha salido del túnel hacia zona 0
+[02:30:19] Humano-3 ha entrado en Zona 2
+[02:30:19] Humano-4 ha salido del túnel 0
+[02:30:19] El túnel 0 ya está libre.
+[02:30:19] Humano-4 ha salido del túnel hacia zona 0
+[02:30:19] Humano-4 ha entrado en Zona 0
+[02:30:19] Humano-6 ha entrado al túnel 0
+[02:30:19] Humano-6 está cruzando el túnel hacia zona 0
+[02:30:19] Humano-7 está esperando para entrar al túnel 0
+[02:30:19] Humano-8 está esperando para entrar al túnel 0
+[02:30:19] Humano-9 está esperando para entrar al túnel 0
+[02:30:20] Humano-1 ha salido de Zona 3
+[02:30:20] Humano-1 está esperando para entrar al túnel 0
+[02:30:20] Humano-10 está esperando para entrar al túnel 0
+[02:30:20] Humano-6 ha salido del túnel 0
+[02:30:20] El túnel 0 ya está libre.
+[02:30:20] Humano-6 ha salido del túnel hacia zona 0
+[02:30:20] Humano-6 ha entrado en Zona 1
+[02:30:20] Humano-7 ha entrado al túnel 0
+[02:30:20] Humano-7 está cruzando el túnel hacia zona 0
+[02:30:20] Humano-8 está esperando para entrar al túnel 0
+[02:30:20] Humano-9 está esperando para entrar al túnel 0
+[02:30:20] Humano-1 está esperando para entrar al túnel 0
+[02:30:20] Humano-10 está esperando para entrar al túnel 0
+[02:30:21] Zombie-0 ha salido de Zona 3
+[02:30:21] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:30:21] Zombie-Zombie-0 entra en zona de riesgo Zona 1
+[02:30:21] Zombie-0 ha entrado en Zona 1
+[02:30:21] Zombie-Zombie-0 inicia ataque a Humano-6
+[02:30:21] Humano-11 está esperando para entrar al túnel 0
+[02:30:21] Humano-7 ha salido del túnel 0
+[02:30:21] El túnel 0 ya está libre.
+[02:30:21] Humano-7 ha salido del túnel hacia zona 0
+[02:30:21] Humano-8 ha entrado al túnel 0
+[02:30:21] Humano-7 ha entrado en Zona 1
+[02:30:21] Humano-9 está esperando para entrar al túnel 0
+[02:30:21] Humano-8 está cruzando el túnel hacia zona 0
+[02:30:21] Humano-1 está esperando para entrar al túnel 0
+[02:30:21] Humano-10 está esperando para entrar al túnel 0
+[02:30:21] Humano-11 está esperando para entrar al túnel 0
+[02:30:22] Zombie-Zombie-0 solo hirió a Humano-6
+[02:30:22] Humano-5 ha salido de Zona 0
+[02:30:22] Humano-5 está esperando para entrar al túnel 0
+[02:30:22] Humano-12 está esperando para entrar al túnel 0
+[02:30:22] Humano-13 está esperando para entrar al túnel 0
+[02:30:22] Humano-8 ha salido del túnel 0
+[02:30:22] El túnel 0 ya está libre.
+[02:30:22] Humano-8 ha salido del túnel hacia zona 0
+[02:30:22] Humano-9 ha entrado al túnel 0
+[02:30:22] Humano-8 ha entrado en Zona 0
+[02:30:22] Humano-1 está esperando para entrar al túnel 0
+[02:30:22] Humano-9 está cruzando el túnel hacia zona 0
+[02:30:22] Humano-10 está esperando para entrar al túnel 0
+[02:30:22] Humano-11 está esperando para entrar al túnel 0
+[02:30:22] Humano-5 está esperando para entrar al túnel 0
+[02:30:22] Humano-12 está esperando para entrar al túnel 0
+[02:30:22] Humano-13 está esperando para entrar al túnel 0
+[02:30:23] Humano-3 ha salido de Zona 2
+[02:30:23] Humano-3 está esperando para entrar al túnel 0
+[02:30:23] Humano-2 ha salido de Zona 1
+[02:30:23] Humano-2 está esperando para entrar al túnel 0
+[02:30:23] Humano-14 está esperando para entrar al túnel 0
+[02:30:23] Humano-9 ha salido del túnel 0
+[02:30:23] El túnel 0 ya está libre.
+[02:30:23] Humano-9 ha salido del túnel hacia zona 0
+[02:30:23] Humano-9 ha entrado en Zona 2
+[02:30:23] Humano-1 ha entrado al túnel 0
+[02:30:23] Humano-10 está esperando para entrar al túnel 0
+[02:30:23] Humano-1 está regresando al refugio por el túnel desde zona 0
+[02:30:23] Humano-11 está esperando para entrar al túnel 0
+[02:30:23] Humano-5 está esperando para entrar al túnel 0
+[02:30:23] Humano-12 está esperando para entrar al túnel 0
+[02:30:23] Humano-13 está esperando para entrar al túnel 0
+[02:30:23] Humano-3 está esperando para entrar al túnel 0
+[02:30:23] Humano-2 está esperando para entrar al túnel 0
+[02:30:23] Humano-14 está esperando para entrar al túnel 0
+[02:30:24] Humano-15 está esperando para entrar al túnel 0
+[02:30:24] Humano-1 ha salido del túnel 0
+[02:30:24] El túnel 0 ya está libre.
+[02:30:24] Humano-10 ha entrado al túnel 0
+[02:30:24] Humano-10 está cruzando el túnel hacia zona 0
+[02:30:24] Humano-1 ha llegado al refugio desde zona 0
+[02:30:24] Humano-11 está esperando para entrar al túnel 0
+[02:30:24] Humano-5 está esperando para entrar al túnel 0
+[02:30:24] Humano-12 está esperando para entrar al túnel 0
+[02:30:24] Humano-13 está esperando para entrar al túnel 0
+[02:30:24] Humano-3 está esperando para entrar al túnel 0
+[02:30:24] Humano-2 está esperando para entrar al túnel 0
+[02:30:24] Humano-14 está esperando para entrar al túnel 0
+[02:30:24] Humano-15 está esperando para entrar al túnel 0
+[02:30:24] Humano-1 ha entrado al refugio. [1/6]
+[02:30:24] Humano-1 ha entrado al refugio. [1/6]
+[02:30:24] Humano-1 está descansando en la zona de descanso.
+[02:30:24] Zombie-0 ha salido de Zona 1
+[02:30:24] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:30:24] Zombie-Zombie-0 entra en zona de riesgo Zona 3
+[02:30:24] Zombie-0 ha entrado en Zona 3
+[02:30:24] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:30:24] Humano-4 ha salido de Zona 0
+[02:30:24] Humano-4 está esperando para entrar al túnel 0
+[02:30:25] Humano-6 ha salido de Zona 1
+[02:30:25] Humano-6 está esperando para entrar al túnel 0
+[02:30:25] Humano-7 ha salido de Zona 1
+[02:30:25] Humano-7 está esperando para entrar al túnel 0
+[02:30:25] Humano-16 está esperando para entrar al túnel 0
+[02:30:25] Humano-10 ha salido del túnel 0
+[02:30:25] El túnel 0 ya está libre.
+[02:30:25] Humano-10 ha salido del túnel hacia zona 0
+[02:30:25] Humano-11 ha entrado al túnel 0
+[02:30:25] Humano-10 ha entrado en Zona 1
+[02:30:25] Humano-5 está esperando para entrar al túnel 0
+[02:30:25] Humano-11 está cruzando el túnel hacia zona 0
+[02:30:25] Humano-12 está esperando para entrar al túnel 0
+[02:30:25] Humano-13 está esperando para entrar al túnel 0
+[02:30:25] Humano-3 está esperando para entrar al túnel 0
+[02:30:25] Humano-2 está esperando para entrar al túnel 0
+[02:30:25] Humano-14 está esperando para entrar al túnel 0
+[02:30:25] Humano-15 está esperando para entrar al túnel 0
+[02:30:25] Humano-4 está esperando para entrar al túnel 0
+[02:30:25] Humano-6 está esperando para entrar al túnel 0
+[02:30:25] Humano-7 está esperando para entrar al túnel 0
+[02:30:25] Humano-16 está esperando para entrar al túnel 0
+[02:30:26] Humano-1 está recuperándose de sus heridas.
+[02:30:26] Humano-1 está descansando en la zona de descanso.
+[02:30:26] Humano-8 ha salido de Zona 0
+[02:30:26] Humano-8 está esperando para entrar al túnel 0
+[02:30:26] Humano-17 está esperando para entrar al túnel 0
+[02:30:26] Humano-11 ha salido del túnel 0
+[02:30:26] El túnel 0 ya está libre.
+[02:30:26] Humano-11 ha salido del túnel hacia zona 0
+[02:30:26] Humano-5 ha entrado al túnel 0
+[02:30:26] Humano-5 está regresando al refugio por el túnel desde zona 0
+[02:30:26] Humano-11 ha entrado en Zona 2
+[02:30:26] Humano-12 está esperando para entrar al túnel 0
+[02:30:26] Humano-13 está esperando para entrar al túnel 0
+[02:30:26] Humano-3 está esperando para entrar al túnel 0
+[02:30:26] Humano-2 está esperando para entrar al túnel 0
+[02:30:26] Humano-14 está esperando para entrar al túnel 0
+[02:30:26] Humano-15 está esperando para entrar al túnel 0
+[02:30:26] Humano-4 está esperando para entrar al túnel 0
+[02:30:26] Humano-6 está esperando para entrar al túnel 0
+[02:30:26] Humano-7 está esperando para entrar al túnel 0
+[02:30:26] Humano-16 está esperando para entrar al túnel 0
+[02:30:26] Humano-8 está esperando para entrar al túnel 0
+[02:30:26] Humano-17 está esperando para entrar al túnel 0
+[02:30:27] Zombie-0 ha salido de Zona 3
+[02:30:27] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:30:27] Zombie-Zombie-0 entra en zona de riesgo Zona 3
+[02:30:27] Zombie-0 ha entrado en Zona 3
+[02:30:27] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:30:27] Humano-18 está esperando para entrar al túnel 0
+[02:30:27] Humano-19 está esperando para entrar al túnel 0
+[02:30:27] Humano-20 está esperando para entrar al túnel 0
+[02:30:27] Humano-5 ha salido del túnel 0
+[02:30:27] El túnel 0 ya está libre.
+[02:30:27] Humano-5 ha llegado al refugio desde zona 0
+[02:30:27] Humano-12 ha entrado al túnel 0
+[02:30:27] Humano-12 está cruzando el túnel hacia zona 0
+[02:30:27] Humano-5 ha entrado al refugio. [2/6]
+[02:30:27] Humano-13 está esperando para entrar al túnel 0
+[02:30:27] Humano-5 ha entrado al refugio. [2/6]
+[02:30:27] Humano-3 está esperando para entrar al túnel 0
+[02:30:27] Humano-2 está esperando para entrar al túnel 0
+[02:30:27] Humano-14 está esperando para entrar al túnel 0
+[02:30:27] Humano-15 está esperando para entrar al túnel 0
+[02:30:27] Humano-4 está esperando para entrar al túnel 0
+[02:30:27] Humano-6 está esperando para entrar al túnel 0
+[02:30:27] Humano-7 está esperando para entrar al túnel 0
+[02:30:27] Humano-16 está esperando para entrar al túnel 0
+[02:30:27] Humano-8 está esperando para entrar al túnel 0
+[02:30:27] Humano-17 está esperando para entrar al túnel 0
+[02:30:27] Humano-18 está esperando para entrar al túnel 0
+[02:30:27] Humano-19 está esperando para entrar al túnel 0
+[02:30:27] Humano-20 está esperando para entrar al túnel 0
+[02:30:28] Humano-21 está esperando para entrar al túnel 0
+[02:30:28] Humano-12 ha salido del túnel 0
+[02:30:28] El túnel 0 ya está libre.
+[02:30:28] Humano-12 ha salido del túnel hacia zona 0
+[02:30:28] Humano-13 ha entrado al túnel 0
+[02:30:28] Humano-13 está cruzando el túnel hacia zona 0
+[02:30:28] Humano-12 ha entrado en Zona 3
+[02:30:28] Humano-3 está esperando para entrar al túnel 0
+[02:30:28] Humano-2 está esperando para entrar al túnel 0
+[02:30:28] Humano-14 está esperando para entrar al túnel 0
+[02:30:28] Humano-15 está esperando para entrar al túnel 0
+[02:30:28] Humano-4 está esperando para entrar al túnel 0
+[02:30:28] Humano-6 está esperando para entrar al túnel 0
+[02:30:28] Humano-7 está esperando para entrar al túnel 0
+[02:30:28] Humano-16 está esperando para entrar al túnel 0
+[02:30:28] Humano-8 está esperando para entrar al túnel 0
+[02:30:28] Humano-17 está esperando para entrar al túnel 0
+[02:30:28] Humano-18 está esperando para entrar al túnel 0
+[02:30:28] Humano-19 está esperando para entrar al túnel 0
+[02:30:28] Humano-20 está esperando para entrar al túnel 0
+[02:30:28] Humano-21 está esperando para entrar al túnel 0
+[02:30:28] Humano-9 ha salido de Zona 2
+[02:30:28] Humano-9 está esperando para entrar al túnel 0
+[02:30:28] Humano-5 está descansando en la zona de descanso.
+[02:30:28] Humano-1 ha salido del refugio. [1/6]
+[02:30:28] Humano-1 está esperando para entrar al túnel 0
+[02:30:29] Humano-22 está esperando para entrar al túnel 0
+[02:30:29] Humano-13 ha salido del túnel 0
+[02:30:29] El túnel 0 ya está libre.
+[02:30:29] Humano-13 ha salido del túnel hacia zona 0
+[02:30:29] Humano-3 ha entrado al túnel 0
+[02:30:29] Humano-13 ha entrado en Zona 3
+[02:30:29] Humano-3 está regresando al refugio por el túnel desde zona 0
+[02:30:29] Humano-2 está esperando para entrar al túnel 0
+[02:30:29] Humano-14 está esperando para entrar al túnel 0
+[02:30:29] Humano-15 está esperando para entrar al túnel 0
+[02:30:29] Humano-4 está esperando para entrar al túnel 0
+[02:30:29] Humano-6 está esperando para entrar al túnel 0
+[02:30:29] Humano-7 está esperando para entrar al túnel 0
+[02:30:29] Humano-16 está esperando para entrar al túnel 0
+[02:30:29] Humano-8 está esperando para entrar al túnel 0
+[02:30:29] Humano-17 está esperando para entrar al túnel 0
+[02:30:29] Humano-18 está esperando para entrar al túnel 0
+[02:30:29] Humano-19 está esperando para entrar al túnel 0
+[02:30:29] Humano-20 está esperando para entrar al túnel 0
+[02:30:29] Humano-21 está esperando para entrar al túnel 0
+[02:30:29] Humano-9 está esperando para entrar al túnel 0
+[02:30:29] Humano-1 está esperando para entrar al túnel 0
+[02:30:29] Humano-22 está esperando para entrar al túnel 0
+[02:30:30] Zombie-0 ha salido de Zona 3
+[02:30:30] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:30:30] Zombie-Zombie-0 entra en zona de riesgo Zona 3
+[02:30:30] Zombie-0 ha entrado en Zona 3
+[02:30:30] Zombie-Zombie-0 inicia ataque a Humano-12
+[02:30:30] Humano-11 ha salido de Zona 2
+[02:30:30] Humano-11 está esperando para entrar al túnel 0
+[02:30:30] Humano-10 ha salido de Zona 1
+[02:30:30] Humano-10 está esperando para entrar al túnel 0
+[02:30:30] Humano-23 está esperando para entrar al túnel 0
+[02:30:30] Humano-3 ha salido del túnel 0
+[02:30:30] El túnel 0 ya está libre.
+[02:30:30] Humano-3 ha llegado al refugio desde zona 0
+[02:30:30] Humano-3 ha entrado al refugio. [2/6]
+[02:30:30] Humano-2 ha entrado al túnel 0
+[02:30:30] Humano-3 ha entrado al refugio. [2/6]
+[02:30:30] Humano-14 está esperando para entrar al túnel 0
+[02:30:30] Humano-2 está regresando al refugio por el túnel desde zona 0
+[02:30:30] Humano-15 está esperando para entrar al túnel 0
+[02:30:30] Humano-4 está esperando para entrar al túnel 0
+[02:30:30] Humano-6 está esperando para entrar al túnel 0
+[02:30:30] Humano-7 está esperando para entrar al túnel 0
+[02:30:30] Humano-16 está esperando para entrar al túnel 0
+[02:30:30] Humano-8 está esperando para entrar al túnel 0
+[02:30:30] Humano-17 está esperando para entrar al túnel 0
+[02:30:30] Humano-18 está esperando para entrar al túnel 0
+[02:30:30] Humano-19 está esperando para entrar al túnel 0
+[02:30:30] Humano-20 está esperando para entrar al túnel 0
+[02:30:30] Humano-21 está esperando para entrar al túnel 0
+[02:30:30] Humano-9 está esperando para entrar al túnel 0
+[02:30:30] Humano-1 está esperando para entrar al túnel 0
+[02:30:30] Humano-22 está esperando para entrar al túnel 0
+[02:30:30] Humano-11 está esperando para entrar al túnel 0
+[02:30:30] Humano-10 está esperando para entrar al túnel 0
+[02:30:30] Humano-23 está esperando para entrar al túnel 0
+[02:30:30] Zombie-Zombie-0 solo hirió a Humano-12
+[02:30:30] Humano-3 está descansando en la zona de descanso.
+[02:30:30] Humano-5 ha salido del refugio. [1/6]
+[02:30:30] Humano-5 está esperando para entrar al túnel 0
+[02:30:31] Humano-24 está esperando para entrar al túnel 0
+[02:30:31] Humano-2 ha salido del túnel 0
+[02:30:31] El túnel 0 ya está libre.
+[02:30:31] Humano-2 ha llegado al refugio desde zona 0
+[02:30:31] Humano-14 ha entrado al túnel 0
+[02:30:31] Humano-2 ha entrado al refugio. [2/6]
+[02:30:31] Humano-14 está cruzando el túnel hacia zona 0
+[02:30:31] Humano-15 está esperando para entrar al túnel 0
+[02:30:31] Humano-2 ha entrado al refugio. [2/6]
+[02:30:31] Humano-4 está esperando para entrar al túnel 0
+[02:30:31] Humano-6 está esperando para entrar al túnel 0
+[02:30:31] Humano-7 está esperando para entrar al túnel 0
+[02:30:31] Humano-16 está esperando para entrar al túnel 0
+[02:30:31] Humano-8 está esperando para entrar al túnel 0
+[02:30:31] Humano-17 está esperando para entrar al túnel 0
+[02:30:31] Humano-18 está esperando para entrar al túnel 0
+[02:30:31] Humano-19 está esperando para entrar al túnel 0
+[02:30:31] Humano-20 está esperando para entrar al túnel 0
+[02:30:31] Humano-21 está esperando para entrar al túnel 0
+[02:30:31] Humano-9 está esperando para entrar al túnel 0
+[02:30:31] Humano-1 está esperando para entrar al túnel 0
+[02:30:31] Humano-22 está esperando para entrar al túnel 0
+[02:30:31] Humano-11 está esperando para entrar al túnel 0
+[02:30:31] Humano-10 está esperando para entrar al túnel 0
+[02:30:31] Humano-23 está esperando para entrar al túnel 0
+[02:30:31] Humano-5 está esperando para entrar al túnel 0
+[02:30:31] Humano-24 está esperando para entrar al túnel 0
+[02:30:32] Humano-2 está descansando en la zona de descanso.
+[02:30:32] Humano-3 ha salido del refugio. [1/6]
+[02:30:32] Humano-3 está esperando para entrar al túnel 0
+[02:30:32] Humano-25 está esperando para entrar al túnel 0
+[02:30:32] Humano-26 está esperando para entrar al túnel 0
+[02:30:32] Humano-27 está esperando para entrar al túnel 0
+[02:30:32] Humano-14 ha salido del túnel 0
+[02:30:32] El túnel 0 ya está libre.
+[02:30:32] Humano-14 ha salido del túnel hacia zona 0
+[02:30:32] Humano-15 ha entrado al túnel 0
+[02:30:32] Humano-14 ha entrado en Zona 2
+[02:30:32] Humano-15 está cruzando el túnel hacia zona 0
+[02:30:32] Humano-4 está esperando para entrar al túnel 0
+[02:30:32] Humano-6 está esperando para entrar al túnel 0
+[02:30:32] Humano-7 está esperando para entrar al túnel 0
+[02:30:32] Humano-16 está esperando para entrar al túnel 0
+[02:30:32] Humano-8 está esperando para entrar al túnel 0
+[02:30:32] Humano-17 está esperando para entrar al túnel 0
+[02:30:32] Humano-18 está esperando para entrar al túnel 0
+[02:30:32] Humano-19 está esperando para entrar al túnel 0
+[02:30:32] Humano-20 está esperando para entrar al túnel 0
+[02:30:32] Humano-21 está esperando para entrar al túnel 0
+[02:30:32] Humano-9 está esperando para entrar al túnel 0
+[02:30:32] Humano-1 está esperando para entrar al túnel 0
+[02:30:32] Humano-22 está esperando para entrar al túnel 0
+[02:30:32] Humano-11 está esperando para entrar al túnel 0
+[02:30:32] Humano-10 está esperando para entrar al túnel 0
+[02:30:32] Humano-23 está esperando para entrar al túnel 0
+[02:30:32] Humano-5 está esperando para entrar al túnel 0
+[02:30:32] Humano-24 está esperando para entrar al túnel 0
+[02:30:32] Humano-3 está esperando para entrar al túnel 0
+[02:30:32] Humano-25 está esperando para entrar al túnel 0
+[02:30:32] Humano-26 está esperando para entrar al túnel 0
+[02:30:32] Humano-27 está esperando para entrar al túnel 0
+[02:30:33] Zombie-0 ha salido de Zona 3
+[02:30:33] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:30:33] Zombie-Zombie-0 entra en zona de riesgo Zona 0
+[02:30:33] Zombie-0 ha entrado en Zona 0
+[02:30:33] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:30:33] Humano-13 ha salido de Zona 3
+[02:30:33] Humano-13 está esperando para entrar al túnel 0
+[02:30:33] Humano-12 ha salido de Zona 3
+[02:30:33] Humano-12 está esperando para entrar al túnel 0
+[02:30:33] Humano-28 está esperando para entrar al túnel 0
+[02:30:33] Humano-15 ha salido del túnel 0
+[02:30:33] El túnel 0 ya está libre.
+[02:30:33] Humano-15 ha salido del túnel hacia zona 0
+[02:30:33] Humano-4 ha entrado al túnel 0
+[02:30:33] Humano-15 ha entrado en Zona 1
+[02:30:33] Humano-6 está esperando para entrar al túnel 0
+[02:30:33] Humano-4 está regresando al refugio por el túnel desde zona 0
+[02:30:33] Humano-7 está esperando para entrar al túnel 0
+[02:30:33] Humano-16 está esperando para entrar al túnel 0
+[02:30:33] Humano-8 está esperando para entrar al túnel 0
+[02:30:33] Humano-17 está esperando para entrar al túnel 0
+[02:30:33] Humano-18 está esperando para entrar al túnel 0
+[02:30:33] Humano-19 está esperando para entrar al túnel 0
+[02:30:33] Humano-20 está esperando para entrar al túnel 0
+[02:30:33] Humano-21 está esperando para entrar al túnel 0
+[02:30:33] Humano-9 está esperando para entrar al túnel 0
+[02:30:33] Humano-1 está esperando para entrar al túnel 0
+[02:30:33] Humano-22 está esperando para entrar al túnel 0
+[02:30:33] Humano-11 está esperando para entrar al túnel 0
+[02:30:33] Humano-10 está esperando para entrar al túnel 0
+[02:30:33] Humano-23 está esperando para entrar al túnel 0
+[02:30:33] Humano-5 está esperando para entrar al túnel 0
+[02:30:33] Humano-24 está esperando para entrar al túnel 0
+[02:30:33] Humano-3 está esperando para entrar al túnel 0
+[02:30:33] Humano-25 está esperando para entrar al túnel 0
+[02:30:33] Humano-26 está esperando para entrar al túnel 0
+[02:30:33] Humano-27 está esperando para entrar al túnel 0
+[02:30:33] Humano-13 está esperando para entrar al túnel 0
+[02:30:33] Humano-12 está esperando para entrar al túnel 0
+[02:30:33] Humano-28 está esperando para entrar al túnel 0
+[02:30:34] Humano-2 ha salido del refugio. [0/6]
+[02:30:34] Humano-2 está esperando para entrar al túnel 0
+[02:30:34] Humano-29 está esperando para entrar al túnel 0
+[02:30:34] Humano-30 está esperando para entrar al túnel 0
+[02:30:34] Humano-31 está esperando para entrar al túnel 0
+[02:30:34] Humano-4 ha salido del túnel 0
+[02:30:34] El túnel 0 ya está libre.
+[02:30:34] Humano-4 ha llegado al refugio desde zona 0
+[02:30:34] Humano-6 ha entrado al túnel 0
+[02:30:34] Humano-4 ha entrado al refugio. [1/6]
+[02:30:34] Humano-6 está regresando al refugio por el túnel desde zona 0
+[02:30:34] Humano-7 está esperando para entrar al túnel 0
+[02:30:34] Humano-4 ha entrado al refugio. [1/6]
+[02:30:34] Humano-16 está esperando para entrar al túnel 0
+[02:30:34] Humano-4 está descansando en la zona de descanso.
+[02:30:34] Humano-8 está esperando para entrar al túnel 0
+[02:30:34] Humano-17 está esperando para entrar al túnel 0
+[02:30:34] Humano-18 está esperando para entrar al túnel 0
+[02:30:34] Humano-19 está esperando para entrar al túnel 0
+[02:30:34] Humano-20 está esperando para entrar al túnel 0
+[02:30:34] Humano-21 está esperando para entrar al túnel 0
+[02:30:34] Humano-9 está esperando para entrar al túnel 0
+[02:30:34] Humano-1 está esperando para entrar al túnel 0
+[02:30:34] Humano-22 está esperando para entrar al túnel 0
+[02:30:34] Humano-11 está esperando para entrar al túnel 0
+[02:30:34] Humano-10 está esperando para entrar al túnel 0
+[02:30:34] Humano-23 está esperando para entrar al túnel 0
+[02:30:34] Humano-5 está esperando para entrar al túnel 0
+[02:30:34] Humano-24 está esperando para entrar al túnel 0
+[02:30:34] Humano-3 está esperando para entrar al túnel 0
+[02:30:34] Humano-25 está esperando para entrar al túnel 0
+[02:30:34] Humano-26 está esperando para entrar al túnel 0
+[02:30:34] Humano-27 está esperando para entrar al túnel 0
+[02:30:34] Humano-13 está esperando para entrar al túnel 0
+[02:30:34] Humano-12 está esperando para entrar al túnel 0
+[02:30:34] Humano-28 está esperando para entrar al túnel 0
+[02:30:34] Humano-2 está esperando para entrar al túnel 0
+[02:30:34] Humano-29 está esperando para entrar al túnel 0
+[02:30:34] Humano-30 está esperando para entrar al túnel 0
+[02:30:34] Humano-31 está esperando para entrar al túnel 0
+[02:30:35] FIN DE LA EJECUCIÓN
+[02:39:13] INICIO DE LA EJECUCIÓN
+[02:39:13] Zombie-Zombie-0 entra en zona de riesgo Zona 2
+[02:39:13] Zombie-0 ha entrado en Zona 2
+[02:39:13] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:39:13] Humano-1 ha entrado al túnel 0
+[02:39:13] Humano-1 está cruzando el túnel hacia zona 0
+[02:39:14] Humano-1 ha salido del túnel 0
+[02:39:14] El túnel 0 ya está libre.
+[02:39:14] Humano-2 ha entrado al túnel 0
+[02:39:14] Humano-2 está cruzando el túnel hacia zona 0
+[02:39:14] Humano-1 ha salido del túnel hacia zona 0
+[02:39:14] Humano-1 ha entrado en Zona 2
+[02:39:15] Humano-3 está esperando para entrar al túnel 0
+[02:39:15] Humano-2 ha salido del túnel 0
+[02:39:15] El túnel 0 ya está libre.
+[02:39:15] Humano-2 ha salido del túnel hacia zona 0
+[02:39:15] Humano-2 ha entrado en Zona 1
+[02:39:15] Humano-3 ha entrado al túnel 0
+[02:39:15] Humano-3 está cruzando el túnel hacia zona 0
+[02:39:15] Zombie-0 ha salido de Zona 2
+[02:39:15] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:39:15] Zombie-Zombie-0 entra en zona de riesgo Zona 0
+[02:39:15] Zombie-0 ha entrado en Zona 0
+[02:39:15] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:39:16] Humano-4 está esperando para entrar al túnel 0
+[02:39:16] Humano-3 ha salido del túnel 0
+[02:39:16] El túnel 0 ya está libre.
+[02:39:16] Humano-3 ha salido del túnel hacia zona 0
+[02:39:16] Humano-3 ha entrado en Zona 1
+[02:39:16] Humano-4 ha entrado al túnel 0
+[02:39:16] Humano-4 está cruzando el túnel hacia zona 0
+[02:39:17] Humano-5 está esperando para entrar al túnel 0
+[02:39:17] Humano-6 está esperando para entrar al túnel 0
+[02:39:17] Humano-4 ha salido del túnel 0
+[02:39:17] El túnel 0 ya está libre.
+[02:39:17] Humano-4 ha salido del túnel hacia zona 0
+[02:39:17] Humano-4 ha entrado en Zona 2
+[02:39:17] Humano-5 ha entrado al túnel 0
+[02:39:17] Humano-5 está cruzando el túnel hacia zona 0
+[02:39:17] Humano-6 está esperando para entrar al túnel 0
+[02:39:18] Zombie-0 ha salido de Zona 0
+[02:39:18] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:39:18] Zombie-Zombie-0 entra en zona de riesgo Zona 3
+[02:39:18] Zombie-0 ha entrado en Zona 3
+[02:39:18] Zombie-Zombie-0 no encontró humanos en esta zona.
+[02:39:18] Humano-7 está esperando para entrar al túnel 0
+[02:39:18] Humano-8 está esperando para entrar al túnel 0
+[02:39:18] Humano-5 ha salido del túnel 0
+[02:39:18] El túnel 0 ya está libre.
+[02:39:18] Humano-5 ha salido del túnel hacia zona 0
+[02:39:18] Humano-5 ha entrado en Zona 3
+[02:39:18] Humano-6 ha entrado al túnel 0
+[02:39:18] Humano-6 está cruzando el túnel hacia zona 0
+[02:39:18] Humano-7 está esperando para entrar al túnel 0
+[02:39:18] Humano-8 está esperando para entrar al túnel 0
+[02:39:19] Humano-9 está esperando para entrar al túnel 0
+[02:39:19] Humano-10 está esperando para entrar al túnel 0
+[02:39:19] Humano-11 está esperando para entrar al túnel 0
+[02:39:19] Humano-6 ha salido del túnel 0
+[02:39:19] El túnel 0 ya está libre.
+[02:39:19] Humano-6 ha salido del túnel hacia zona 0
+[02:39:19] Humano-7 ha entrado al túnel 0
+[02:39:19] Humano-7 está cruzando el túnel hacia zona 0
+[02:39:19] Humano-6 ha entrado en Zona 2
+[02:39:19] Humano-8 está esperando para entrar al túnel 0
+[02:39:19] Humano-9 está esperando para entrar al túnel 0
+[02:39:19] Humano-10 está esperando para entrar al túnel 0
+[02:39:19] Humano-11 está esperando para entrar al túnel 0
+[02:39:19] Humano-1 ha salido de Zona 2
+[02:39:19] Humano-1 está esperando para entrar al túnel 0
+[02:39:19] Humano-3 ha salido de Zona 1
+[02:39:19] Humano-3 está esperando para entrar al túnel 0
+[02:39:20] Humano-2 ha salido de Zona 1
+[02:39:20] Humano-2 está esperando para entrar al túnel 0
+[02:39:20] Humano-12 está esperando para entrar al túnel 0
+[02:39:20] Humano-13 está esperando para entrar al túnel 0
+[02:39:20] Humano-7 ha salido del túnel 0
+[02:39:20] Humano-8 ha entrado al túnel 0
+[02:39:20] Humano-8 está cruzando el túnel hacia zona 0
+[02:39:20] Humano-9 está esperando para entrar al túnel 0
+[02:39:20] Humano-10 está esperando para entrar al túnel 0
+[02:39:20] Humano-11 está esperando para entrar al túnel 0
+[02:39:20] Humano-1 está esperando para entrar al túnel 0
+[02:39:20] Humano-3 está esperando para entrar al túnel 0
+[02:39:20] Humano-2 está esperando para entrar al túnel 0
+[02:39:20] Humano-12 está esperando para entrar al túnel 0
+[02:39:20] Humano-13 está esperando para entrar al túnel 0
+[02:39:20] El túnel 0 está ocupado y será liberado manualmente.
+[02:39:20] Humano-7 ha salido del túnel hacia zona 0
+[02:39:20] Humano-7 ha entrado en Zona 3
+[02:39:20] Humano-9 ha entrado al túnel 0
+[02:39:20] Humano-9 está cruzando el túnel hacia zona 0
+[02:39:20] Humano-10 está esperando para entrar al túnel 0
+[02:39:20] Humano-11 está esperando para entrar al túnel 0
+[02:39:20] Humano-1 está esperando para entrar al túnel 0
+[02:39:20] Humano-3 está esperando para entrar al túnel 0
+[02:39:20] Humano-2 está esperando para entrar al túnel 0
+[02:39:20] Humano-12 está esperando para entrar al túnel 0
+[02:39:20] Humano-13 está esperando para entrar al túnel 0
+[02:39:20] Zombie-0 ha salido de Zona 3
+[02:39:20] Zombie-Zombie-0 abandona la zona de riesgo.
+[02:39:20] Zombie-Zombie-0 entra en zona de riesgo Zona 2
+[02:39:20] Zombie-0 ha entrado en Zona 2
+[02:39:20] Zombie-Zombie-0 inicia ataque a Humano-4
+[02:39:21] Humano-14 está esperando para entrar al túnel 0
+[02:39:21] Humano-8 ha salido del túnel 0
+[02:39:21] El túnel 0 ya está libre.
+[02:39:21] Humano-8 ha salido del túnel hacia zona 0
+[02:39:21] Humano-10 ha entrado al túnel 0
+[02:39:21] Humano-8 ha entrado en Zona 2
+[02:39:21] Humano-10 está cruzando el túnel hacia zona 0
+[02:39:21] Humano-11 está esperando para entrar al túnel 0
+[02:39:21] Humano-1 está esperando para entrar al túnel 0
+[02:39:21] Humano-3 está esperando para entrar al túnel 0
+[02:39:21] Humano-2 está esperando para entrar al túnel 0
+[02:39:21] Humano-12 está esperando para entrar al túnel 0
+[02:39:21] Humano-13 está esperando para entrar al túnel 0
+[02:39:21] Humano-14 está esperando para entrar al túnel 0
+[02:39:21] Humano-9 ha salido del túnel 0
+[02:39:21] El túnel 0 ya está libre.
+[02:39:21] Humano-9 ha salido del túnel hacia zona 0
+[02:39:21] Humano-11 ha entrado al túnel 0
+[02:39:21] Humano-9 ha entrado en Zona 3
+[02:39:21] Humano-11 está cruzando el túnel hacia zona 0
+[02:39:21] Humano-1 está esperando para entrar al túnel 0
+[02:39:21] Humano-3 está esperando para entrar al túnel 0
+[02:39:21] Humano-2 está esperando para entrar al túnel 0
+[02:39:21] Humano-12 está esperando para entrar al túnel 0
+[02:39:21] Humano-13 está esperando para entrar al túnel 0
+[02:39:21] Humano-14 está esperando para entrar al túnel 0
+[02:39:21] Humano-5 ha salido de Zona 3
+[02:39:21] Humano-5 está esperando para entrar al túnel 0
+[02:39:21] Zombie-Zombie-0 solo hirió a Humano-4
+[02:39:21] Humano-4 ha salido de Zona 2
+[02:39:21] Humano-4 está esperando para entrar al túnel 0
+[02:39:22] Humano-15 está esperando para entrar al túnel 0
+[02:39:22] Humano-10 ha salido del túnel 0
+[02:39:22] El túnel 0 ya está libre.
+[02:39:22] Humano-10 ha salido del túnel hacia zona 0
+[02:39:22] Humano-1 ha entrado al túnel 0
+[02:39:22] Humano-10 ha entrado en Zona 0
+[02:39:22] Humano-1 está regresando al refugio por el túnel desde zona 0
+[02:39:22] Humano-3 está esperando para entrar al túnel 0
+[02:39:22] Humano-2 está esperando para entrar al túnel 0
+[02:39:22] Humano-12 está esperando para entrar al túnel 0
+[02:39:22] Humano-13 está esperando para entrar al túnel 0
+[02:39:22] Humano-14 está esperando para entrar al túnel 0
+[02:39:22] Humano-5 está esperando para entrar al túnel 0
+[02:39:22] Humano-4 está esperando para entrar al túnel 0
+[02:39:22] Humano-15 está esperando para entrar al túnel 0
+[02:39:22] Humano-11 ha salido del túnel 0
+[02:39:22] El túnel 0 ya está libre.
+[02:39:22] Humano-11 ha salido del túnel hacia zona 0
+[02:39:22] Humano-11 ha entrado en Zona 1
+[02:39:22] Humano-3 ha entrado al túnel 0
+[02:39:22] Humano-3 está regresando al refugio por el túnel desde zona 0
+[02:39:22] Humano-2 está esperando para entrar al túnel 0
+[02:39:22] Humano-12 está esperando para entrar al túnel 0
+[02:39:22] Humano-13 está esperando para entrar al túnel 0
+[02:39:22] Humano-14 está esperando para entrar al túnel 0
+[02:39:22] Humano-5 está esperando para entrar al túnel 0
+[02:39:22] Humano-4 está esperando para entrar al túnel 0
+[02:39:22] Humano-15 está esperando para entrar al túnel 0
+[02:39:23] Humano-16 está esperando para entrar al túnel 0
+[02:39:23] Humano-1 ha salido del túnel 0
+[02:39:23] El túnel 0 ya está libre.
+[02:39:23] Humano-2 ha entrado al túnel 0
+[02:39:23] Humano-1 ha llegado al refugio desde zona 0
+[02:39:23] Humano-2 está regresando al refugio por el túnel desde zona 0
+[02:39:23] Humano-12 está esperando para entrar al túnel 0
+[02:39:23] Humano-13 está esperando para entrar al túnel 0
+[02:39:23] Humano-14 está esperando para entrar al túnel 0
+[02:39:23] Humano-5 está esperando para entrar al túnel 0
+[02:39:23] Humano-4 está esperando para entrar al túnel 0
+[02:39:23] Humano-15 está esperando para entrar al túnel 0
+[02:39:23] Humano-16 está esperando para entrar al túnel 0
+[02:39:23] Humano-3 ha salido del túnel 0
+[02:39:23] El túnel 0 ya está libre.
+[02:39:23] Humano-3 ha llegado al refugio desde zona 0
+[02:39:23] Humano-12 ha entrado al túnel 0
+[02:39:23] Humano-12 está cruzando el túnel hacia zona 0
+[02:39:23] Humano-13 está esperando para entrar al túnel 0
+[02:39:23] Humano-14 está esperando para entrar al túnel 0
+[02:39:23] Humano-5 está esperando para entrar al túnel 0
+[02:39:23] Humano-4 está esperando para entrar al túnel 0
+[02:39:23] Humano-15 está esperando para entrar al túnel 0
+[02:39:23] Humano-16 está esperando para entrar al túnel 0
+[02:39:23] Humano-1 ha entrado al refugio. [1/6]
+[02:39:23] Humano-1 ha entrado al refugio. [1/6]
+[02:39:23] Humano-3 ha entrado al refugio. [2/6]
+[02:39:23] Humano-1 está descansando en la zona de descanso.
+[02:39:23] Humano-3 ha entrado al refugio. [2/6]
+[02:39:23] Humano-6 ha salido de Zona 2
+[02:39:23] Humano-6 está esperando para entrar al túnel 0
+[02:39:24] FIN DE LA EJECUCIÓN
+[03:00:42] INICIO DE LA EJECUCIÓN
+[03:00:42] Zombie-Zombie-0 entra en zona de riesgo Zona 2
+[03:00:42] Zombie-0 ha entrado en Zona 2
+[03:00:42] Humano-1 ha entrado al túnel 0
+[03:00:42] Zombie-Zombie-0 no encontró humanos en esta zona.
+[03:00:42] Humano-1 está cruzando el túnel hacia zona 0
+[03:00:42] Humano-2 está esperando para entrar al túnel 0
+[03:00:43] Humano-1 ha salido del túnel 0
+[03:00:43] El túnel 0 ya está libre.
+[03:00:43] Humano-3 ha entrado al túnel 0
+[03:00:43] Humano-1 ha salido del túnel hacia zona 0
+[03:00:43] Humano-2 está esperando para entrar al túnel 0
+[03:00:43] Humano-1 ha entrado en Zona 3
+[03:00:43] Humano-3 está cruzando el túnel hacia zona 0
+[03:00:43] Humano-4 está esperando para entrar al túnel 0
+[03:00:44] Humano-5 está esperando para entrar al túnel 0
+[03:00:44] Humano-3 ha salido del túnel 0
+[03:00:44] El túnel 0 ya está libre.
+[03:00:44] Humano-3 ha salido del túnel hacia zona 0
+[03:00:44] Humano-2 ha entrado al túnel 0
+[03:00:44] Humano-3 ha entrado en Zona 3
+[03:00:44] Humano-2 está cruzando el túnel hacia zona 0
+[03:00:44] Humano-4 está esperando para entrar al túnel 0
+[03:00:44] Humano-5 está esperando para entrar al túnel 0
+[03:00:44] Zombie-0 ha salido de Zona 2
+[03:00:44] Zombie-Zombie-0 abandona la zona de riesgo.
+[03:00:44] Zombie-Zombie-0 entra en zona de riesgo Zona 0
+[03:00:44] Zombie-0 ha entrado en Zona 0
+[03:00:44] Zombie-Zombie-0 no encontró humanos en esta zona.
+[03:00:45] Humano-6 está esperando para entrar al túnel 0
+[03:00:45] Humano-2 ha salido del túnel 0
+[03:00:45] El túnel 0 ya está libre.
+[03:00:45] Humano-2 ha salido del túnel hacia zona 0
+[03:00:45] Humano-4 ha entrado al túnel 0
+[03:00:45] Humano-2 ha entrado en Zona 3
+[03:00:45] Humano-5 está esperando para entrar al túnel 0
+[03:00:45] Humano-4 está cruzando el túnel hacia zona 0
+[03:00:45] Humano-6 está esperando para entrar al túnel 0
+[03:00:46] Humano-7 está esperando para entrar al túnel 0
+[03:00:46] Humano-8 está esperando para entrar al túnel 0
+[03:00:46] Humano-4 ha salido del túnel 0
+[03:00:46] El túnel 0 ya está libre.
+[03:00:46] Humano-4 ha salido del túnel hacia zona 0
+[03:00:46] Humano-5 ha entrado al túnel 0
+[03:00:46] Humano-4 ha entrado en Zona 0
+[03:00:46] Humano-6 está esperando para entrar al túnel 0
+[03:00:46] Humano-5 está cruzando el túnel hacia zona 0
+[03:00:46] Humano-7 está esperando para entrar al túnel 0
+[03:00:46] Humano-8 está esperando para entrar al túnel 0
+[03:00:47] Zombie-0 ha salido de Zona 0
+[03:00:47] Zombie-Zombie-0 abandona la zona de riesgo.
+[03:00:47] Zombie-Zombie-0 entra en zona de riesgo Zona 2
+[03:00:47] Zombie-0 ha entrado en Zona 2
+[03:00:47] Zombie-Zombie-0 no encontró humanos en esta zona.
+[03:00:47] Humano-9 está esperando para entrar al túnel 0
+[03:00:47] Humano-5 ha salido del túnel 0
+[03:00:47] El túnel 0 ya está libre.
+[03:00:47] Humano-6 ha entrado al túnel 0
+[03:00:47] Humano-5 ha salido del túnel hacia zona 0
+[03:00:47] Humano-5 ha entrado en Zona 2
+[03:00:47] Humano-7 está esperando para entrar al túnel 0
+[03:00:47] Humano-6 está cruzando el túnel hacia zona 0
+[03:00:47] Humano-8 está esperando para entrar al túnel 0
+[03:00:47] Humano-9 está esperando para entrar al túnel 0
+[03:00:47] Humano-1 ha salido de Zona 3
+[03:00:47] Humano-1 está esperando para entrar al túnel 0
+[03:00:48] Humano-10 está esperando para entrar al túnel 0
+[03:00:48] Humano-6 ha salido del túnel 0
+[03:00:48] El túnel 0 ya está libre.
+[03:00:48] Humano-7 ha entrado al túnel 0
+[03:00:48] Humano-6 ha salido del túnel hacia zona 0
+[03:00:48] Humano-6 ha entrado en Zona 1
+[03:00:48] Humano-8 está esperando para entrar al túnel 0
+[03:00:48] Humano-7 está cruzando el túnel hacia zona 0
+[03:00:48] Humano-9 está esperando para entrar al túnel 0
+[03:00:48] Humano-1 está esperando para entrar al túnel 0
+[03:00:48] Humano-10 está esperando para entrar al túnel 0
+[03:00:49] Humano-3 ha salido de Zona 3
+[03:00:49] Humano-3 está esperando para entrar al túnel 0
+[03:00:49] Zombie-0 ha salido de Zona 2
+[03:00:49] Zombie-Zombie-0 abandona la zona de riesgo.
+[03:00:49] Zombie-Zombie-0 entra en zona de riesgo Zona 0
+[03:00:49] Zombie-0 ha entrado en Zona 0
+[03:00:49] Zombie-Zombie-0 inicia ataque a Humano-4
+[03:00:49] Humano-2 ha salido de Zona 3
+[03:00:49] Humano-2 está esperando para entrar al túnel 0
+[03:00:49] Humano-11 está esperando para entrar al túnel 0
+[03:00:49] Humano-7 ha salido del túnel 0
+[03:00:49] El túnel 0 ya está libre.
+[03:00:49] Humano-7 ha salido del túnel hacia zona 0
+[03:00:49] Humano-8 ha entrado al túnel 0
+[03:00:49] Humano-8 está cruzando el túnel hacia zona 0
+[03:00:49] Humano-7 ha entrado en Zona 1
+[03:00:49] Humano-9 está esperando para entrar al túnel 0
+[03:00:49] Humano-1 está esperando para entrar al túnel 0
+[03:00:49] Humano-10 está esperando para entrar al túnel 0
+[03:00:49] Humano-3 está esperando para entrar al túnel 0
+[03:00:49] Humano-2 está esperando para entrar al túnel 0
+[03:00:49] Humano-11 está esperando para entrar al túnel 0
+[03:00:49] FIN DE LA EJECUCIÓN

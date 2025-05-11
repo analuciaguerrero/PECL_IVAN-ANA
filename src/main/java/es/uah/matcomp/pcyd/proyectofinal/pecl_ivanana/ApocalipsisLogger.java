@@ -5,17 +5,17 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import javafx.application.Platform;
-import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 public class ApocalipsisLogger {
     private static ApocalipsisLogger instancia;
     private final PrintWriter escritorArchivo;
     private final DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
 
-    private TextField[] zonasTxtField;
-    private TextField cantidadComida;
-    private TextField[] zombiesTxtField;
-    private TextField eventosGenerales;
+    private Text[] zonasTxtField;
+    private Text cantidadComida;
+    private Text[] zombiesTxtField;
+    private Text eventosGenerales;
 
     private ApocalipsisLogger() throws IOException {
         File carpeta = new File("logs");
@@ -45,13 +45,15 @@ public class ApocalipsisLogger {
         escritorArchivo.println(linea);
         System.out.println(linea);
 
-        // ✅ Solo mostrar en el TextField de eventos generales
         if (eventosGenerales != null) {
-            Platform.runLater(() -> eventosGenerales.appendText(linea + "\n"));
+            Platform.runLater(() -> {
+                String textoActual = eventosGenerales.getText();
+                eventosGenerales.setText(textoActual + linea + "\n");
+            });
         }
     }
 
-    public void setInterfaz(TextField[] zonas, TextField cantidadComida, TextField[] zombies, TextField eventos) {
+    public void setInterfaz(Text[] zonas, Text cantidadComida, Text[] zombies, Text eventos) {
         this.zonasTxtField = zonas;
         this.cantidadComida = cantidadComida;
         this.zombiesTxtField = zombies;

@@ -1,23 +1,25 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Apocalipsis {
+
     private final List<AreaRiesgo> zonas;
     private final Refugio refugio;
     private final ApocalipsisLogger logger;
-
-    public Apocalipsis(ApocalipsisLogger logger) {
+    public Apocalipsis(
+            ApocalipsisLogger logger,
+            GestorHilos zonaComun,
+            GestorHilos descanso,
+            GestorHilos comedor,
+            GestorHilos[] entradas,
+            GestorHilos[] tuneles,
+            GestorHilos[] salidas,
+            AreaRiesgo[] zonasRiesgo,
+            GestorHilos[] zonasZombies
+    ) {
         this.logger = logger;
-        this.zonas = new ArrayList<>();
-
-        // Crear zonas de riesgo
-        for (int i = 0; i < 4; i++) {
-            zonas.add(new AreaRiesgo("Zona-" + i, logger)); // ✅ Asegúrate que cada zona tenga acceso al logger
-        }
-
-        // Crear refugio con capacidad fija de 6
+        this.zonas = List.of(zonasRiesgo); // ✅ Usamos directamente las zonas que ya tienen visualizador
         this.refugio = new Refugio(6, logger);
     }
 
@@ -41,13 +43,10 @@ public class Apocalipsis {
         return logger;
     }
 
-    // ✅ Método para actualizar visualmente los contadores de humanos/zombies si lo deseas
     public void actualizarEstadoZonas() {
-        for (int i = 0; i < zonas.size(); i++) {
-            AreaRiesgo zona = zonas.get(i);
+        for (AreaRiesgo zona : zonas) {
             int numHumanos = zona.getNumHumanos();
             int numZombies = zona.getNumZombies();
-
             logger.log("Estado actual - " + zona.getNombre() + ": " +
                     numHumanos + " humanos, " + numZombies + " zombies.");
         }
