@@ -160,7 +160,7 @@ public class ClienteController {
 
                 interfazCliente.refrescarInterfaz();
             }
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (IOException | NullPointerException | ClassNotFoundException e) {
             System.out.println("Error en la conexión");
             throw new RuntimeException(e);
         }

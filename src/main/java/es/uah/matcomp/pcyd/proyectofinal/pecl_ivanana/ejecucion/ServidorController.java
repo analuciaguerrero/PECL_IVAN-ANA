@@ -86,7 +86,11 @@ public class ServidorController {
 
             while (true) {
                 Socket clienteConectado = socketServidor.accept();
-                manejarConexionCliente(clienteConectado);
+                try {
+                    manejarConexionCliente(clienteConectado);
+                }catch (Exception e) {
+                    System.out.println("Ha sucedido una excepción en el servidor");
+                }
             }
         } catch (IOException e) {
             System.out.println("Fallo al arrancar el servidor");
