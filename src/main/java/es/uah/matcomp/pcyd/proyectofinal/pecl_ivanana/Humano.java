@@ -1,132 +1,109 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import java.util.List;
-import java.util.Random;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Humano extends Thread {
+    private String[] id;
+    private ControlPausa controlPausa;
+    private ZonaComun zonaComun;
+    private ZonaDescanso zonaDescanso;
+    private Comedor comedor;
+    private Tunel[] tunel;
+    private AtomicBoolean enEsperaAtaque = new AtomicBoolean(false);
+    private CyclicBarrier sincronizadorAtaque = new CyclicBarrier(2);
+    private boolean estaMarcado = false;
+    private boolean muerto = false;
 
-    private final String nombre;
-    private final List<AreaRiesgo> zonas;
-    private final Refugio refugio;
-    private final ApocalipsisLogger logger;
-    private final Random random = new Random();
-
-    private volatile boolean vivo = true;
-    private volatile boolean atacado = false;
-    private volatile boolean herido = false;
-
-    private volatile boolean paused = false;  // Control de pausa
-    private static final int TIEMPO_ZONA_RIESGO_MIN = 3000;
-    private static final int TIEMPO_ZONA_RIESGO_EXTRA = 2000;
-    private static final int TIEMPO_REFUGIO = 2500;
-
-    public Humano(String nombre, List<AreaRiesgo> zonas, Refugio refugio, ApocalipsisLogger logger) {
-        this.nombre = nombre;
-        this.zonas = zonas;
-        this.refugio = refugio;
-        this.logger = logger;
-        setName(nombre);
-    }
-    public String getNombre() {
-        return nombre;
+    public Humano(String[] id, Comedor comedor, Tunel[] tunel, ZonaComun zonaComun, ZonaDescanso zonaDescanso, ControlPausa controlPausa) {
+        this.id = id;
+        this.comedor = comedor;
+        this.tunel = tunel;
+        this.zonaComun = zonaComun;
+        this.zonaDescanso = zonaDescanso;
+        this.controlPausa = controlPausa;
     }
 
-    public boolean estaSiendoAtacado() {
-        return atacado;
+    public String[] getIdHumano() {
+        return id;
     }
 
-    public void setSiendoAtacado(boolean valor) {
-        atacado = valor;
-    }
-
-    public boolean estaHerido() {
-        return herido;
-    }
-
-    public void setHerido(boolean valor) {
-        herido = valor;
-    }
-
-    public boolean estaVivo() {
-        return vivo;
-    }
-
-    private void transformarseEnZombie(AreaRiesgo zonaActual) {
-        vivo = false;
-        zonaActual.eliminarHumano(this);
-        logger.log(nombre + " ha muerto y se ha transformado en zombi.");
-
-        String nuevoIdZombie = nombre.replace("H", "Z");
-        Zombie nuevoZombi = new Zombie(nuevoIdZombie, zonas, logger);
-        nuevoZombi.start();
-    }
-
-    private void esperar(long milisegundos) throws InterruptedException {
-        long restante = milisegundos;
-        while (restante > 0) {
-            long paso = Math.min(100, restante);
-            Thread.sleep(paso);
-            restante -= paso;
+    public String getIdHumanoNom() {
+        String nom = "";
+        for (int i = 0; i < 6; i++) {
+            nom += id[i];
         }
+        return nom;
     }
 
-    public int getZona() {
-        return zonas.isEmpty() ? 0 : zonas.get(0).getId();  // devolvemos zona 0 si vacío
+    public void setIdHumano(String[] id) {
+        this.id = id;
     }
 
-    // Método para pausar el hilo
-    public synchronized void pausar() throws InterruptedException {
-        while (paused) {
-            wait();  // El hilo se "duerme" hasta que se reanude
-        }
+    public Tunel[] getTunel() {
+        return tunel;
     }
-    // Método para reanudar el hilo
-    public synchronized void reanudar() {
-        paused = false;
-        notify();  // Despierta al hilo
+
+    public boolean estaEsperandoAtaque() {
+        return enEsperaAtaque.get();
     }
-    @Override
-    public void run() {
+
+    public void setEsperandoAtaque(boolean estado) {
+        this.enEsperaAtaque.set(estado);
+    }
+
+    public void ejecutarDefensa(){
         try {
-            while (vivo && !Thread.currentThread().isInterrupted()) {
-                pausar();  // pausa si corresponde
+            sincronizadorAtaque.await();
+        } catch (InterruptedException | BrokenBarrierException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
-                int indiceZona = random.nextInt(zonas.size());
-                AreaRiesgo zona = zonas.get(indiceZona);
+    public boolean estaMarcado() {
+        return estaMarcado;
+    }
 
-                refugio.cruzarTunel(this);
-                zona.añadirHumano(this); // <-- ya registra en log dentro de AreaRiesgo
+    public void marcar(boolean marcado) {
+        estaMarcado = marcado;
+    }
 
-                esperar(TIEMPO_ZONA_RIESGO_MIN + random.nextInt(TIEMPO_ZONA_RIESGO_EXTRA));
+    public boolean isMuerto(){
+        return muerto;
+    }
 
-                while (atacado && vivo) {
-                    esperar(100);
-                    if (Thread.interrupted()) {
-                        transformarseEnZombie(zona);
-                        return;
-                    }
-                }
+    public void morir(){
+        muerto = true;
+    }
 
-                zona.eliminarHumano(this); // <-- también registra en log
+    public void verificarPausa(){
+        controlPausa.verificarPausa();
+    }
 
-                refugio.volverPorTunel(this);
-                if (refugio.entrarRefugio(this)) {
-                    refugio.usarZonaDescanso(this);
-                    if (herido) {
-                        logger.log(nombre + " está recuperándose de sus heridas.");
-                        refugio.usarZonaDescanso(this);
-                        herido = false;
-                    }
-                    refugio.salirRefugio(this);
-                } else {
-                    logger.log(nombre + " no pudo entrar al refugio. Esperará fuera.");
+    public void run() {
+
+        while (!muerto) {
+            controlPausa.verificarPausa();
+            zonaComun.entrarZonaComun(this);
+            controlPausa.verificarPausa();
+            zonaComun.prepararse(this);
+            controlPausa.verificarPausa();
+            zonaComun.explorarExterior(this);
+            if(!muerto){
+                controlPausa.verificarPausa();
+                comedor.entregarComida(this);
+                controlPausa.verificarPausa();
+                zonaDescanso.descansar(this);
+                controlPausa.verificarPausa();
+                comedor.comer(this);
+                controlPausa.verificarPausa();
+                if (estaMarcado) {
+                    zonaDescanso.descansarHumano(this);
+                    controlPausa.verificarPausa();
                 }
             }
-        } catch (InterruptedException e) {
-            vivo = false;
-            logger.log(nombre + " ha sido interrumpido durante su ejecución.");
-            Thread.currentThread().interrupt();
         }
+        System.out.println("Finalizó el humano " + getIdHumanoNom());
     }
-
 }

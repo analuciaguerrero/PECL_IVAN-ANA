@@ -1,105 +1,97 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import java.util.List;
-import java.util.Random;
-
-public class Zombie extends Thread {
-    private String idZombie;
-    private List<AreaRiesgo> zonasDeRiesgo;
-    private int muertes = 0;
+public class Zombie extends Thread{
+    private String[] id;
     private ApocalipsisLogger logger;
-    private Random aleatorio = new Random();
-    private static final int TIEMPO_MIN_ATAQUE = 500;
-    private static final int TIEMPO_ADICIONAL_ATAQUE = 1000;
-    private static final int TIEMPO_MIN_ESPERA = 2000;
-    private static final int TIEMPO_ADICIONAL_ESPERA = 1000;
-    private volatile boolean activo = true;
+    private ControlPausa controlPausa;
+    private ZonaRiesgo[] zonas;
+    private int victimas = 0;
 
-    public Zombie(String id, List<AreaRiesgo> zonasDeRiesgo, ApocalipsisLogger logger) {
-        this.idZombie = id;
-        this.zonasDeRiesgo = zonasDeRiesgo;
+    public Zombie(String[] id, ZonaRiesgo[] zonas, ControlPausa controlPausa, ApocalipsisLogger logger) {
+        this.id = id;
+        this.zonas = zonas;
+        this.controlPausa = controlPausa;
         this.logger = logger;
-        setName("Zombie-" + id);
     }
 
-    public String getZombieId() {
-        return idZombie;
+    public String getIdZombie() {
+        String nom = "";
+        for (int i = 0; i < 6; i++) {
+            nom += id[i];
+        }
+        return nom;
     }
 
-    public int getMuertes() {
-        return muertes;
+    public int obtenerVictimas() {
+        return victimas;
     }
 
-    public void detener() {
-        activo = false;
-        interrupt();  // Interrumpir el hilo si está en ejecución
+    public void eliminarHumano(Humano objetivo, ZonaRiesgo zona) {
+        controlPausa.verificarPausa();
+        logger.log("Humano " + objetivo.getIdHumanoNom() + " fue eliminado por el zombie " + getIdZombie() + " en la zona " + zona.getId() + ". Por lo que ahora es también un zombie.");
+        objetivo.morir();
     }
 
-
-    private AreaRiesgo seleccionarZonaAleatoria() {
-        return zonasDeRiesgo.get(aleatorio.nextInt(zonasDeRiesgo.size()));
-    }
-
-
-    private void esperarTiempoAleatorio(int base, int adicional) throws InterruptedException {
-        int espera = base + (adicional > 0 ? aleatorio.nextInt(adicional + 1) : 0);
-        Thread.sleep(espera);  // Pausar el hilo durante el tiempo calculado
-    }
-
-
-    // Metodo sincronizado para atacar a un humano
-    private void atacarObjetivo(Humano humano) throws InterruptedException {
-        synchronized (humano) {  // Protección contra otros hilos que puedan intentar modificar el humano al mismo tiempo
-            if (!humano.estaVivo()) return;  // Si el humano ya está muerto, no hace nada
-
-            logger.log(getName() + " inicia ataque a " + humano.getName());
-            humano.setSiendoAtacado(true);  // Marcar al humano como atacado
-
-            int tiempoAtaque = TIEMPO_MIN_ATAQUE + aleatorio.nextInt(TIEMPO_ADICIONAL_ATAQUE + 1);
-            esperarTiempoAleatorio(tiempoAtaque, 0);  // Esperar el tiempo de ataque
-
-            if (humano.estaVivo()) {
-                double exito = aleatorio.nextDouble();
-                if (exito > 0.66) {
-                    humano.interrupt();  // Matar al humano interrumpiéndolo
-                    muertes++;
-                    logger.log(getName() + " eliminó a " + humano.getName());
-                    logger.log(getName() + " ha eliminado " + muertes + " humanos en total.");
-                } else {
-                    humano.setHerido(true);
-                    humano.setSiendoAtacado(false);  // El humano ha sido herido pero no muerto
-                    logger.log(getName() + " solo hirió a " + humano.getName());
-                }
+    public void atacar(Humano victima, ZonaRiesgo zona) {
+        try {
+            controlPausa.verificarPausa();
+            sleep(500 + (int) (Math.random()*1000));
+            controlPausa.verificarPausa();
+            int res = (int) (Math.random()*3);
+            if (res == 0) {
+                controlPausa.verificarPausa();
+                String[] idHumano = victima.getIdHumano();
+                controlPausa.verificarPausa();
+                eliminarHumano(victima,zona);
+                controlPausa.verificarPausa();
+                String[] nuevoID = new String[]{"Z", idHumano[1], idHumano[2], idHumano[3], idHumano[4], idHumano[5]};
+                new Zombie(nuevoID, zonas, controlPausa, logger).start();
+                controlPausa.verificarPausa();
+                victimas++;
+                victima.ejecutarDefensa();
             }
+            else {
+                controlPausa.verificarPausa();
+                logger.log("Humano " + victima.getIdHumanoNom() + " ha sido marcado por el zombie " + getIdZombie());
+                victima.marcar(true);
+                victima.ejecutarDefensa();
+                controlPausa.verificarPausa();
+                victima.setEsperandoAtaque(false);
+            }
+        } catch (InterruptedException ie) {
+            System.out.println("Error en ataque.");
         }
     }
 
 
-    @Override
     public void run() {
-        while (activo && !isInterrupted()) {
-            try {
-                AreaRiesgo zonaActual = seleccionarZonaAleatoria();  // Seleccionar una zona aleatoria
-                logger.log(getName() + " entra en zona de riesgo " + zonaActual.getNombre());
-
-                zonaActual.añadirZombie(this);  // Registrar al zombi en la zona de riesgo
-
-                Humano objetivo = zonaActual.obtenerObjetivoAleatorio().orElse(null);  // Seleccionar un humano, si existe
-
-                if (objetivo != null) {
-                    atacarObjetivo(objetivo);  // Atacar al humano si existe
-                } else {
-                    logger.log(getName() + " no encontró humanos en esta zona.");
+        try {
+            while (true) {
+                controlPausa.verificarPausa(); // Comprobamos la pausa
+                int zonaSeleccionada = (int) (4 * Math.random()); // Elegimos una zona de riesgo aleatoria
+                logger.log("El zombie " + getIdZombie() + " ingresa a la zona de riesgo " + zonaSeleccionada);
+                ZonaRiesgo zonaActual = zonas[zonaSeleccionada];
+                controlPausa.verificarPausa();
+                zonaActual.entrarZombie(this); // Metemos el zombie a la zona de riesgo
+                controlPausa.verificarPausa();
+                Humano objetivo = zonaActual.seleccionarHumanoAleatorio(zonaActual); // Elegimos un humano aleatorio
+                controlPausa.verificarPausa();
+                if(!(objetivo == null)){
+                    controlPausa.verificarPausa();
+                    objetivo.setEsperandoAtaque(true);
+                    objetivo.interrupt();
+                    controlPausa.verificarPausa();
+                    atacar(objetivo, zonaActual);
+                    controlPausa.verificarPausa();
                 }
-
-                esperarTiempoAleatorio(TIEMPO_MIN_ESPERA, TIEMPO_ADICIONAL_ESPERA);  // Esperar antes de moverse a otra zona
-
-                zonaActual.eliminarZombie(this);  // Retirar al zombi de la zona de riesgo
-                logger.log(getName() + " abandona la zona de riesgo.");
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();  // Propagar la interrupción
-                logger.log(getName() + " ha sido interrumpido durante su ejecución.");
+                sleep(2000 + (int) (Math.random()*1000)); // Simulamos el tiempo de espera en la zona de riesgo
+                controlPausa.verificarPausa();
+                logger.log("El zombie " + getIdZombie() + " va a la zona de riesgo " + zonaSeleccionada);
+                zonaActual.salirZombie(this);
+                controlPausa.verificarPausa();
             }
+        } catch (InterruptedException ie) {
+            System.out.println("Excepción detectada.");
         }
     }
 

@@ -1,68 +1,46 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import java.io.*;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-import javafx.application.Platform;
-import javafx.scene.text.Text;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.Semaphore;
 
 public class ApocalipsisLogger {
-    private static ApocalipsisLogger instancia;
-    private final PrintWriter escritorArchivo;
-    private final DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm:ss");
 
-    private Text[] zonasTxtField;
-    private Text cantidadComida;
-    private Text[] zombiesTxtField;
-    private Text eventosGenerales;
+    private Semaphore accesoArchivo = new Semaphore(1, true);
+    private String ARCHIVO_LOG = "logs/apocalipsis.txt";
 
-    private ApocalipsisLogger() throws IOException {
-        File carpeta = new File("logs");
-        if (!carpeta.exists() && !carpeta.mkdirs()) {
-            throw new IOException("No se pudo crear la carpeta de logs.");
-        }
-
-        File archivoLog = new File(carpeta, "apocalipsis.txt");
+    public void prepararArchivo() {
         try {
-            this.escritorArchivo = new PrintWriter(new FileWriter(archivoLog, true), true);
+            File archivo = new File(ARCHIVO_LOG);
+            // si el archivo ya existe, lo borramos
+            if (archivo.exists()) {
+                archivo.delete();
+            }
+            // crear nuevo archivo
+            archivo.createNewFile();
         } catch (IOException e) {
-            throw new IOException("Error al abrir el archivo de log.", e);
+            System.out.println("No se pudo preparar el archivo de registro.");
         }
     }
 
-    public static synchronized ApocalipsisLogger getInstancia() throws IOException {
-        if (instancia == null) {
-            instancia = new ApocalipsisLogger();
-        }
-        return instancia;
-    }
-
-    public synchronized void log(String mensaje) {
-        String tiempo = LocalDateTime.now().format(formatoHora);
-        String linea = "[" + tiempo + "] " + mensaje;
-
-        escritorArchivo.println(linea);
-        System.out.println(linea);
-
-        if (eventosGenerales != null) {
-            Platform.runLater(() -> {
-                String textoActual = eventosGenerales.getText();
-                eventosGenerales.setText(textoActual + linea + "\n");
-            });
-        }
-    }
-
-    public void setInterfaz(Text[] zonas, Text cantidadComida, Text[] zombies, Text eventos) {
-        this.zonasTxtField = zonas;
-        this.cantidadComida = cantidadComida;
-        this.zombiesTxtField = zombies;
-        this.eventosGenerales = eventos;
-    }
-
-    public void cerrar() {
-        if (escritorArchivo != null) {
-            escritorArchivo.close();
+    public void log(String mensaje){
+        try {
+            accesoArchivo.acquire();
+            try (BufferedWriter escritor = new BufferedWriter(new FileWriter(ARCHIVO_LOG, true))) {
+                String marcaTiempo = new SimpleDateFormat("dd/MM/yyyy  HH:mm:ss").format(new Date());
+                escritor.write(marcaTiempo + " - " + mensaje);
+                escritor.newLine();
+            } catch (IOException e) {
+                System.out.println("Ocurrió un error al escribir en el archivo.");
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Se interrumpió el acceso al archivo de registro.");
+        } finally {
+            accesoArchivo.release();
         }
     }
 }
