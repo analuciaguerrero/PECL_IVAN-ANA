@@ -398,7 +398,7 @@ public class InterfazServidor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanelRefugio.setBackground(new java.awt.Color(102, 255, 255));
+        jPanelRefugio.setBackground(new java.awt.Color(34, 139, 34));
         jPanelRefugio.setPreferredSize(new java.awt.Dimension(200, 400));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -406,10 +406,10 @@ public class InterfazServidor extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("REFUGIO");
 
-        jPanelDescanso.setBackground(new java.awt.Color(102, 102, 102));
+        jPanelDescanso.setBackground(new java.awt.Color(220, 220, 220));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Descansando");
+        jLabel2.setText("Descanso");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         jTextAreaHumanosDescanso.setColumns(20);
@@ -436,10 +436,10 @@ public class InterfazServidor extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(220, 220, 220));
         jPanel1.setForeground(new java.awt.Color(153, 255, 255));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel3.setBackground(new java.awt.Color(220, 220, 220));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Comedor");
 
@@ -489,7 +489,7 @@ public class InterfazServidor extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(220, 220, 220));
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Zona común");
@@ -548,17 +548,17 @@ public class InterfazServidor extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        jPanelTuneles.setBackground(new java.awt.Color(255, 153, 0));
+        jPanelTuneles.setBackground(new java.awt.Color(255, 255, 153));
         jPanelTuneles.setPreferredSize(new java.awt.Dimension(200, 400));
 
-        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel6.setBackground(new java.awt.Color(220, 220, 220));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("TUNELES");
+        jLabel6.setText("TÚNELES");
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("TUNEL 0");
+        jLabel7.setText("Túnel A");
 
         jScrollPaneListaRegresando0.setViewportView(jListRegresando0);
 
@@ -604,7 +604,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("TUNEL 1");
+        jLabel8.setText("Túnel B");
 
         jScrollPaneListaRegresando6.setViewportView(jListRegresando1);
 
@@ -650,7 +650,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("TUNEL 2");
+        jLabel9.setText("Túnel C");
 
         jListPasar2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { " " };
@@ -696,7 +696,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("TUNEL 3");
+        jLabel10.setText("Túnel D");
 
         jListPasar3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { " " };
@@ -772,11 +772,11 @@ public class InterfazServidor extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPaneZonaRiesgo.setBackground(new java.awt.Color(51, 255, 51));
+        jPaneZonaRiesgo.setBackground(new java.awt.Color(204, 0, 0));
         jPaneZonaRiesgo.setPreferredSize(new java.awt.Dimension(200, 400));
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("ZONA 0");
+        jLabel11.setText("Zona de riesgo A");
 
         jScrollPaneListaRegresando1.setViewportView(jListHumanosZona0);
 
@@ -815,7 +815,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("ZONA 1");
+        jLabel12.setText("Zona de riesgo B");
 
         jScrollPaneListaRegresando2.setViewportView(jListHumanosZona1);
 
@@ -854,7 +854,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("ZONA 3");
+        jLabel13.setText("Zona de riesgo C");
 
         jScrollPaneListaRegresando3.setViewportView(jListHumanosZona3);
 
@@ -893,7 +893,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("ZONA 2");
+        jLabel14.setText("Zona de riesgo D");
 
         jScrollPaneListaRegresando4.setViewportView(jListHumanosZona2);
 
@@ -935,7 +935,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("ZONAS DE RIESGO");
+        jLabel15.setText("ZONA DE RIESGO");
 
         javax.swing.GroupLayout jPaneZonaRiesgoLayout = new javax.swing.GroupLayout(jPaneZonaRiesgo);
         jPaneZonaRiesgo.setLayout(jPaneZonaRiesgoLayout);

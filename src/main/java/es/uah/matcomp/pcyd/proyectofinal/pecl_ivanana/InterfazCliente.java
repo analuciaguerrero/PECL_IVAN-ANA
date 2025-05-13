@@ -79,9 +79,9 @@ public class InterfazCliente extends javax.swing.JFrame {
 
     private void jToggleButtonPararActionPerformed(java.awt.event.ActionEvent evt) {
         if (clienteController.isDetener()){
-            jToggleButtonParar.setText("PAUSAR");
+            jToggleButtonParar.setText("Detener ejecución");
         }else{
-            jToggleButtonParar.setText("REANUDAR");
+            jToggleButtonParar.setText("Reanudar Apocalipsis");
         }
         clienteController.alternarEstadoDetener();
         clienteController.activarCambio();
@@ -187,25 +187,25 @@ public class InterfazCliente extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("NÚMERO DE HUMANOS EN EL REFUGIO");
+        jLabel1.setText("Número de humanos en el refugio");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2.setText("NÚMERO DE HUMANOS EN LAS ZONAS DE RIESGO");
+        jLabel2.setText("Número de humanos en las zonas de riesgo");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setText("NÚMERO DE ZOMBIS EN LAS ZONAS DE RIESGO");
+        jLabel3.setText("Número de zombis en las zonas de riesgo");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setText("NÚMERO DE HUMANOS EN LOS TÚNELES");
+        jLabel4.setText("Número de humanos en los túneles");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setText("ZOMBIS MÁS LETALES");
+        jLabel5.setText("Zombis más letales");
 
         jList1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jScrollPane1.setViewportView(jList1);
 
         jToggleButtonParar.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jToggleButtonParar.setText("DETENER EJECUCIÓN");
+        jToggleButtonParar.setText("Detener ejecución");
         jToggleButtonParar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButtonPararActionPerformed(evt);
@@ -304,16 +304,16 @@ public class InterfazCliente extends javax.swing.JFrame {
         });
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("1");
+        jLabel6.setText("En A");
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("2");
+        jLabel7.setText("En B");
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("3");
+        jLabel8.setText("En C");
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("4");
+        jLabel9.setText("En D");
 
         jTextFieldHumanosZComun.setEditable(false);
         jTextFieldHumanosZComun.addActionListener(new java.awt.event.ActionListener() {
@@ -336,13 +336,13 @@ public class InterfazCliente extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setText("Z Común");
+        jLabel10.setText("Común");
 
-        jLabel11.setText("Z Descanso");
+        jLabel11.setText("Descanso");
 
         jLabel12.setText("Comedor");
 
-        jLabel13.setText("Total");
+        jLabel13.setText("Suma");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
