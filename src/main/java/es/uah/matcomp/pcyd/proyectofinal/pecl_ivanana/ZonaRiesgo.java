@@ -1,7 +1,5 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion.InterfazServidor;
-
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -33,22 +31,22 @@ public class ZonaRiesgo {
 
     public void entrarZombie(Zombie z) {
         listaZombies.add(z);
-        SwingUtilities.invokeLater(() -> interfaz.actualizarZombiesZP(id));
+        SwingUtilities.invokeLater(() -> interfaz.mostrarZombisZonaPeligro(id));
     }
 
     public void entrarHumano(Humano h) {
         listaHumanos.add(h);
-        SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosZP(id));
+        SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosZonaPeligro(id));
     }
 
     public void salirZombie(Zombie z) {
         listaZombies.remove(z);
-        SwingUtilities.invokeLater(() -> interfaz.actualizarZombiesZP(id));
+        SwingUtilities.invokeLater(() -> interfaz.mostrarZombisZonaPeligro(id));
     }
 
     public void salirHumano(Humano h) {
         listaHumanos.remove(h);
-        SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosZP(id));
+        SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosZonaPeligro(id));
     }
 
     public synchronized Humano seleccionarHumanoAleatorio(ZonaRiesgo zona) {
@@ -59,7 +57,7 @@ public class ZonaRiesgo {
             int indice = (int) (totalHumanos * Math.random());
             Humano objetivo = zona.getListaHumanos().get(indice);
             zona.getListaHumanos().remove(objetivo);
-            SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosZP(id));
+            SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosZonaPeligro(id));
             return objetivo;
         }
     }

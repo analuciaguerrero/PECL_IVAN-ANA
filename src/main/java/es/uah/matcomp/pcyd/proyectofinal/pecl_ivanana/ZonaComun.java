@@ -1,7 +1,5 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion.InterfazServidor;
-
 import javax.swing.*;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -34,7 +32,7 @@ public class ZonaComun {
 
     public void entrarZonaComun(Humano h) {
         listaHumanos.add(h);
-        SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosZonaComun());
+        SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosZonaComun());
         logger.log("Humano " + h.getIdHumanoNom() + " ha entrado a la Zona Común.");
     }
 
@@ -42,7 +40,7 @@ public class ZonaComun {
         int seleccion = (int) (Math.random() * 4);
         logger.log("El humano " + h.getIdHumanoNom() + " ha elegido el túnel " + seleccion + " para salir de la Zona Común.");
         listaHumanos.remove(h);
-        SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosZonaComun());
+        SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosZonaComun());
         tuneles[seleccion].salirAlExterior(h);
         if (!h.isMuerto()) {
             tuneles[seleccion].regresarDelExterior(h);

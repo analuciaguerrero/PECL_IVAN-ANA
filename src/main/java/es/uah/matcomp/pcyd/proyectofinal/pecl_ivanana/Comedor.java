@@ -1,6 +1,6 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion.InterfazServidor;
+import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion.ServidorController;
 
 import javax.swing.*;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -9,7 +9,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static java.lang.Thread.sleep;
 
 public class Comedor {
     private ApocalipsisLogger logger;
@@ -20,9 +19,9 @@ public class Comedor {
     private ReentrantLock accesoComida = new ReentrantLock();
     private Condition sinComida = accesoComida.newCondition();
 
-    public Comedor(ApocalipsisLogger log, InterfazServidor vista) {
-        this.interfaz = vista;
+    public Comedor(ApocalipsisLogger log, InterfazServidor interfaz) {
         this.logger = log;
+        this.interfaz = interfaz;
     }
 
     public AtomicInteger getComida() {
@@ -47,7 +46,6 @@ public class Comedor {
             finally {
                 accesoComida.unlock();
             }
-
         }
     }
 
@@ -56,7 +54,8 @@ public class Comedor {
             try {
                 h.verificarPausa(); // Comprobar la pausa
                 listaComedor.add(h); // Los añadimos a la lista del comedor
-                SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosComedor());
+                // Actualiza la interfaz
+                SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosComedor());
 
                 turnoComida.acquire();
                 accesoComida.lock();
@@ -72,18 +71,25 @@ public class Comedor {
                 h.verificarPausa();
                 turnoComida.release(); // Permite dejar pasar al siguiente ya que dejan el semáforo
                 comidaDisp.decrementAndGet(); // Decrementamos una unidad de comida ya que come
-                h.verificarPausa();
-
-                SwingUtilities.invokeLater(() -> interfaz.actualizarComida());
+                // Log de la comida
                 logger.log("Humano " + h.getIdHumanoNom() + " está comiendo. Comida restante: " + comidaDisp.toString());
 
-                Thread.sleep(3000 + (int) (2000 * Math.random())); // Simula el tiempo de alimentación
-                logger.log("Humano " + h.getIdHumanoNom() + " terminó de comer.");
-
-                listaComedor.remove(h); // Los eliminamos de la lista del comedor
                 h.verificarPausa();
 
-                SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosComedor());
+                SwingUtilities.invokeLater(() -> interfaz.actualizarCantidadComida());
+
+                // Simula el tiempo de alimentación
+                Thread.sleep(3000 + (int) (2000 * Math.random()));
+
+                // Log de finalización de la comida
+                logger.log("Humano " + h.getIdHumanoNom() + " terminó de comer.");
+
+                // Elimina al humano de la lista del comedor
+                listaComedor.remove(h);
+                h.verificarPausa();
+
+                // Actualiza la interfaz de nuevo
+                SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosComedor());
 
             } catch (InterruptedException e) {
                 logger.log("Humano " + h.getIdHumanoNom() + " fue interrumpido mientras comía. Posiblemente ha muerto.");

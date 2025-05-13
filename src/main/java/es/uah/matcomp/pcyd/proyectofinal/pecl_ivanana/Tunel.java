@@ -1,6 +1,6 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion.InterfazServidor;
+import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion.ServidorController;
 
 import javax.swing.*;
 import java.util.concurrent.BrokenBarrierException;
@@ -54,7 +54,7 @@ public class Tunel {
             h.verificarPausa();
             semEspera.acquire(); //Comprueba si puede entrar a la zona de espera
             colaEspera.add(h); // Añadimos el humano a la cola de espera
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaPasarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.refrescarListaEntradaTunel(getId()));
 
             if (barreraEsperar.getNumberWaiting() + 1 == 3) {
                 logger.log("Humano " + h.getIdHumanoNom() + " ha llegado al tunel " + id + " y ya son 3, así que están preparados para adentrarse en el mundo exterior.");
@@ -81,18 +81,18 @@ public class Tunel {
             logger.log("Humano " + h.getIdHumanoNom() + " está atravesando el tunel " + id);
             semEspera.release(); // Liberamos uno de la cola de espera del túnel
             colaEspera.remove(h); // Eliminamos de la cola de espera
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaPasarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.refrescarListaEntradaTunel(getId()));
             colaAtravesando.add(h); // Añadimos en la cola atravesando el túnel
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaPasarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.refrescarListaTransitando(getId()));
             Thread.sleep(1000); // Simulación del tiempo que tarda en pasar
             colaAtravesando.remove(h); // Eliminamos de la cola atravesando el túnel
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaPasarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.refrescarListaTransitando(getId()));
             logger.log("Humano " + h.getIdHumanoNom() + " terminó de cruzar el tunel " + id);
             semPaso.release(); // Permitimos que pase el siguiente
             h.verificarPausa();
             logger.log("Humano " + h.getIdHumanoNom() + " entró en la zona de riesgo " + id);
             zonaRiesgo.entrarHumano(h);
-            SwingUtilities.invokeLater(() -> interfaz.actualizarHumanosZP(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.mostrarHumanosZonaPeligro(getId()));
             Thread.sleep((long) (Math.random() * 3000 + 2000));
             h.verificarPausa();
 
@@ -116,19 +116,19 @@ public class Tunel {
                 logger.log("Retorna el humano " + h.getIdHumanoNom() + " con comida.");
             }
             colaRegreso.add(h); // Añadimos el humano a la cola de regreso
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaRegresarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.actualizarRetornoTunel(getId()));
 
             logger.log("Humano " + h.getIdHumanoNom() + " esperando entrada por túnel " + id);
 
             semPaso.acquire();
             colaRegreso.remove(h); // Eliminamos el humano de la cola de regreso
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaRegresarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.actualizarRetornoTunel(getId()));
             colaAtravesando.add(h); // Añadimos el humano a la cola de atravesar el túnel
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaRegresarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.actualizarRetornoTunel(getId()));
             logger.log("Humano " + h.getIdHumanoNom() + " regresando por tunel " + id);
             Thread.sleep(1000); // Simula el tiempo que tarda en cruzar
             colaAtravesando.remove(h); // Eliminamos el humano de la cola atravesar el túnel cuando haya finalizado el tiempo
-            SwingUtilities.invokeLater(() -> interfaz.actualizarListaRegresarTunel(getId()));
+            SwingUtilities.invokeLater(() -> interfaz.actualizarRetornoTunel(getId()));
             logger.log("Humano " + h.getIdHumanoNom() + " está pasando por el tunel " + id);
             semPaso.release(); // Lo liberamos para que se permita pasar al siguiente
             lockPaso.lock();

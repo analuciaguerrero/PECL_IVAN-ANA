@@ -1,5 +1,7 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.ejecucion;
 
+import es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana.InterfazCliente;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -156,7 +158,7 @@ public class ClienteController {
                 // Top Zombies
                 topZombies = (ArrayList<String>) entrada.readObject();
 
-                interfazCliente.actualizarVentana();
+                interfazCliente.refrescarInterfaz();
             }
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error en la conexión");
@@ -165,7 +167,7 @@ public class ClienteController {
     }
 
     public static void main(String args[]) {
-        ClienteController cliente = new ClienteController();
-        new Thread(cliente::iniciarConexion).start();
+        ClienteController clienteController = new ClienteController();
+        new Thread(clienteController::iniciarConexion).start();
     }
 }
