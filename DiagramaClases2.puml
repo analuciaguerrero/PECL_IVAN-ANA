@@ -1,0 +1,127 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class ClienteController {
+  - interfazCliente : InterfazCliente
+  - zonaComun : Integer
+  - zonaDescanso : Integer
+  - comedor : Integer
+  - enColaTuneles : Integer[4]
+  - cruzandoTuneles : Integer[4]
+  - regresandoTuneles : Integer[4]
+  - zombieZonasRiesgo : Integer[4]
+  - zonasRiesgo : Integer[4]
+  - topZombies : ArrayList<String>
+  - detener : Boolean
+  - hayCambio : Boolean
+
+  + ClienteController()
+  + getZonaComun() : Integer
+  + getZonaDescanso() : Integer
+  + getComedor() : Integer
+  + getEnColaTunel1() : Integer
+  + getEnColaTunel2() : Integer
+  + getEnColaTunel3() : Integer
+  + getEnColaTunel4() : Integer
+  + getCruzandoTunel1() : Integer
+  + getCruzandoTunel2() : Integer
+  + getCruzandoTunel3() : Integer
+  + getCruzandoTunel4() : Integer
+  + getRegresandoTunel1() : Integer
+  + getRegresandoTunel2() : Integer
+  + getRegresandoTunel3() : Integer
+  + getRegresandoTunel4() : Integer
+  + getZombieZonaRiesgo1() : Integer
+  + getZombieZonaRiesgo2() : Integer
+  + getZombieZonaRiesgo3() : Integer
+  + getZombieZonaRiesgo4() : Integer
+  + getZonaRiesgo1() : Integer
+  + getZonaRiesgo2() : Integer
+  + getZonaRiesgo3() : Integer
+  + getZonaRiesgo4() : Integer
+  + getTopZombies() : ArrayList<String>
+  + isDetener() : Boolean
+  + alternarEstadoDetener() : void
+  + isCambio() : Boolean
+  + activarCambio() : void
+  + desactivarCambio() : void
+  + iniciarConexion() : void
+  + main(args : String[]) : void
+}
+
+ClienteController -> InterfazCliente
+
+class ServidorController {
+  - apocalipsis : Apocalipsis
+  - hayCambioEstado : Boolean
+  - socketServidor : ServerSocket
+  - estaDetenido : Boolean
+
+  + ServidorController()
+  + getApocalipsis() : Apocalipsis
+  + manejarConexionCliente(clienteSocket : Socket) : void
+  + iniciarServidor() : void
+  + main(args : String[]) : void
+}
+
+ServidorController -> Apocalipsis
+
+class InterfazCliente{
+
+  - clienteController : ClienteController
+
+  + InterfazCliente(clienteController : ClienteController)
+  - jToggleButtonPararActionPerformed(evt : ActionEvent) : void
+  + cargarDatos() : void
+  + limpiarCampos() : void
+  + refrescarInterfaz() : void
+}
+
+InterfazCliente -> ClienteController
+
+class InterfazServidor{
+  - apocalipsis : Apocalipsis
+
+  + InterfazServidor(apocalipsis : Apocalipsis)
+  - jTextFieldNumComidaActionPerformed(evt : ActionEvent) : void
+  + mostrarHumanosZonaComun() : void
+  + mostrandoHumanosDescansando() : void
+  + mostrarHumanosComedor() : void
+  + actualizarCantidadComida() : void
+  + refrescarListaEntradaTunel(indice : int) : void
+  + refrescarListaTransitando(indice : int) : void
+  + actualizarRetornoTunel(indice : int) : void
+  + mostrarZombisZonaPeligro(indice : int) : void
+  + mostrarHumanosZonaPeligro(indice : int) : void
+}
+
+InterfazServidor -> Apocalipsis
+
+class Apocalipsis {
+  - logger : ApocalipsisLogger
+  - controlPausa : ControlPausa
+  - interfaz : InterfazServidor
+  - idZ : String[5]
+  - idH : String[5]
+  - zonas : ZonaRiesgo[4]
+  - zonaComun : ZonaComun
+  - zonaDescanso : ZonaDescanso
+  - comedor : Comedor
+  - tunel : Tunel[4]
+  - clasificacion : Clasificacion
+  - executor : ExecutorService
+
+  + Apocalipsis()
+  + getZonaRiesgo() : ZonaRiesgo[]
+  + getZonaComun() : ZonaComun
+  + getZonaDescanso() : ZonaDescanso
+  + getComedor() : Comedor
+  + getTunel() : Tunel[]
+  + getClasificacion() : Clasificacion
+  + reanudar() : void
+  + detener() : void
+  + ejecutarEnSegundoPlano() : void
+  - inicializar() : void
+}
+Apocalipsis -> InterfazServidor
+
+@enduml

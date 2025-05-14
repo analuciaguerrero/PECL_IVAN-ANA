@@ -1,0 +1,177 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+top to bottom direction
+scale 0.7
+skinparam ClassPadding 2
+skinparam ClassMargin 2
+skinparam HorizontalSpacing 10
+skinparam VerticalSpacing 25
+
+class Apocalipsis {
+  - logger : ApocalipsisLogger
+  - controlPausa : ControlPausa
+  - interfaz : InterfazServidor
+  - idZ : String[5]
+  - idH : String[5]
+  - zonas : ZonaRiesgo[4]
+  - zonaComun : ZonaComun
+  - zonaDescanso : ZonaDescanso
+  - comedor : Comedor
+  - tunel : Tunel[4]
+  - clasificacion : Clasificacion
+  - executor : ExecutorService
+
+  + Apocalipsis()
+  + getZonaRiesgo() : ZonaRiesgo[]
+  + getZonaComun() : ZonaComun
+  + getZonaDescanso() : ZonaDescanso
+  + getComedor() : Comedor
+  + getTunel() : Tunel[]
+  + getClasificacion() : Clasificacion
+  + reanudar() : void
+  + detener() : void
+  + ejecutarEnSegundoPlano() : void
+  - inicializar() : void
+}
+
+class Tunel {
+  - id : int
+  - logger : ApocalipsisLogger
+  - interfaz : InterfazServidor
+  - zonaRiesgo : ZonaRiesgo
+  - barreraEsperar : CyclicBarrier
+  - lockPaso : ReentrantLock
+  - condicionPaso : Condition
+  - semEspera : Semaphore
+  - semPaso : Semaphore
+  - colaEspera : LinkedBlockingQueue<Humano>
+  - colaAtravesando : LinkedBlockingQueue<Humano>
+  - colaRegreso : LinkedBlockingQueue<Humano>
+
+  + Tunel(id : int, zonaRiesgo : ZonaRiesgo, logger : ApocalipsisLogger, interfaz : InterfazServidor)
+  + getId() : int
+  + getColaEspera() : LinkedBlockingQueue<Humano>
+  + getColaAtravesando() : LinkedBlockingQueue<Humano>
+  + getColaRegreso() : LinkedBlockingQueue<Humano>
+  + salirAlExterior(h : Humano) : void
+  + regresarDelExterior(h : Humano) : void
+}
+
+Tunel -> Extras
+Tunel -> ZonaRiesgo
+
+
+Extras -> ZonaRiesgo
+
+ZonasRefugio -> Extras
+ZonasRefugio -> Tunel
+
+
+
+
+
+ZonaRiesgo -> Extras
+
+
+Apocalipsis -> Extras
+Apocalipsis -> ZonaRiesgo
+Apocalipsis -> ZonasRefugio
+Apocalipsis -> Tunel
+
+
+
+
+
+class ZonaRiesgo {
+  - id : int
+  - logger : ApocalipsisLogger
+  - interfaz : InterfazServidor
+  - listaZombies : LinkedBlockingQueue<Zombie>
+  - listaHumanos : ArrayList<Humano>
+
+  + ZonaRiesgo(idZona : int, logger : ApocalipsisLogger, ventanaUI : InterfazServidor)
+  + getId() : int
+  + getListaZombies() : LinkedBlockingQueue<Zombie>
+  + getListaHumanos() : ArrayList<Humano>
+  + entrarZombie(z : Zombie) : void
+  + entrarHumano(h : Humano) : void
+  + salirZombie(z : Zombie) : void
+  + salirHumano(h : Humano) : void
+  + seleccionarHumanoAleatorio(zona : ZonaRiesgo) : Humano
+}
+
+package ZonasRefugio{
+
+class ZonaDescanso {
+  - logger : ApocalipsisLogger
+  - interfaz : InterfazServidor
+  - listaDescanso : LinkedBlockingQueue<Humano>
+
+  + ZonaDescanso(logger : ApocalipsisLogger, interfaz : InterfazServidor)
+  + getListaHumanosDescansando() : LinkedBlockingQueue<Humano>
+  + descansarHumano(h : Humano) : void
+  + descansar(h : Humano) : void
+}
+class ZonaComun {
+  - logger : ApocalipsisLogger
+  - interfaz : InterfazServidor
+  - tuneles : Tunel[]
+  - listaHumanos : LinkedBlockingQueue<Humano>
+
+  + ZonaComun(tunelesDisponibles : Tunel[], logger : ApocalipsisLogger, interfaz : InterfazServidor)
+  + getListaHumanosZonaComun() : LinkedBlockingQueue<Humano>
+  + prepararse(h : Humano) : void
+  + entrarZonaComun(h : Humano) : void
+  + explorarExterior(h : Humano) : void
+}
+class Comedor {
+  - logger : ApocalipsisLogger
+  - interfaz : InterfazServidor
+  - listaComedor : LinkedBlockingQueue<Humano>
+  - comidaDisp : AtomicInteger
+  - turnoComida : Semaphore
+  - accesoComida : ReentrantLock
+  - sinComida : Condition
+
+  + Comedor(log : ApocalipsisLogger, interfaz : InterfazServidor)
+  + getComida() : AtomicInteger
+  + getListaHumanosComedor() : LinkedBlockingQueue<Humano>
+  + entregarComida(h : Humano) : void
+  + comer(h : Humano) : void
+}
+}
+
+package Extras {
+
+class ControlPausa {
+  - logger : ApocalipsisLogger
+  - enPausa : boolean
+  - lockPausa : ReentrantLock
+  - reanudarCondicion : Condition
+
+  + ControlPausa(log : ApocalipsisLogger)
+  + verificarPausa() : void
+  + reanudarEjecucion() : void
+  + detenerEjecucion() : void
+}
+
+class Clasificacion {
+  - zonas : ZonaRiesgo[]
+  - ordenarPorVictimas : Comparator<Zombie>
+
+  + Clasificacion(zonas : ZonaRiesgo[])
+  + generarTopZombies() : ArrayList<String>
+}
+
+class ApocalipsisLogger {
+  - accesoArchivo : Semaphore
+  - ARCHIVO_LOG : String
+
+  + prepararArchivo() : void
+  + log(mensaje : String) : void
+}
+
+}
+
+
+@enduml
