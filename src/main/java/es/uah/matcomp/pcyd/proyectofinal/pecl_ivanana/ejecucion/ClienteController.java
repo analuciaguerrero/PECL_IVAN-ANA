@@ -30,9 +30,11 @@ public class ClienteController {
     public Integer getZonaComun() {
         return zonaComun;
     }
+
     public Integer getZonaDescanso() {
         return zonaDescanso;
     }
+
     public Integer getComedor() {
         return comedor;
     }
@@ -55,12 +57,15 @@ public class ClienteController {
     public Integer getZombieZonaRiesgo1() {
         return zombieZonaRiesgo1;
     }
+
     public Integer getZombieZonaRiesgo2() {
         return zombieZonaRiesgo2;
     }
+
     public Integer getZombieZonaRiesgo3() {
         return zombieZonaRiesgo3;
     }
+
     public Integer getZombieZonaRiesgo4() {
         return zombieZonaRiesgo4;
     }
@@ -68,12 +73,15 @@ public class ClienteController {
     public Integer getZonaRiesgo1() {
         return zonaRiesgo1;
     }
+
     public Integer getZonaRiesgo2() {
         return zonaRiesgo2;
     }
+
     public Integer getZonaRiesgo3() {
         return zonaRiesgo3;
     }
+
     public Integer getZonaRiesgo4() {
         return zonaRiesgo4;
     }
@@ -103,19 +111,15 @@ public class ClienteController {
     }
 
     public void iniciarConexion() {
-        Socket conexion;
-        try {
-            conexion = new Socket(InetAddress.getLocalHost(), 5002); // Conectamos al servidor
-            ObjectInputStream entrada = new ObjectInputStream(conexion.getInputStream());
-            ObjectOutputStream salida = new ObjectOutputStream(conexion.getOutputStream());
+        try (Socket conexion = new Socket(InetAddress.getLocalHost(), 5002);
+             ObjectInputStream entrada = new ObjectInputStream(conexion.getInputStream());
+             ObjectOutputStream salida = new ObjectOutputStream(conexion.getOutputStream())) {
+
             while (true) {
                 salida.writeObject(detener);
-                if(hayCambio) {
-                    salida.writeObject(hayCambio);
+                salida.writeObject(hayCambio);
+                if (hayCambio) {
                     desactivarCambio();
-                }
-                else{
-                    salida.writeObject(hayCambio);
                 }
                 salida.flush();
                 salida.reset();
@@ -160,6 +164,7 @@ public class ClienteController {
 
                 interfazCliente.refrescarInterfaz();
             }
+
         } catch (IOException | NullPointerException | ClassNotFoundException e) {
             System.out.println("Error en la conexión");
             throw new RuntimeException(e);

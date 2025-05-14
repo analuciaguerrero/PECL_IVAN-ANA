@@ -1,9 +1,7 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 
 public class Apocalipsis {
     private ApocalipsisLogger logger = new ApocalipsisLogger();
@@ -22,6 +20,7 @@ public class Apocalipsis {
     public Apocalipsis(){
         interfaz.setVisible(true);
     }
+
     public ZonaRiesgo[] getZonaRiesgo() {
         return zonas;
     }
@@ -29,15 +28,19 @@ public class Apocalipsis {
     public ZonaComun getZonaComun() {
         return zonaComun;
     }
+
     public ZonaDescanso getZonaDescanso() {
         return zonaDescanso;
     }
+
     public Comedor getComedor() {
         return comedor;
     }
+
     public Tunel[] getTunel() {
         return tunel;
     }
+
     public Clasificacion getClasificacion() {
         return clasificacion;
     }
@@ -55,7 +58,6 @@ public class Apocalipsis {
     }
 
     private void inicializar() {
-
         logger.prepararArchivo();
 
         for (int i = 0; i < 4; i++) {
@@ -65,29 +67,31 @@ public class Apocalipsis {
         for (int i = 0; i < 4; i++) {
             tunel[i] = new Tunel(i, zonas[i], logger, interfaz);
         }
+
         zonaComun = new ZonaComun(tunel, logger, interfaz);
         zonaDescanso = new ZonaDescanso(logger, interfaz);
 
-        // Creamos zombies
+        // Creamos zombies con ID Z0000
         idZ[0] = "Z";
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 4; i++) {
             idZ[i] = "0";
         }
+        idZ[5] = ""; // no se usa, pero lo dejamos por compatibilidad
         new Zombie(idZ, zonas, controlPausa, logger).start();
 
-        // Creamos humanos
-        int recuento = 1;
+        // Creamos humanos con ID H0000 a H9999
+        int recuento = 0;
         for (int t = 0; t < 10; t++) {
             for (int k = 0; k < 10; k++) {
                 for (int i = 0; i < 10; i++) {
                     for (int j = 0; j < 10; j++) {
-                        String numero = String.format("%05d", recuento);
+                        String numero = String.format("%04d", recuento); // 4 cifras
                         idH[0] = "H";
                         idH[1] = String.valueOf(numero.charAt(0));
                         idH[2] = String.valueOf(numero.charAt(1));
                         idH[3] = String.valueOf(numero.charAt(2));
                         idH[4] = String.valueOf(numero.charAt(3));
-                        idH[5] = String.valueOf(numero.charAt(4));
+                        idH[5] = ""; // sin usar, pero mantenido por estructura
                         System.out.println(String.join("", idH));
                         new Humano(idH.clone(), comedor, tunel, zonaComun, zonaDescanso, controlPausa).start();
                         recuento++;
@@ -103,3 +107,4 @@ public class Apocalipsis {
         }
     }
 }
+
