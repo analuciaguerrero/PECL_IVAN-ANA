@@ -7,8 +7,8 @@ public class Apocalipsis {
     private ApocalipsisLogger logger = new ApocalipsisLogger();
     private ControlPausa controlPausa = new ControlPausa(logger);
     private InterfazServidor interfaz = new InterfazServidor(this);
-    private String[] idZ = new String[6]; // ID Zombie
-    private String[] idH = new String[6]; // ID Humano
+    private String[] idZ = new String[5]; // ID Zombie
+    private String[] idH = new String[5]; // ID Humano
     private ZonaRiesgo[] zonas = new ZonaRiesgo[4];
     private ZonaComun zonaComun;
     private ZonaDescanso zonaDescanso;
@@ -68,7 +68,7 @@ public class Apocalipsis {
 
         // Creamos zombies
         idZ[0] = "Z";
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 4; i++) {
             idZ[i] = "0";
         }
         new Zombie(idZ, zonas, controlPausa, logger).start();
@@ -79,13 +79,12 @@ public class Apocalipsis {
             for (int k = 0; k < 10; k++) {
                 for (int i = 0; i < 10; i++) {
                     for (int j = 0; j < 10; j++) {
-                        String numero = String.format("%05d", recuento);
+                        String numero = String.format("%04d", recuento);
                         idH[0] = "H";
                         idH[1] = String.valueOf(numero.charAt(0));
                         idH[2] = String.valueOf(numero.charAt(1));
                         idH[3] = String.valueOf(numero.charAt(2));
                         idH[4] = String.valueOf(numero.charAt(3));
-                        idH[5] = String.valueOf(numero.charAt(4));
                         System.out.println(String.join("", idH));
                         new Humano(idH.clone(), comedor, tunel, zonaComun, zonaDescanso, controlPausa).start();
                         recuento++;

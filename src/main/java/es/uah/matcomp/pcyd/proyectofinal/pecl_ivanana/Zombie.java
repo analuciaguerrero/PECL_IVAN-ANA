@@ -18,7 +18,7 @@ public class Zombie extends Thread{
 
     public String getIdZombie() {
         String nom = "";
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             nom += id[i];
         }
         return nom;
@@ -46,7 +46,7 @@ public class Zombie extends Thread{
                 controlPausa.verificarPausa();
                 eliminarHumano(victima,zona);
                 controlPausa.verificarPausa();
-                String[] nuevoID = new String[]{"Z", idHumano[1], idHumano[2], idHumano[3], idHumano[4], idHumano[5]};
+                String[] nuevoID = new String[]{"Z", idHumano[1], idHumano[2], idHumano[3], idHumano[4]};
                 new Zombie(nuevoID, zonas, controlPausa, logger).start();
                 controlPausa.verificarPausa();
                 victimas++;

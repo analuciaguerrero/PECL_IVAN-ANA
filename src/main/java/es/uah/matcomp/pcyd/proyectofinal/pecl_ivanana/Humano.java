@@ -31,7 +31,7 @@ public class Humano extends Thread {
 
     public String getIdHumanoNom() {
         String nom = "";
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             nom += id[i];
         }
         return nom;

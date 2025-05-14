@@ -1,35 +1,1033 @@
-14/05/2025  20:12:37 - El zombie Z00000 ingresa a la zona de riesgo 0
-14/05/2025  20:12:37 - Humano H00001 ha entrado a la Zona Común.
-14/05/2025  20:12:37 - Humano H00001 se esta preparando para salir.
-14/05/2025  20:12:38 - Humano H00002 ha entrado a la Zona Común.
-14/05/2025  20:12:38 - Humano H00002 se esta preparando para salir.
-14/05/2025  20:12:38 - El humano H00001 ha elegido el túnel 2 para salir de la Zona Común.
-14/05/2025  20:12:38 - Humano H00001 está esperando en el tunel 2 para salir. Humanos esperando: 1
-14/05/2025  20:12:39 - Humano H00003 ha entrado a la Zona Común.
-14/05/2025  20:12:39 - Humano H00003 se esta preparando para salir.
-14/05/2025  20:12:39 - El zombie Z00000 va a la zona de riesgo 0
-14/05/2025  20:12:39 - El zombie Z00000 ingresa a la zona de riesgo 3
-14/05/2025  20:12:40 - El humano H00002 ha elegido el túnel 0 para salir de la Zona Común.
-14/05/2025  20:12:40 - Humano H00002 está esperando en el tunel 0 para salir. Humanos esperando: 1
-14/05/2025  20:12:41 - Humano H00004 ha entrado a la Zona Común.
-14/05/2025  20:12:41 - Humano H00004 se esta preparando para salir.
-14/05/2025  20:12:41 - El humano H00003 ha elegido el túnel 2 para salir de la Zona Común.
-14/05/2025  20:12:41 - Humano H00003 está esperando en el tunel 2 para salir. Humanos esperando: 2
-14/05/2025  20:12:41 - Humano H00005 ha entrado a la Zona Común.
-14/05/2025  20:12:41 - Humano H00005 se esta preparando para salir.
-14/05/2025  20:12:42 - El zombie Z00000 va a la zona de riesgo 3
-14/05/2025  20:12:42 - El zombie Z00000 ingresa a la zona de riesgo 0
-14/05/2025  20:12:42 - Humano H00006 ha entrado a la Zona Común.
-14/05/2025  20:12:42 - Humano H00006 se esta preparando para salir.
-14/05/2025  20:12:43 - El humano H00004 ha elegido el túnel 1 para salir de la Zona Común.
-14/05/2025  20:12:43 - Humano H00004 está esperando en el tunel 1 para salir. Humanos esperando: 1
-14/05/2025  20:12:43 - El humano H00005 ha elegido el túnel 0 para salir de la Zona Común.
-14/05/2025  20:12:43 - Humano H00005 está esperando en el tunel 0 para salir. Humanos esperando: 2
-14/05/2025  20:12:44 - El humano H00006 ha elegido el túnel 3 para salir de la Zona Común.
-14/05/2025  20:12:44 - Humano H00006 está esperando en el tunel 3 para salir. Humanos esperando: 1
-14/05/2025  20:12:44 - Humano H00007 ha entrado a la Zona Común.
-14/05/2025  20:12:44 - Humano H00007 se esta preparando para salir.
-14/05/2025  20:12:45 - El zombie Z00000 va a la zona de riesgo 0
-14/05/2025  20:12:45 - El zombie Z00000 ingresa a la zona de riesgo 1
-14/05/2025  20:12:45 - Humano H00008 ha entrado a la Zona Común.
-14/05/2025  20:12:45 - Humano H00008 se esta preparando para salir.
+14/05/2025  20:37:03 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:03 - Humano H0001 ha entrado a la Zona Común.
+14/05/2025  20:37:03 - Humano H0001 se esta preparando para salir.
+14/05/2025  20:37:03 - Humano H0002 ha entrado a la Zona Común.
+14/05/2025  20:37:03 - Humano H0002 se esta preparando para salir.
+14/05/2025  20:37:04 - Humano H0003 ha entrado a la Zona Común.
+14/05/2025  20:37:04 - Humano H0003 se esta preparando para salir.
+14/05/2025  20:37:04 - El humano H0001 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:04 - Humano H0001 está esperando en el tunel 0 para salir. Humanos esperando: 1
+14/05/2025  20:37:05 - El humano H0002 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:05 - Humano H0002 está esperando en el tunel 2 para salir. Humanos esperando: 1
+14/05/2025  20:37:05 - El zombie Z0000 va a la zona de riesgo 2
+14/05/2025  20:37:05 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:05 - Humano H0004 ha entrado a la Zona Común.
+14/05/2025  20:37:05 - Humano H0004 se esta preparando para salir.
+14/05/2025  20:37:06 - El humano H0003 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:06 - Humano H0003 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:07 - Humano H0005 ha entrado a la Zona Común.
+14/05/2025  20:37:07 - Humano H0005 se esta preparando para salir.
+14/05/2025  20:37:07 - El zombie Z0000 va a la zona de riesgo 2
+14/05/2025  20:37:07 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:07 - El humano H0004 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:07 - Humano H0004 está esperando en el tunel 0 para salir. Humanos esperando: 2
+14/05/2025  20:37:08 - El humano H0005 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:08 - Humano H0005 está esperando en el tunel 3 para salir. Humanos esperando: 1
+14/05/2025  20:37:08 - Humano H0006 ha entrado a la Zona Común.
+14/05/2025  20:37:08 - Humano H0006 se esta preparando para salir.
+14/05/2025  20:37:09 - Humano H0007 ha entrado a la Zona Común.
+14/05/2025  20:37:09 - Humano H0007 se esta preparando para salir.
+14/05/2025  20:37:09 - El humano H0006 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:09 - Humano H0006 está esperando en el tunel 2 para salir. Humanos esperando: 2
+14/05/2025  20:37:09 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:09 - El zombie Z0000 ingresa a la zona de riesgo 0
+14/05/2025  20:37:10 - El humano H0007 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:10 - Humano H0007 ha llegado al tunel 0 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:10 - Humano H0001 está atravesando el tunel 0
+14/05/2025  20:37:11 - Humano H0008 ha entrado a la Zona Común.
+14/05/2025  20:37:11 - Humano H0008 se esta preparando para salir.
+14/05/2025  20:37:11 - Humano H0001 terminó de cruzar el tunel 0
+14/05/2025  20:37:11 - Humano H0001 entró en la zona de riesgo 0
+14/05/2025  20:37:11 - Humano H0007 está atravesando el tunel 0
+14/05/2025  20:37:12 - Humano H0009 ha entrado a la Zona Común.
+14/05/2025  20:37:12 - Humano H0009 se esta preparando para salir.
+14/05/2025  20:37:12 - El zombie Z0000 va a la zona de riesgo 0
+14/05/2025  20:37:12 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:12 - El humano H0008 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:12 - Humano H0008 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:12 - Humano H0007 terminó de cruzar el tunel 0
+14/05/2025  20:37:12 - Humano H0007 entró en la zona de riesgo 0
+14/05/2025  20:37:12 - Humano H0004 está atravesando el tunel 0
+14/05/2025  20:37:13 - Humano H0010 ha entrado a la Zona Común.
+14/05/2025  20:37:13 - Humano H0010 se esta preparando para salir.
+14/05/2025  20:37:13 - Humano H0004 terminó de cruzar el tunel 0
+14/05/2025  20:37:13 - Humano H0004 entró en la zona de riesgo 0
+14/05/2025  20:37:14 - El humano H0009 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:14 - Humano H0009 está esperando en el tunel 3 para salir. Humanos esperando: 2
+14/05/2025  20:37:14 - Humano H0011 ha entrado a la Zona Común.
+14/05/2025  20:37:14 - Humano H0011 se esta preparando para salir.
+14/05/2025  20:37:14 - El zombie Z0000 va a la zona de riesgo 2
+14/05/2025  20:37:14 - El zombie Z0000 ingresa a la zona de riesgo 0
+14/05/2025  20:37:14 - El humano H0010 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:14 - Humano H0010 ha llegado al tunel 3 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:14 - Humano H0010 está atravesando el tunel 3
+14/05/2025  20:37:14 - Humano H0001 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:14 - Retorna el humano H0001 con comida.
+14/05/2025  20:37:14 - Humano H0001 esperando entrada por túnel 0
+14/05/2025  20:37:14 - Humano H0001 regresando por tunel 0
+14/05/2025  20:37:15 - Humano H0012 ha entrado a la Zona Común.
+14/05/2025  20:37:15 - Humano H0012 se esta preparando para salir.
+14/05/2025  20:37:15 - Humano H0007 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:15 - Retorna el humano H0007 con comida.
+14/05/2025  20:37:15 - Humano H0007 esperando entrada por túnel 0
+14/05/2025  20:37:15 - Humano H0010 terminó de cruzar el tunel 3
+14/05/2025  20:37:15 - Humano H0010 entró en la zona de riesgo 3
+14/05/2025  20:37:15 - Humano H0005 está atravesando el tunel 3
+14/05/2025  20:37:15 - Humano H0001 está pasando por el tunel 0
+14/05/2025  20:37:15 - Humano H0007 regresando por tunel 0
+14/05/2025  20:37:15 - El humano H0001 ha traido 2 piezas de comida. Comida restante: 2
+14/05/2025  20:37:15 - El humano H0001 está descansando tras regresar del exterior.
+14/05/2025  20:37:15 - El humano H0011 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:15 - Humano H0011 ha llegado al tunel 2 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:15 - Humano H0011 está atravesando el tunel 2
+14/05/2025  20:37:16 - Humano H0004 ha sido marcado por el zombie Z0000
+14/05/2025  20:37:16 - Humano H0004 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:16 - Retorna el humano H0004 marcado y sin comida.
+14/05/2025  20:37:16 - Humano H0004 esperando entrada por túnel 0
+14/05/2025  20:37:16 - El humano H0012 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:16 - Humano H0012 está esperando en el tunel 2 para salir. Humanos esperando: 1
+14/05/2025  20:37:16 - Humano H0005 terminó de cruzar el tunel 3
+14/05/2025  20:37:16 - Humano H0005 entró en la zona de riesgo 3
+14/05/2025  20:37:16 - Humano H0009 está atravesando el tunel 3
+14/05/2025  20:37:16 - Humano H0007 está pasando por el tunel 0
+14/05/2025  20:37:16 - Humano H0004 regresando por tunel 0
+14/05/2025  20:37:16 - El humano H0007 ha traido 2 piezas de comida. Comida restante: 4
+14/05/2025  20:37:16 - El humano H0007 está descansando tras regresar del exterior.
+14/05/2025  20:37:16 - Humano H0011 terminó de cruzar el tunel 2
+14/05/2025  20:37:16 - Humano H0002 está atravesando el tunel 2
+14/05/2025  20:37:16 - Humano H0011 entró en la zona de riesgo 2
+14/05/2025  20:37:16 - Humano H0013 ha entrado a la Zona Común.
+14/05/2025  20:37:16 - Humano H0013 se esta preparando para salir.
+14/05/2025  20:37:17 - Humano H0014 ha entrado a la Zona Común.
+14/05/2025  20:37:17 - Humano H0014 se esta preparando para salir.
+14/05/2025  20:37:17 - Humano H0009 terminó de cruzar el tunel 3
+14/05/2025  20:37:17 - Humano H0009 entró en la zona de riesgo 3
+14/05/2025  20:37:17 - Humano H0004 está pasando por el tunel 0
+14/05/2025  20:37:17 - El humano H0004 está descansando tras regresar del exterior.
+14/05/2025  20:37:17 - Humano H0002 terminó de cruzar el tunel 2
+14/05/2025  20:37:17 - Humano H0002 entró en la zona de riesgo 2
+14/05/2025  20:37:17 - Humano H0006 está atravesando el tunel 2
+14/05/2025  20:37:18 - Humano H0010 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:18 - Retorna el humano H0010 con comida.
+14/05/2025  20:37:18 - Humano H0010 esperando entrada por túnel 3
+14/05/2025  20:37:18 - Humano H0010 regresando por tunel 3
+14/05/2025  20:37:18 - El humano H0013 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:18 - Humano H0013 está esperando en el tunel 2 para salir. Humanos esperando: 2
+14/05/2025  20:37:18 - El zombie Z0000 va a la zona de riesgo 0
+14/05/2025  20:37:18 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:18 - Humano H0006 terminó de cruzar el tunel 2
+14/05/2025  20:37:18 - Humano H0006 entró en la zona de riesgo 2
+14/05/2025  20:37:19 - Humano H0010 está pasando por el tunel 3
+14/05/2025  20:37:19 - El humano H0010 ha traido 2 piezas de comida. Comida restante: 6
+14/05/2025  20:37:19 - El humano H0010 está descansando tras regresar del exterior.
+14/05/2025  20:37:19 - Humano H0015 ha entrado a la Zona Común.
+14/05/2025  20:37:19 - Humano H0015 se esta preparando para salir.
+14/05/2025  20:37:19 - El humano H0014 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:19 - Humano H0014 está esperando en el tunel 3 para salir. Humanos esperando: 1
+14/05/2025  20:37:19 - Humano H0005 fue eliminado por el zombie Z0000 en la zona 3. Por lo que ahora es también un zombie.
+14/05/2025  20:37:19 - El zombie Z0005 ingresa a la zona de riesgo 2
+14/05/2025  20:37:19 - Humano H0001 ha finalizado su descanso.
+14/05/2025  20:37:19 - Humano H0001 está comiendo. Comida restante: 5
+14/05/2025  20:37:20 - Humano H0007 ha finalizado su descanso.
+14/05/2025  20:37:20 - Humano H0007 está comiendo. Comida restante: 4
+14/05/2025  20:37:20 - Humano H0011 ha sido marcado por el zombie Z0005
+14/05/2025  20:37:20 - Humano H0011 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:20 - Retorna el humano H0011 marcado y sin comida.
+14/05/2025  20:37:20 - Humano H0011 esperando entrada por túnel 2
+14/05/2025  20:37:20 - Humano H0011 regresando por tunel 2
+14/05/2025  20:37:20 - El humano H0015 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:20 - Humano H0015 está esperando en el tunel 0 para salir. Humanos esperando: 1
+14/05/2025  20:37:21 - Humano H0016 ha entrado a la Zona Común.
+14/05/2025  20:37:21 - Humano H0016 se esta preparando para salir.
+14/05/2025  20:37:21 - Humano H0006 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:21 - Retorna el humano H0006 con comida.
+14/05/2025  20:37:21 - Humano H0006 esperando entrada por túnel 2
+14/05/2025  20:37:21 - Humano H0011 está pasando por el tunel 2
+14/05/2025  20:37:21 - El humano H0011 está descansando tras regresar del exterior.
+14/05/2025  20:37:21 - Humano H0006 regresando por tunel 2
+14/05/2025  20:37:21 - Humano H0004 ha finalizado su descanso.
+14/05/2025  20:37:21 - Humano H0004 está comiendo. Comida restante: 3
+14/05/2025  20:37:21 - Humano H0002 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:21 - Retorna el humano H0002 con comida.
+14/05/2025  20:37:21 - Humano H0002 esperando entrada por túnel 2
+14/05/2025  20:37:21 - Humano H0009 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:21 - Retorna el humano H0009 con comida.
+14/05/2025  20:37:21 - Humano H0009 esperando entrada por túnel 3
+14/05/2025  20:37:21 - Humano H0009 regresando por tunel 3
+14/05/2025  20:37:22 - Humano H0006 está pasando por el tunel 2
+14/05/2025  20:37:22 - El humano H0006 ha traido 2 piezas de comida. Comida restante: 5
+14/05/2025  20:37:22 - Humano H0002 regresando por tunel 2
+14/05/2025  20:37:22 - El humano H0006 está descansando tras regresar del exterior.
+14/05/2025  20:37:22 - Humano H0017 ha entrado a la Zona Común.
+14/05/2025  20:37:22 - Humano H0017 se esta preparando para salir.
+14/05/2025  20:37:22 - Humano H0010 ha finalizado su descanso.
+14/05/2025  20:37:22 - Humano H0010 está comiendo. Comida restante: 4
+14/05/2025  20:37:22 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:22 - El zombie Z0000 ingresa a la zona de riesgo 0
+14/05/2025  20:37:22 - Humano H0009 está pasando por el tunel 3
+14/05/2025  20:37:22 - El humano H0009 ha traido 2 piezas de comida. Comida restante: 6
+14/05/2025  20:37:22 - El humano H0009 está descansando tras regresar del exterior.
+14/05/2025  20:37:23 - El humano H0016 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:23 - Humano H0016 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:23 - Humano H0016 está atravesando el tunel 1
+14/05/2025  20:37:23 - Humano H0001 terminó de comer.
+14/05/2025  20:37:23 - Humano H0001 ha entrado a la Zona Común.
+14/05/2025  20:37:23 - Humano H0001 se esta preparando para salir.
+14/05/2025  20:37:23 - El zombie Z0005 va a la zona de riesgo 2
+14/05/2025  20:37:23 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:23 - Humano H0002 está pasando por el tunel 2
+14/05/2025  20:37:23 - El humano H0002 ha traido 2 piezas de comida. Comida restante: 8
+14/05/2025  20:37:23 - El humano H0002 está descansando tras regresar del exterior.
+14/05/2025  20:37:23 - Humano H0007 terminó de comer.
+14/05/2025  20:37:23 - Humano H0007 ha entrado a la Zona Común.
+14/05/2025  20:37:23 - Humano H0007 se esta preparando para salir.
+14/05/2025  20:37:23 - El humano H0017 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:23 - Humano H0017 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:23 - Humano H0011 ha finalizado su descanso.
+14/05/2025  20:37:23 - Humano H0011 está comiendo. Comida restante: 7
+14/05/2025  20:37:24 - Humano H0016 terminó de cruzar el tunel 1
+14/05/2025  20:37:24 - Humano H0016 entró en la zona de riesgo 1
+14/05/2025  20:37:24 - Humano H0003 está atravesando el tunel 1
+14/05/2025  20:37:24 - Humano H0018 ha entrado a la Zona Común.
+14/05/2025  20:37:24 - Humano H0018 se esta preparando para salir.
+14/05/2025  20:37:24 - El humano H0001 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:24 - Humano H0001 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:25 - El humano H0007 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:25 - Humano H0007 está esperando en el tunel 3 para salir. Humanos esperando: 2
+14/05/2025  20:37:25 - Humano H0003 terminó de cruzar el tunel 1
+14/05/2025  20:37:25 - Humano H0003 entró en la zona de riesgo 1
+14/05/2025  20:37:25 - Humano H0008 está atravesando el tunel 1
+14/05/2025  20:37:25 - Humano H0019 ha entrado a la Zona Común.
+14/05/2025  20:37:25 - Humano H0019 se esta preparando para salir.
+14/05/2025  20:37:25 - Humano H0006 ha finalizado su descanso.
+14/05/2025  20:37:25 - Humano H0006 está comiendo. Comida restante: 6
+14/05/2025  20:37:25 - El zombie Z0000 va a la zona de riesgo 0
+14/05/2025  20:37:25 - El zombie Z0000 ingresa a la zona de riesgo 1
+14/05/2025  20:37:25 - Humano H0009 ha finalizado su descanso.
+14/05/2025  20:37:25 - Humano H0009 está comiendo. Comida restante: 5
+14/05/2025  20:37:25 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:25 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:25 - Humano H0004 terminó de comer.
+14/05/2025  20:37:25 - HumanoH0004 está descansando para recuperarse.
+14/05/2025  20:37:26 - El humano H0018 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:26 - Humano H0018 ha llegado al tunel 3 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:26 - Humano H0018 está atravesando el tunel 3
+14/05/2025  20:37:26 - Humano H0008 terminó de cruzar el tunel 1
+14/05/2025  20:37:26 - Humano H0008 entró en la zona de riesgo 1
+14/05/2025  20:37:26 - Humano H0002 ha finalizado su descanso.
+14/05/2025  20:37:26 - Humano H0002 está comiendo. Comida restante: 4
+14/05/2025  20:37:26 - Humano H0020 ha entrado a la Zona Común.
+14/05/2025  20:37:26 - Humano H0020 se esta preparando para salir.
+14/05/2025  20:37:26 - Humano H0010 terminó de comer.
+14/05/2025  20:37:26 - Humano H0010 ha entrado a la Zona Común.
+14/05/2025  20:37:26 - Humano H0010 se esta preparando para salir.
+14/05/2025  20:37:26 - Humano H0003 fue eliminado por el zombie Z0000 en la zona 1. Por lo que ahora es también un zombie.
+14/05/2025  20:37:26 - El zombie Z0003 ingresa a la zona de riesgo 1
+14/05/2025  20:37:26 - El humano H0019 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:26 - Humano H0019 está esperando en el tunel 3 para salir. Humanos esperando: 1
+14/05/2025  20:37:27 - Humano H0018 terminó de cruzar el tunel 3
+14/05/2025  20:37:27 - Humano H0018 entró en la zona de riesgo 3
+14/05/2025  20:37:27 - Humano H0014 está atravesando el tunel 3
+14/05/2025  20:37:27 - Humano H0016 ha sido marcado por el zombie Z0003
+14/05/2025  20:37:27 - Humano H0016 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:27 - Retorna el humano H0016 marcado y sin comida.
+14/05/2025  20:37:27 - Humano H0016 esperando entrada por túnel 1
+14/05/2025  20:37:27 - Humano H0016 regresando por tunel 1
+14/05/2025  20:37:27 - Humano H0011 terminó de comer.
+14/05/2025  20:37:27 - HumanoH0011 está descansando para recuperarse.
+14/05/2025  20:37:28 - Humano H0014 terminó de cruzar el tunel 3
+14/05/2025  20:37:28 - Humano H0007 está atravesando el tunel 3
+14/05/2025  20:37:28 - Humano H0014 entró en la zona de riesgo 3
+14/05/2025  20:37:28 - Humano H0021 ha entrado a la Zona Común.
+14/05/2025  20:37:28 - Humano H0021 se esta preparando para salir.
+14/05/2025  20:37:28 - El humano H0020 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:28 - Humano H0020 ha llegado al tunel 2 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:28 - Humano H0020 está atravesando el tunel 2
+14/05/2025  20:37:28 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:28 - El zombie Z0005 ingresa a la zona de riesgo 0
+14/05/2025  20:37:28 - El humano H0010 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:28 - Humano H0010 está esperando en el tunel 3 para salir. Humanos esperando: 2
+14/05/2025  20:37:28 - Humano H0006 terminó de comer.
+14/05/2025  20:37:28 - Humano H0006 ha entrado a la Zona Común.
+14/05/2025  20:37:28 - Humano H0006 se esta preparando para salir.
+14/05/2025  20:37:28 - Humano H0016 está pasando por el tunel 1
+14/05/2025  20:37:28 - El humano H0016 está descansando tras regresar del exterior.
+14/05/2025  20:37:28 - Humano H0004 se ha recuperado completamente.
+14/05/2025  20:37:28 - Humano H0004 ha entrado a la Zona Común.
+14/05/2025  20:37:28 - Humano H0004 se esta preparando para salir.
+14/05/2025  20:37:28 - El zombie Z0000 va a la zona de riesgo 1
+14/05/2025  20:37:28 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:29 - Humano H0007 terminó de cruzar el tunel 3
+14/05/2025  20:37:29 - Humano H0007 entró en la zona de riesgo 3
+14/05/2025  20:37:29 - Humano H0020 terminó de cruzar el tunel 2
+14/05/2025  20:37:29 - Humano H0020 entró en la zona de riesgo 2
+14/05/2025  20:37:29 - Humano H0012 está atravesando el tunel 2
+14/05/2025  20:37:29 - Humano H0018 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:29 - Retorna el humano H0018 con comida.
+14/05/2025  20:37:29 - Humano H0018 esperando entrada por túnel 3
+14/05/2025  20:37:29 - Humano H0018 regresando por tunel 3
+14/05/2025  20:37:29 - Humano H0022 ha entrado a la Zona Común.
+14/05/2025  20:37:29 - Humano H0022 se esta preparando para salir.
+14/05/2025  20:37:29 - El humano H0021 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:29 - Humano H0021 está esperando en el tunel 0 para salir. Humanos esperando: 2
+14/05/2025  20:37:29 - Humano H0009 terminó de comer.
+14/05/2025  20:37:29 - Humano H0009 ha entrado a la Zona Común.
+14/05/2025  20:37:29 - Humano H0009 se esta preparando para salir.
+14/05/2025  20:37:29 - El humano H0006 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:29 - Humano H0006 está esperando en el tunel 2 para salir. Humanos esperando: 1
+14/05/2025  20:37:30 - Humano H0008 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:30 - Retorna el humano H0008 con comida.
+14/05/2025  20:37:30 - Humano H0008 esperando entrada por túnel 1
+14/05/2025  20:37:30 - Humano H0008 regresando por tunel 1
+14/05/2025  20:37:30 - Humano H0014 ha sido marcado por el zombie Z0000
+14/05/2025  20:37:30 - Humano H0014 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:30 - Retorna el humano H0014 marcado y sin comida.
+14/05/2025  20:37:30 - Humano H0014 esperando entrada por túnel 3
+14/05/2025  20:37:30 - Humano H0012 terminó de cruzar el tunel 2
+14/05/2025  20:37:30 - Humano H0012 entró en la zona de riesgo 2
+14/05/2025  20:37:30 - Humano H0013 está atravesando el tunel 2
+14/05/2025  20:37:30 - Humano H0018 está pasando por el tunel 3
+14/05/2025  20:37:30 - El humano H0018 ha traido 2 piezas de comida. Comida restante: 6
+14/05/2025  20:37:30 - Humano H0014 regresando por tunel 3
+14/05/2025  20:37:30 - El humano H0018 está descansando tras regresar del exterior.
+14/05/2025  20:37:30 - El humano H0004 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:30 - Humano H0004 ha llegado al tunel 0 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:30 - Humano H0004 está atravesando el tunel 0
+14/05/2025  20:37:30 - El zombie Z0003 va a la zona de riesgo 1
+14/05/2025  20:37:30 - El zombie Z0003 ingresa a la zona de riesgo 3
+14/05/2025  20:37:30 - Humano H0016 ha finalizado su descanso.
+14/05/2025  20:37:30 - Humano H0016 está comiendo. Comida restante: 5
+14/05/2025  20:37:30 - Humano H0002 terminó de comer.
+14/05/2025  20:37:30 - Humano H0002 ha entrado a la Zona Común.
+14/05/2025  20:37:30 - Humano H0002 se esta preparando para salir.
+14/05/2025  20:37:30 - Humano H0011 se ha recuperado completamente.
+14/05/2025  20:37:30 - Humano H0011 ha entrado a la Zona Común.
+14/05/2025  20:37:30 - Humano H0011 se esta preparando para salir.
+14/05/2025  20:37:30 - El humano H0009 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:30 - Humano H0009 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:31 - Humano H0008 está pasando por el tunel 1
+14/05/2025  20:37:31 - El humano H0008 ha traido 2 piezas de comida. Comida restante: 7
+14/05/2025  20:37:31 - Humano H0009 está atravesando el tunel 1
+14/05/2025  20:37:31 - El humano H0008 está descansando tras regresar del exterior.
+14/05/2025  20:37:31 - Humano H0023 ha entrado a la Zona Común.
+14/05/2025  20:37:31 - Humano H0023 se esta preparando para salir.
+14/05/2025  20:37:31 - El zombie Z0005 va a la zona de riesgo 0
+14/05/2025  20:37:31 - Humano H0013 terminó de cruzar el tunel 2
+14/05/2025  20:37:31 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:31 - Humano H0013 entró en la zona de riesgo 2
+14/05/2025  20:37:31 - Humano H0014 está pasando por el tunel 3
+14/05/2025  20:37:31 - El humano H0014 está descansando tras regresar del exterior.
+14/05/2025  20:37:31 - Humano H0020 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:31 - Retorna el humano H0020 con comida.
+14/05/2025  20:37:31 - Humano H0020 esperando entrada por túnel 2
+14/05/2025  20:37:31 - Humano H0020 regresando por tunel 2
+14/05/2025  20:37:31 - Humano H0004 terminó de cruzar el tunel 0
+14/05/2025  20:37:31 - Humano H0004 entró en la zona de riesgo 0
+14/05/2025  20:37:31 - Humano H0021 está atravesando el tunel 0
+14/05/2025  20:37:31 - El humano H0022 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:31 - Humano H0022 está esperando en el tunel 0 para salir. Humanos esperando: 1
+14/05/2025  20:37:31 - Humano H0007 fue eliminado por el zombie Z0003 en la zona 3. Por lo que ahora es también un zombie.
+14/05/2025  20:37:31 - El zombie Z0007 ingresa a la zona de riesgo 0
+14/05/2025  20:37:32 - Humano H0009 terminó de cruzar el tunel 1
+14/05/2025  20:37:32 - Humano H0009 entró en la zona de riesgo 1
+14/05/2025  20:37:32 - Humano H0017 está atravesando el tunel 1
+14/05/2025  20:37:32 - El humano H0002 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:32 - Humano H0002 está esperando en el tunel 0 para salir. Humanos esperando: 2
+14/05/2025  20:37:32 - Humano H0020 está pasando por el tunel 2
+14/05/2025  20:37:32 - El humano H0020 ha traido 2 piezas de comida. Comida restante: 9
+14/05/2025  20:37:32 - El humano H0020 está descansando tras regresar del exterior.
+14/05/2025  20:37:32 - Humano H0021 terminó de cruzar el tunel 0
+14/05/2025  20:37:32 - Humano H0021 entró en la zona de riesgo 0
+14/05/2025  20:37:32 - Humano H0015 está atravesando el tunel 0
+14/05/2025  20:37:32 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:32 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:32 - El humano H0023 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:32 - Humano H0023 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:32 - El humano H0011 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:32 - Humano H0011 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:32 - Humano H0024 ha entrado a la Zona Común.
+14/05/2025  20:37:32 - Humano H0024 se esta preparando para salir.
+14/05/2025  20:37:33 - Humano H0017 terminó de cruzar el tunel 1
+14/05/2025  20:37:33 - Humano H0017 entró en la zona de riesgo 1
+14/05/2025  20:37:33 - Humano H0001 está atravesando el tunel 1
+14/05/2025  20:37:33 - Humano H0004 ha sido marcado por el zombie Z0007
+14/05/2025  20:37:33 - Humano H0004 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:33 - Retorna el humano H0004 marcado y sin comida.
+14/05/2025  20:37:33 - Humano H0004 esperando entrada por túnel 0
+14/05/2025  20:37:33 - Humano H0015 terminó de cruzar el tunel 0
+14/05/2025  20:37:33 - Humano H0015 entró en la zona de riesgo 0
+14/05/2025  20:37:33 - Humano H0004 regresando por tunel 0
+14/05/2025  20:37:33 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:33 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:33 - Humano H0018 ha finalizado su descanso.
+14/05/2025  20:37:33 - Humano H0018 está comiendo. Comida restante: 8
+14/05/2025  20:37:33 - El humano H0024 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:33 - Humano H0024 ha llegado al tunel 3 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:33 - Humano H0024 está atravesando el tunel 3
+14/05/2025  20:37:33 - Humano H0013 fue eliminado por el zombie Z0000 en la zona 2. Por lo que ahora es también un zombie.
+14/05/2025  20:37:33 - El zombie Z0013 ingresa a la zona de riesgo 0
+14/05/2025  20:37:34 - Humano H0001 terminó de cruzar el tunel 1
+14/05/2025  20:37:34 - Humano H0008 ha finalizado su descanso.
+14/05/2025  20:37:34 - Humano H0001 entró en la zona de riesgo 1
+14/05/2025  20:37:34 - Humano H0008 está comiendo. Comida restante: 7
+14/05/2025  20:37:34 - Humano H0004 está pasando por el tunel 0
+14/05/2025  20:37:34 - El humano H0004 está descansando tras regresar del exterior.
+14/05/2025  20:37:34 - Humano H0025 ha entrado a la Zona Común.
+14/05/2025  20:37:34 - Humano H0025 se esta preparando para salir.
+14/05/2025  20:37:34 - Humano H0014 ha finalizado su descanso.
+14/05/2025  20:37:34 - Humano H0014 está comiendo. Comida restante: 6
+14/05/2025  20:37:34 - Humano H0024 terminó de cruzar el tunel 3
+14/05/2025  20:37:34 - Humano H0024 entró en la zona de riesgo 3
+14/05/2025  20:37:34 - Humano H0019 está atravesando el tunel 3
+14/05/2025  20:37:34 - El zombie Z0003 va a la zona de riesgo 3
+14/05/2025  20:37:34 - El zombie Z0003 ingresa a la zona de riesgo 0
+14/05/2025  20:37:34 - Humano H0012 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:34 - Retorna el humano H0012 con comida.
+14/05/2025  20:37:34 - Humano H0012 esperando entrada por túnel 2
+14/05/2025  20:37:34 - Humano H0012 regresando por tunel 2
+14/05/2025  20:37:35 - Humano H0015 ha sido marcado por el zombie Z0013
+14/05/2025  20:37:35 - Humano H0015 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:35 - Retorna el humano H0015 marcado y sin comida.
+14/05/2025  20:37:35 - Humano H0015 esperando entrada por túnel 0
+14/05/2025  20:37:35 - Humano H0015 regresando por tunel 0
+14/05/2025  20:37:35 - Humano H0020 ha finalizado su descanso.
+14/05/2025  20:37:35 - Humano H0020 está comiendo. Comida restante: 5
+14/05/2025  20:37:35 - Humano H0017 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:35 - Retorna el humano H0017 con comida.
+14/05/2025  20:37:35 - Humano H0017 esperando entrada por túnel 1
+14/05/2025  20:37:35 - Humano H0017 regresando por tunel 1
+14/05/2025  20:37:35 - Humano H0026 ha entrado a la Zona Común.
+14/05/2025  20:37:35 - Humano H0026 se esta preparando para salir.
+14/05/2025  20:37:35 - Humano H0016 terminó de comer.
+14/05/2025  20:37:35 - HumanoH0016 está descansando para recuperarse.
+14/05/2025  20:37:35 - Humano H0021 ha sido marcado por el zombie Z0003
+14/05/2025  20:37:35 - Humano H0021 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:35 - Retorna el humano H0021 marcado y sin comida.
+14/05/2025  20:37:35 - Humano H0021 esperando entrada por túnel 0
+14/05/2025  20:37:35 - Humano H0019 terminó de cruzar el tunel 3
+14/05/2025  20:37:35 - Humano H0019 entró en la zona de riesgo 3
+14/05/2025  20:37:35 - Humano H0010 está atravesando el tunel 3
+14/05/2025  20:37:35 - El zombie Z0000 va a la zona de riesgo 2
+14/05/2025  20:37:35 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:35 - Humano H0012 está pasando por el tunel 2
+14/05/2025  20:37:35 - El humano H0012 ha traido 2 piezas de comida. Comida restante: 7
+14/05/2025  20:37:35 - El humano H0012 está descansando tras regresar del exterior.
+14/05/2025  20:37:36 - Humano H0015 está pasando por el tunel 0
+14/05/2025  20:37:36 - El humano H0015 está descansando tras regresar del exterior.
+14/05/2025  20:37:36 - Humano H0021 regresando por tunel 0
+14/05/2025  20:37:36 - El zombie Z0007 va a la zona de riesgo 0
+14/05/2025  20:37:36 - El zombie Z0007 ingresa a la zona de riesgo 1
+14/05/2025  20:37:36 - El humano H0025 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:36 - Humano H0025 ha llegado al tunel 0 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:36 - Humano H0017 está pasando por el tunel 1
+14/05/2025  20:37:36 - El humano H0017 ha traido 2 piezas de comida. Comida restante: 9
+14/05/2025  20:37:36 - El humano H0017 está descansando tras regresar del exterior.
+14/05/2025  20:37:36 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:36 - El zombie Z0005 ingresa a la zona de riesgo 0
+14/05/2025  20:37:36 - Humano H0010 terminó de cruzar el tunel 3
+14/05/2025  20:37:36 - Humano H0010 entró en la zona de riesgo 3
+14/05/2025  20:37:37 - Humano H0018 terminó de comer.
+14/05/2025  20:37:37 - Humano H0018 ha entrado a la Zona Común.
+14/05/2025  20:37:37 - Humano H0018 se esta preparando para salir.
+14/05/2025  20:37:37 - Humano H0027 ha entrado a la Zona Común.
+14/05/2025  20:37:37 - Humano H0027 se esta preparando para salir.
+14/05/2025  20:37:37 - Humano H0001 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:37 - Retorna el humano H0001 con comida.
+14/05/2025  20:37:37 - Humano H0001 esperando entrada por túnel 1
+14/05/2025  20:37:37 - Humano H0001 regresando por tunel 1
+14/05/2025  20:37:37 - Humano H0021 está pasando por el tunel 0
+14/05/2025  20:37:37 - Humano H0025 está atravesando el tunel 0
+14/05/2025  20:37:37 - El humano H0021 está descansando tras regresar del exterior.
+14/05/2025  20:37:37 - El humano H0026 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:37 - Humano H0026 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:37 - El zombie Z0013 va a la zona de riesgo 0
+14/05/2025  20:37:37 - El zombie Z0013 ingresa a la zona de riesgo 2
+14/05/2025  20:37:37 - Humano H0019 fue eliminado por el zombie Z0000 en la zona 3. Por lo que ahora es también un zombie.
+14/05/2025  20:37:37 - El zombie Z0019 ingresa a la zona de riesgo 0
+14/05/2025  20:37:37 - Humano H0009 ha sido marcado por el zombie Z0007
+14/05/2025  20:37:37 - Humano H0009 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:37 - Retorna el humano H0009 marcado y sin comida.
+14/05/2025  20:37:37 - Humano H0009 esperando entrada por túnel 1
+14/05/2025  20:37:37 - Humano H0004 ha finalizado su descanso.
+14/05/2025  20:37:37 - Humano H0004 está comiendo. Comida restante: 8
+14/05/2025  20:37:38 - El humano H0018 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:38 - Humano H0018 está esperando en el tunel 3 para salir. Humanos esperando: 1
+14/05/2025  20:37:38 - Humano H0024 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:38 - Retorna el humano H0024 con comida.
+14/05/2025  20:37:38 - Humano H0024 esperando entrada por túnel 3
+14/05/2025  20:37:38 - Humano H0024 regresando por tunel 3
+14/05/2025  20:37:38 - Humano H0001 está pasando por el tunel 1
+14/05/2025  20:37:38 - El humano H0001 ha traido 2 piezas de comida. Comida restante: 10
+14/05/2025  20:37:38 - Humano H0026 está atravesando el tunel 1
+14/05/2025  20:37:38 - El humano H0001 está descansando tras regresar del exterior.
+14/05/2025  20:37:38 - Humano H0025 terminó de cruzar el tunel 0
+14/05/2025  20:37:38 - Humano H0025 entró en la zona de riesgo 0
+14/05/2025  20:37:38 - Humano H0022 está atravesando el tunel 0
+14/05/2025  20:37:38 - Humano H0028 ha entrado a la Zona Común.
+14/05/2025  20:37:38 - Humano H0028 se esta preparando para salir.
+14/05/2025  20:37:38 - El humano H0027 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:38 - Humano H0027 está esperando en el tunel 0 para salir. Humanos esperando: 1
+14/05/2025  20:37:38 - El zombie Z0003 va a la zona de riesgo 0
+14/05/2025  20:37:38 - El zombie Z0003 ingresa a la zona de riesgo 3
+14/05/2025  20:37:38 - Humano H0015 ha finalizado su descanso.
+14/05/2025  20:37:38 - Humano H0015 está comiendo. Comida restante: 9
+14/05/2025  20:37:38 - Humano H0008 terminó de comer.
+14/05/2025  20:37:38 - Humano H0008 ha entrado a la Zona Común.
+14/05/2025  20:37:38 - Humano H0008 se esta preparando para salir.
+14/05/2025  20:37:38 - Humano H0017 ha finalizado su descanso.
+14/05/2025  20:37:38 - Humano H0017 está comiendo. Comida restante: 8
+14/05/2025  20:37:39 - Humano H0024 está pasando por el tunel 3
+14/05/2025  20:37:39 - El humano H0024 ha traido 2 piezas de comida. Comida restante: 10
+14/05/2025  20:37:39 - El humano H0024 está descansando tras regresar del exterior.
+14/05/2025  20:37:39 - Humano H0026 terminó de cruzar el tunel 1
+14/05/2025  20:37:39 - Humano H0026 entró en la zona de riesgo 1
+14/05/2025  20:37:39 - Humano H0023 está atravesando el tunel 1
+14/05/2025  20:37:39 - El zombie Z0005 va a la zona de riesgo 0
+14/05/2025  20:37:39 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:39 - Humano H0022 terminó de cruzar el tunel 0
+14/05/2025  20:37:39 - Humano H0022 entró en la zona de riesgo 0
+14/05/2025  20:37:39 - Humano H0002 está atravesando el tunel 0
+14/05/2025  20:37:39 - Humano H0012 ha finalizado su descanso.
+14/05/2025  20:37:39 - Humano H0012 está comiendo. Comida restante: 9
+14/05/2025  20:37:39 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:39 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:39 - Humano H0016 se ha recuperado completamente.
+14/05/2025  20:37:39 - Humano H0016 ha entrado a la Zona Común.
+14/05/2025  20:37:39 - Humano H0016 se esta preparando para salir.
+14/05/2025  20:37:39 - Humano H0014 terminó de comer.
+14/05/2025  20:37:39 - HumanoH0014 está descansando para recuperarse.
+14/05/2025  20:37:39 - Humano H0010 ha sido marcado por el zombie Z0003
+14/05/2025  20:37:39 - Humano H0010 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:39 - Retorna el humano H0010 marcado y sin comida.
+14/05/2025  20:37:39 - Humano H0010 esperando entrada por túnel 3
+14/05/2025  20:37:39 - Humano H0010 regresando por tunel 3
+14/05/2025  20:37:39 - Humano H0021 ha finalizado su descanso.
+14/05/2025  20:37:39 - Humano H0021 está comiendo. Comida restante: 8
+14/05/2025  20:37:39 - El zombie Z0007 va a la zona de riesgo 1
+14/05/2025  20:37:39 - El zombie Z0007 ingresa a la zona de riesgo 3
+14/05/2025  20:37:39 - Humano H0029 ha entrado a la Zona Común.
+14/05/2025  20:37:39 - Humano H0029 se esta preparando para salir.
+14/05/2025  20:37:39 - El zombie Z0019 va a la zona de riesgo 0
+14/05/2025  20:37:39 - El zombie Z0019 ingresa a la zona de riesgo 1
+14/05/2025  20:37:39 - El humano H0028 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:39 - Humano H0028 está esperando en el tunel 2 para salir. Humanos esperando: 2
+14/05/2025  20:37:39 - El zombie Z0013 va a la zona de riesgo 2
+14/05/2025  20:37:39 - El zombie Z0013 ingresa a la zona de riesgo 0
+14/05/2025  20:37:39 - Humano H0020 terminó de comer.
+14/05/2025  20:37:39 - Humano H0020 ha entrado a la Zona Común.
+14/05/2025  20:37:39 - Humano H0020 se esta preparando para salir.
+14/05/2025  20:37:40 - Humano H0023 terminó de cruzar el tunel 1
+14/05/2025  20:37:40 - Humano H0011 está atravesando el tunel 1
+14/05/2025  20:37:40 - Humano H0023 entró en la zona de riesgo 1
+14/05/2025  20:37:40 - Humano H0002 terminó de cruzar el tunel 0
+14/05/2025  20:37:40 - Humano H0002 entró en la zona de riesgo 0
+14/05/2025  20:37:40 - El humano H0008 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:40 - Humano H0008 está esperando en el tunel 0 para salir. Humanos esperando: 2
+14/05/2025  20:37:40 - El humano H0016 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:40 - Humano H0016 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:40 - Humano H0010 está pasando por el tunel 3
+14/05/2025  20:37:40 - El humano H0010 está descansando tras regresar del exterior.
+14/05/2025  20:37:40 - Humano H0030 ha entrado a la Zona Común.
+14/05/2025  20:37:40 - Humano H0030 se esta preparando para salir.
+14/05/2025  20:37:40 - Humano H0026 ha sido marcado por el zombie Z0019
+14/05/2025  20:37:40 - Humano H0026 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:40 - Retorna el humano H0026 marcado y sin comida.
+14/05/2025  20:37:40 - Humano H0026 esperando entrada por túnel 1
+14/05/2025  20:37:40 - Humano H0022 ha sido marcado por el zombie Z0013
+14/05/2025  20:37:40 - Humano H0022 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:40 - Retorna el humano H0022 marcado y sin comida.
+14/05/2025  20:37:40 - Humano H0022 esperando entrada por túnel 0
+14/05/2025  20:37:40 - Humano H0022 regresando por tunel 0
+14/05/2025  20:37:40 - El humano H0029 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:40 - Humano H0029 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:41 - Humano H0011 terminó de cruzar el tunel 1
+14/05/2025  20:37:41 - Humano H0011 entró en la zona de riesgo 1
+14/05/2025  20:37:41 - Humano H0009 regresando por tunel 1
+14/05/2025  20:37:41 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:41 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:41 - El zombie Z0003 va a la zona de riesgo 3
+14/05/2025  20:37:41 - El humano H0020 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:41 - El zombie Z0003 ingresa a la zona de riesgo 0
+14/05/2025  20:37:41 - Humano H0020 ha llegado al tunel 0 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:41 - El zombie Z0007 va a la zona de riesgo 3
+14/05/2025  20:37:41 - El zombie Z0007 ingresa a la zona de riesgo 1
+14/05/2025  20:37:41 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:41 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:41 - Humano H0031 ha entrado a la Zona Común.
+14/05/2025  20:37:41 - Humano H0031 se esta preparando para salir.
+14/05/2025  20:37:41 - Humano H0024 ha finalizado su descanso.
+14/05/2025  20:37:41 - Humano H0024 está comiendo. Comida restante: 7
+14/05/2025  20:37:41 - Humano H0001 ha finalizado su descanso.
+14/05/2025  20:37:41 - Humano H0001 está comiendo. Comida restante: 6
+14/05/2025  20:37:41 - Humano H0015 terminó de comer.
+14/05/2025  20:37:41 - HumanoH0015 está descansando para recuperarse.
+14/05/2025  20:37:41 - Humano H0022 está pasando por el tunel 0
+14/05/2025  20:37:41 - El humano H0022 está descansando tras regresar del exterior.
+14/05/2025  20:37:41 - Humano H0020 está atravesando el tunel 0
+14/05/2025  20:37:42 - Humano H0009 está pasando por el tunel 1
+14/05/2025  20:37:42 - El humano H0009 está descansando tras regresar del exterior.
+14/05/2025  20:37:42 - Humano H0026 regresando por tunel 1
+14/05/2025  20:37:42 - Humano H0023 ha sido marcado por el zombie Z0007
+14/05/2025  20:37:42 - Humano H0023 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:42 - Retorna el humano H0023 marcado y sin comida.
+14/05/2025  20:37:42 - Humano H0023 esperando entrada por túnel 1
+14/05/2025  20:37:42 - Humano H0017 terminó de comer.
+14/05/2025  20:37:42 - Humano H0017 ha entrado a la Zona Común.
+14/05/2025  20:37:42 - Humano H0017 se esta preparando para salir.
+14/05/2025  20:37:42 - Humano H0025 ha sido marcado por el zombie Z0003
+14/05/2025  20:37:42 - Humano H0025 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:42 - Retorna el humano H0025 marcado y sin comida.
+14/05/2025  20:37:42 - Humano H0025 esperando entrada por túnel 0
+14/05/2025  20:37:42 - El humano H0030 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:42 - Humano H0030 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:42 - Humano H0030 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:42 - Humano H0016 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:42 - Humano H0029 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:42 - Humano H0012 terminó de comer.
+14/05/2025  20:37:42 - Humano H0012 ha entrado a la Zona Común.
+14/05/2025  20:37:42 - Humano H0012 se esta preparando para salir.
+14/05/2025  20:37:42 - Humano H0004 terminó de comer.
+14/05/2025  20:37:42 - HumanoH0004 está descansando para recuperarse.
+14/05/2025  20:37:42 - Humano H0020 terminó de cruzar el tunel 0
+14/05/2025  20:37:42 - Humano H0020 entró en la zona de riesgo 0
+14/05/2025  20:37:42 - Humano H0027 está atravesando el tunel 0
+14/05/2025  20:37:43 - El humano H0031 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:43 - Humano H0026 está pasando por el tunel 1
+14/05/2025  20:37:43 - El humano H0026 está descansando tras regresar del exterior.
+14/05/2025  20:37:43 - Humano H0023 regresando por tunel 1
+14/05/2025  20:37:43 - Humano H0032 ha entrado a la Zona Común.
+14/05/2025  20:37:43 - Humano H0032 se esta preparando para salir.
+14/05/2025  20:37:43 - El zombie Z0013 va a la zona de riesgo 0
+14/05/2025  20:37:43 - El zombie Z0013 ingresa a la zona de riesgo 2
+14/05/2025  20:37:43 - Humano H0014 se ha recuperado completamente.
+14/05/2025  20:37:43 - Humano H0014 ha entrado a la Zona Común.
+14/05/2025  20:37:43 - Humano H0014 se esta preparando para salir.
+14/05/2025  20:37:43 - Humano H0021 terminó de comer.
+14/05/2025  20:37:43 - El zombie Z0019 va a la zona de riesgo 1
+14/05/2025  20:37:43 - HumanoH0021 está descansando para recuperarse.
+14/05/2025  20:37:43 - El zombie Z0019 ingresa a la zona de riesgo 0
+14/05/2025  20:37:43 - Humano H0027 terminó de cruzar el tunel 0
+14/05/2025  20:37:43 - Humano H0027 entró en la zona de riesgo 0
+14/05/2025  20:37:43 - Humano H0008 está atravesando el tunel 0
+14/05/2025  20:37:44 - El humano H0012 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:44 - Humano H0010 ha finalizado su descanso.
+14/05/2025  20:37:44 - Humano H0023 está pasando por el tunel 1
+14/05/2025  20:37:44 - Humano H0010 está comiendo. Comida restante: 5
+14/05/2025  20:37:44 - El humano H0023 está descansando tras regresar del exterior.
+14/05/2025  20:37:44 - Humano H0030 está atravesando el tunel 1
+14/05/2025  20:37:44 - Humano H0031 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:44 - El humano H0017 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:44 - Humano H0017 está esperando en el tunel 3 para salir. Humanos esperando: 2
+14/05/2025  20:37:44 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:44 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:44 - Humano H0011 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:44 - Retorna el humano H0011 con comida.
+14/05/2025  20:37:44 - Humano H0011 esperando entrada por túnel 1
+14/05/2025  20:37:44 - Humano H0033 ha entrado a la Zona Común.
+14/05/2025  20:37:44 - Humano H0033 se esta preparando para salir.
+14/05/2025  20:37:44 - Humano H0002 ha sido marcado por el zombie Z0019
+14/05/2025  20:37:44 - Humano H0002 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:44 - Retorna el humano H0002 marcado y sin comida.
+14/05/2025  20:37:44 - Humano H0002 esperando entrada por túnel 0
+14/05/2025  20:37:44 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:44 - El zombie Z0005 ingresa a la zona de riesgo 1
+14/05/2025  20:37:44 - El humano H0032 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:44 - El zombie Z0003 va a la zona de riesgo 0
+14/05/2025  20:37:44 - El zombie Z0003 ingresa a la zona de riesgo 3
+14/05/2025  20:37:44 - Humano H0008 terminó de cruzar el tunel 0
+14/05/2025  20:37:44 - Humano H0008 entró en la zona de riesgo 0
+14/05/2025  20:37:44 - Humano H0025 regresando por tunel 0
+14/05/2025  20:37:44 - El humano H0014 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:44 - Humano H0014 ha llegado al tunel 3 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:44 - Humano H0014 está atravesando el tunel 3
+14/05/2025  20:37:45 - El zombie Z0007 va a la zona de riesgo 1
+14/05/2025  20:37:45 - El zombie Z0007 ingresa a la zona de riesgo 0
+14/05/2025  20:37:45 - Humano H0030 terminó de cruzar el tunel 1
+14/05/2025  20:37:45 - Humano H0030 entró en la zona de riesgo 1
+14/05/2025  20:37:45 - Humano H0016 está atravesando el tunel 1
+14/05/2025  20:37:45 - Humano H0012 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:45 - Humano H0020 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:45 - Retorna el humano H0020 con comida.
+14/05/2025  20:37:45 - Humano H0020 esperando entrada por túnel 0
+14/05/2025  20:37:45 - Humano H0022 ha finalizado su descanso.
+14/05/2025  20:37:45 - Humano H0022 está comiendo. Comida restante: 4
+14/05/2025  20:37:45 - Humano H0024 terminó de comer.
+14/05/2025  20:37:45 - Humano H0024 ha entrado a la Zona Común.
+14/05/2025  20:37:45 - Humano H0024 se esta preparando para salir.
+14/05/2025  20:37:45 - Humano H0034 ha entrado a la Zona Común.
+14/05/2025  20:37:45 - Humano H0034 se esta preparando para salir.
+14/05/2025  20:37:45 - El humano H0033 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:45 - Humano H0033 está esperando en el tunel 3 para salir. Humanos esperando: 1
+14/05/2025  20:37:45 - Humano H0009 ha finalizado su descanso.
+14/05/2025  20:37:45 - Humano H0009 está comiendo. Comida restante: 3
+14/05/2025  20:37:45 - El zombie Z0013 va a la zona de riesgo 2
+14/05/2025  20:37:45 - El zombie Z0013 ingresa a la zona de riesgo 0
+14/05/2025  20:37:45 - Humano H0025 está pasando por el tunel 0
+14/05/2025  20:37:45 - El humano H0025 está descansando tras regresar del exterior.
+14/05/2025  20:37:45 - Humano H0002 regresando por tunel 0
+14/05/2025  20:37:45 - Humano H0014 terminó de cruzar el tunel 3
+14/05/2025  20:37:45 - Humano H0018 está atravesando el tunel 3
+14/05/2025  20:37:45 - Humano H0014 entró en la zona de riesgo 3
+14/05/2025  20:37:46 - Humano H0026 ha finalizado su descanso.
+14/05/2025  20:37:46 - Humano H0026 está comiendo. Comida restante: 2
+14/05/2025  20:37:46 - Humano H0016 terminó de cruzar el tunel 1
+14/05/2025  20:37:46 - Humano H0016 entró en la zona de riesgo 1
+14/05/2025  20:37:46 - Humano H0029 está atravesando el tunel 1
+14/05/2025  20:37:46 - Humano H0032 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:46 - Humano H0032 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:46 - Humano H0031 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:46 - Humano H0012 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:46 - Humano H0015 se ha recuperado completamente.
+14/05/2025  20:37:46 - Humano H0015 ha entrado a la Zona Común.
+14/05/2025  20:37:46 - Humano H0015 se esta preparando para salir.
+14/05/2025  20:37:46 - Humano H0027 fue eliminado por el zombie Z0007 en la zona 0. Por lo que ahora es también un zombie.
+14/05/2025  20:37:46 - El zombie Z0027 ingresa a la zona de riesgo 2
+14/05/2025  20:37:46 - El humano H0034 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:46 - Humano H0034 está esperando en el tunel 0 para salir. Humanos esperando: 1
+14/05/2025  20:37:46 - Humano H0001 terminó de comer.
+14/05/2025  20:37:46 - Humano H0001 ha entrado a la Zona Común.
+14/05/2025  20:37:46 - Humano H0001 se esta preparando para salir.
+14/05/2025  20:37:46 - El zombie Z0019 va a la zona de riesgo 0
+14/05/2025  20:37:46 - El zombie Z0019 ingresa a la zona de riesgo 0
+14/05/2025  20:37:46 - El zombie Z0000 va a la zona de riesgo 2
+14/05/2025  20:37:46 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:46 - Humano H0002 está pasando por el tunel 0
+14/05/2025  20:37:46 - El humano H0002 está descansando tras regresar del exterior.
+14/05/2025  20:37:46 - Humano H0020 regresando por tunel 0
+14/05/2025  20:37:46 - Humano H0018 terminó de cruzar el tunel 3
+14/05/2025  20:37:46 - Humano H0018 entró en la zona de riesgo 3
+14/05/2025  20:37:46 - Humano H0017 está atravesando el tunel 3
+14/05/2025  20:37:47 - Humano H0035 ha entrado a la Zona Común.
+14/05/2025  20:37:47 - Humano H0035 se esta preparando para salir.
+14/05/2025  20:37:47 - El humano H0024 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:47 - Humano H0024 está esperando en el tunel 3 para salir. Humanos esperando: 2
+14/05/2025  20:37:47 - Humano H0029 terminó de cruzar el tunel 1
+14/05/2025  20:37:47 - Humano H0029 entró en la zona de riesgo 1
+14/05/2025  20:37:47 - Humano H0011 regresando por tunel 1
+14/05/2025  20:37:47 - Humano H0004 se ha recuperado completamente.
+14/05/2025  20:37:47 - Humano H0004 ha entrado a la Zona Común.
+14/05/2025  20:37:47 - Humano H0004 se esta preparando para salir.
+14/05/2025  20:37:47 - Humano H0008 ha sido marcado por el zombie Z0013
+14/05/2025  20:37:47 - Humano H0008 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:47 - Retorna el humano H0008 marcado y sin comida.
+14/05/2025  20:37:47 - Humano H0008 esperando entrada por túnel 0
+14/05/2025  20:37:47 - Humano H0021 se ha recuperado completamente.
+14/05/2025  20:37:47 - Humano H0021 ha entrado a la Zona Común.
+14/05/2025  20:37:47 - Humano H0021 se esta preparando para salir.
+14/05/2025  20:37:47 - Humano H0023 ha finalizado su descanso.
+14/05/2025  20:37:47 - Humano H0023 está comiendo. Comida restante: 1
+14/05/2025  20:37:47 - El zombie Z0003 va a la zona de riesgo 3
+14/05/2025  20:37:47 - El zombie Z0003 ingresa a la zona de riesgo 1
+14/05/2025  20:37:47 - El humano H0015 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:47 - El zombie Z0005 va a la zona de riesgo 1
+14/05/2025  20:37:47 - El zombie Z0005 ingresa a la zona de riesgo 3
+14/05/2025  20:37:47 - Humano H0014 fue eliminado por el zombie Z0000 en la zona 3. Por lo que ahora es también un zombie.
+14/05/2025  20:37:47 - El zombie Z0014 ingresa a la zona de riesgo 2
+14/05/2025  20:37:47 - El humano H0001 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:47 - Humano H0001 está esperando en el tunel 0 para salir. Humanos esperando: 2
+14/05/2025  20:37:47 - Humano H0020 está pasando por el tunel 0
+14/05/2025  20:37:47 - El humano H0020 ha traido 2 piezas de comida. Comida restante: 3
+14/05/2025  20:37:47 - Humano H0008 regresando por tunel 0
+14/05/2025  20:37:47 - El humano H0020 está descansando tras regresar del exterior.
+14/05/2025  20:37:47 - Humano H0017 terminó de cruzar el tunel 3
+14/05/2025  20:37:47 - Humano H0017 entró en la zona de riesgo 3
+14/05/2025  20:37:48 - Humano H0011 está pasando por el tunel 1
+14/05/2025  20:37:48 - El humano H0011 ha traido 2 piezas de comida. Comida restante: 5
+14/05/2025  20:37:48 - Humano H0032 está atravesando el tunel 1
+14/05/2025  20:37:48 - El humano H0011 está descansando tras regresar del exterior.
+14/05/2025  20:37:48 - Humano H0015 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:48 - Humano H0010 terminó de comer.
+14/05/2025  20:37:48 - HumanoH0010 está descansando para recuperarse.
+14/05/2025  20:37:48 - Humano H0016 fue eliminado por el zombie Z0003 en la zona 1. Por lo que ahora es también un zombie.
+14/05/2025  20:37:48 - El zombie Z0016 ingresa a la zona de riesgo 1
+14/05/2025  20:37:48 - Humano H0022 terminó de comer.
+14/05/2025  20:37:48 - HumanoH0022 está descansando para recuperarse.
+14/05/2025  20:37:48 - Humano H0030 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:48 - Retorna el humano H0030 con comida.
+14/05/2025  20:37:48 - Humano H0030 esperando entrada por túnel 1
+14/05/2025  20:37:48 - El zombie Z0007 va a la zona de riesgo 0
+14/05/2025  20:37:48 - El zombie Z0007 ingresa a la zona de riesgo 0
+14/05/2025  20:37:48 - El humano H0004 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:48 - Humano H0004 ha llegado al tunel 2 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:48 - Humano H0004 está atravesando el tunel 2
+14/05/2025  20:37:48 - El zombie Z0027 va a la zona de riesgo 2
+14/05/2025  20:37:48 - El zombie Z0027 ingresa a la zona de riesgo 0
+14/05/2025  20:37:48 - El humano H0035 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:48 - Humano H0035 está esperando en el tunel 2 para salir. Humanos esperando: 1
+14/05/2025  20:37:48 - El zombie Z0019 va a la zona de riesgo 0
+14/05/2025  20:37:48 - El zombie Z0019 ingresa a la zona de riesgo 0
+14/05/2025  20:37:48 - Humano H0036 ha entrado a la Zona Común.
+14/05/2025  20:37:48 - Humano H0036 se esta preparando para salir.
+14/05/2025  20:37:48 - Humano H0018 fue eliminado por el zombie Z0005 en la zona 3. Por lo que ahora es también un zombie.
+14/05/2025  20:37:48 - El zombie Z0018 ingresa a la zona de riesgo 1
+14/05/2025  20:37:48 - Humano H0008 está pasando por el tunel 0
+14/05/2025  20:37:48 - El humano H0008 está descansando tras regresar del exterior.
+14/05/2025  20:37:48 - El humano H0021 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:49 - Humano H0032 terminó de cruzar el tunel 1
+14/05/2025  20:37:49 - Humano H0032 entró en la zona de riesgo 1
+14/05/2025  20:37:49 - Humano H0031 está atravesando el tunel 1
+14/05/2025  20:37:49 - Humano H0021 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:49 - Humano H0029 fue eliminado por el zombie Z0016 en la zona 1. Por lo que ahora es también un zombie.
+14/05/2025  20:37:49 - El zombie Z0029 ingresa a la zona de riesgo 0
+14/05/2025  20:37:49 - SE DETIENE LA EJECUCIÓN DEL SISTEMA
+14/05/2025  20:37:49 - Humano H0004 terminó de cruzar el tunel 2
+14/05/2025  20:37:49 - Humano H0006 está atravesando el tunel 2
+14/05/2025  20:37:49 - Humano H0009 terminó de comer.
+14/05/2025  20:37:50 - Humano H0026 terminó de comer.
+14/05/2025  20:37:50 - Humano H0031 terminó de cruzar el tunel 1
+14/05/2025  20:37:50 - Humano H0012 está atravesando el tunel 1
+14/05/2025  20:37:50 - Humano H0006 terminó de cruzar el tunel 2
+14/05/2025  20:37:50 - Humano H0028 está atravesando el tunel 2
+14/05/2025  20:37:50 - Humano H0023 terminó de comer.
+14/05/2025  20:37:51 - Humano H0012 terminó de cruzar el tunel 1
+14/05/2025  20:37:51 - Humano H0030 regresando por tunel 1
+14/05/2025  20:37:51 - Humano H0028 terminó de cruzar el tunel 2
+14/05/2025  20:37:52 - Humano H0030 está pasando por el tunel 1
+14/05/2025  20:37:54 - SE REANUDA LA EJECUCIÓN DEL SISTEMA
+14/05/2025  20:37:54 - Humano H0025 ha finalizado su descanso.
+14/05/2025  20:37:54 - Humano H0025 está comiendo. Comida restante: 4
+14/05/2025  20:37:54 - Humano H0004 entró en la zona de riesgo 2
+14/05/2025  20:37:54 - El humano H0036 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:54 - HumanoH0009 está descansando para recuperarse.
+14/05/2025  20:37:54 - Humano H0036 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:54 - HumanoH0026 está descansando para recuperarse.
+14/05/2025  20:37:54 - El zombie Z0013 va a la zona de riesgo 0
+14/05/2025  20:37:54 - Humano H0036 está atravesando el tunel 1
+14/05/2025  20:37:54 - Humano H0031 entró en la zona de riesgo 1
+14/05/2025  20:37:54 - El zombie Z0014 va a la zona de riesgo 2
+14/05/2025  20:37:54 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:54 - Humano H0011 ha finalizado su descanso.
+14/05/2025  20:37:54 - El zombie Z0013 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - Humano H0017 deja la zona de riesgo 3 y regresa al refugio
+14/05/2025  20:37:54 - Humano H0020 ha finalizado su descanso.
+14/05/2025  20:37:54 - El zombie Z0003 va a la zona de riesgo 1
+14/05/2025  20:37:54 - El zombie Z0014 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - Humano H0002 ha finalizado su descanso.
+14/05/2025  20:37:54 - El zombie Z0000 ingresa a la zona de riesgo 3
+14/05/2025  20:37:54 - Humano H0006 entró en la zona de riesgo 2
+14/05/2025  20:37:54 - Humano H0011 está comiendo. Comida restante: 3
+14/05/2025  20:37:54 - Humano H0037 ha entrado a la Zona Común.
+14/05/2025  20:37:54 - El zombie Z0019 va a la zona de riesgo 0
+14/05/2025  20:37:54 - HumanoH0023 está descansando para recuperarse.
+14/05/2025  20:37:54 - El zombie Z0007 va a la zona de riesgo 0
+14/05/2025  20:37:54 - Retorna el humano H0017 con comida.
+14/05/2025  20:37:54 - El zombie Z0027 va a la zona de riesgo 0
+14/05/2025  20:37:54 - Humano H0020 está comiendo. Comida restante: 2
+14/05/2025  20:37:54 - Humano H0012 entró en la zona de riesgo 1
+14/05/2025  20:37:54 - El zombie Z0005 va a la zona de riesgo 3
+14/05/2025  20:37:54 - El zombie Z0003 ingresa a la zona de riesgo 0
+14/05/2025  20:37:54 - Humano H0008 ha finalizado su descanso.
+14/05/2025  20:37:54 - El zombie Z0029 va a la zona de riesgo 0
+14/05/2025  20:37:54 - Humano H0028 entró en la zona de riesgo 2
+14/05/2025  20:37:54 - El zombie Z0018 va a la zona de riesgo 1
+14/05/2025  20:37:54 - Humano H0032 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:54 - El zombie Z0016 va a la zona de riesgo 1
+14/05/2025  20:37:54 - Humano H0002 está comiendo. Comida restante: 1
+14/05/2025  20:37:54 - Humano H0010 se ha recuperado completamente.
+14/05/2025  20:37:54 - El humano H0030 ha traido 2 piezas de comida. Comida restante: 3
+14/05/2025  20:37:54 - Humano H0022 se ha recuperado completamente.
+14/05/2025  20:37:54 - Humano H0037 se esta preparando para salir.
+14/05/2025  20:37:54 - El zombie Z0019 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - El zombie Z0007 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - Humano H0017 esperando entrada por túnel 3
+14/05/2025  20:37:54 - El zombie Z0027 ingresa a la zona de riesgo 1
+14/05/2025  20:37:54 - El zombie Z0005 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - Humano H0008 está comiendo. Comida restante: 2
+14/05/2025  20:37:54 - El zombie Z0029 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - El zombie Z0018 ingresa a la zona de riesgo 2
+14/05/2025  20:37:54 - Retorna el humano H0032 con comida.
+14/05/2025  20:37:54 - El zombie Z0016 ingresa a la zona de riesgo 1
+14/05/2025  20:37:54 - Humano H0010 ha entrado a la Zona Común.
+14/05/2025  20:37:54 - El humano H0030 está descansando tras regresar del exterior.
+14/05/2025  20:37:54 - Humano H0022 ha entrado a la Zona Común.
+14/05/2025  20:37:54 - Humano H0017 regresando por tunel 3
+14/05/2025  20:37:54 - Humano H0032 esperando entrada por túnel 1
+14/05/2025  20:37:54 - Humano H0010 se esta preparando para salir.
+14/05/2025  20:37:54 - Humano H0022 se esta preparando para salir.
+14/05/2025  20:37:54 - Humano H0031 ha sido marcado por el zombie Z0027
+14/05/2025  20:37:54 - Humano H0031 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:54 - Retorna el humano H0031 marcado y sin comida.
+14/05/2025  20:37:54 - Humano H0031 esperando entrada por túnel 1
+14/05/2025  20:37:54 - Humano H0028 ha sido marcado por el zombie Z0007
+14/05/2025  20:37:54 - Humano H0028 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:54 - Retorna el humano H0028 marcado y sin comida.
+14/05/2025  20:37:54 - Humano H0028 esperando entrada por túnel 2
+14/05/2025  20:37:54 - Humano H0028 regresando por tunel 2
+14/05/2025  20:37:55 - Humano H0012 ha sido marcado por el zombie Z0016
+14/05/2025  20:37:55 - Humano H0012 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:55 - Retorna el humano H0012 marcado y sin comida.
+14/05/2025  20:37:55 - Humano H0012 esperando entrada por túnel 1
+14/05/2025  20:37:55 - Humano H0038 ha entrado a la Zona Común.
+14/05/2025  20:37:55 - Humano H0038 se esta preparando para salir.
+14/05/2025  20:37:55 - Humano H0006 ha sido marcado por el zombie Z0019
+14/05/2025  20:37:55 - Humano H0006 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:55 - Retorna el humano H0006 marcado y sin comida.
+14/05/2025  20:37:55 - Humano H0006 esperando entrada por túnel 2
+14/05/2025  20:37:55 - Humano H0036 terminó de cruzar el tunel 1
+14/05/2025  20:37:55 - Humano H0036 entró en la zona de riesgo 1
+14/05/2025  20:37:55 - Humano H0015 está atravesando el tunel 1
+14/05/2025  20:37:55 - Humano H0017 está pasando por el tunel 3
+14/05/2025  20:37:55 - El humano H0017 ha traido 2 piezas de comida. Comida restante: 4
+14/05/2025  20:37:55 - El humano H0017 está descansando tras regresar del exterior.
+14/05/2025  20:37:55 - El humano H0022 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:55 - Humano H0022 ha llegado al tunel 0 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:55 - Humano H0022 está atravesando el tunel 0
+14/05/2025  20:37:55 - Humano H0004 ha sido marcado por el zombie Z0013
+14/05/2025  20:37:55 - Humano H0004 deja la zona de riesgo 2 y regresa al refugio
+14/05/2025  20:37:55 - Retorna el humano H0004 marcado y sin comida.
+14/05/2025  20:37:55 - Humano H0004 esperando entrada por túnel 2
+14/05/2025  20:37:55 - El humano H0037 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:55 - Humano H0037 está esperando en el tunel 0 para salir. Humanos esperando: 1
+14/05/2025  20:37:55 - Humano H0039 ha entrado a la Zona Común.
+14/05/2025  20:37:55 - Humano H0039 se esta preparando para salir.
+14/05/2025  20:37:55 - Humano H0028 está pasando por el tunel 2
+14/05/2025  20:37:55 - El humano H0010 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:55 - El humano H0028 está descansando tras regresar del exterior.
+14/05/2025  20:37:55 - Humano H0006 regresando por tunel 2
+14/05/2025  20:37:56 - Humano H0015 terminó de cruzar el tunel 1
+14/05/2025  20:37:56 - Humano H0015 entró en la zona de riesgo 1
+14/05/2025  20:37:56 - Humano H0021 está atravesando el tunel 1
+14/05/2025  20:37:56 - Humano H0022 terminó de cruzar el tunel 0
+14/05/2025  20:37:56 - Humano H0022 entró en la zona de riesgo 0
+14/05/2025  20:37:56 - Humano H0034 está atravesando el tunel 0
+14/05/2025  20:37:56 - Humano H0010 está esperando en el tunel 0 para salir. Humanos esperando: 2
+14/05/2025  20:37:56 - Humano H0040 ha entrado a la Zona Común.
+14/05/2025  20:37:56 - Humano H0040 se esta preparando para salir.
+14/05/2025  20:37:56 - El humano H0038 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:56 - Humano H0038 está esperando en el tunel 1 para salir. Humanos esperando: 1
+14/05/2025  20:37:56 - El zombie Z0000 va a la zona de riesgo 3
+14/05/2025  20:37:56 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:56 - Humano H0006 está pasando por el tunel 2
+14/05/2025  20:37:56 - Humano H0004 regresando por tunel 2
+14/05/2025  20:37:56 - El humano H0006 está descansando tras regresar del exterior.
+14/05/2025  20:37:56 - El zombie Z0018 va a la zona de riesgo 2
+14/05/2025  20:37:56 - El zombie Z0018 ingresa a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0003 va a la zona de riesgo 0
+14/05/2025  20:37:57 - El zombie Z0003 ingresa a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0007 va a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0007 ingresa a la zona de riesgo 0
+14/05/2025  20:37:57 - El zombie Z0005 va a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0005 ingresa a la zona de riesgo 0
+14/05/2025  20:37:57 - El zombie Z0014 va a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0014 ingresa a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0029 va a la zona de riesgo 2
+14/05/2025  20:37:57 - Humano H0021 terminó de cruzar el tunel 1
+14/05/2025  20:37:57 - El zombie Z0029 ingresa a la zona de riesgo 2
+14/05/2025  20:37:57 - Humano H0021 entró en la zona de riesgo 1
+14/05/2025  20:37:57 - Humano H0032 regresando por tunel 1
+14/05/2025  20:37:57 - Humano H0030 ha finalizado su descanso.
+14/05/2025  20:37:57 - Humano H0030 está comiendo. Comida restante: 3
+14/05/2025  20:37:57 - Humano H0026 se ha recuperado completamente.
+14/05/2025  20:37:57 - Humano H0026 ha entrado a la Zona Común.
+14/05/2025  20:37:57 - Humano H0026 se esta preparando para salir.
+14/05/2025  20:37:57 - El humano H0039 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:57 - Humano H0039 está esperando en el tunel 2 para salir. Humanos esperando: 2
+14/05/2025  20:37:57 - Humano H0034 terminó de cruzar el tunel 0
+14/05/2025  20:37:57 - Humano H0001 está atravesando el tunel 0
+14/05/2025  20:37:57 - Humano H0034 entró en la zona de riesgo 0
+14/05/2025  20:37:57 - Humano H0017 ha finalizado su descanso.
+14/05/2025  20:37:57 - Humano H0017 está comiendo. Comida restante: 2
+14/05/2025  20:37:57 - El zombie Z0027 va a la zona de riesgo 1
+14/05/2025  20:37:57 - El zombie Z0027 ingresa a la zona de riesgo 1
+14/05/2025  20:37:57 - El zombie Z0019 va a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0019 ingresa a la zona de riesgo 3
+14/05/2025  20:37:57 - El zombie Z0013 va a la zona de riesgo 2
+14/05/2025  20:37:57 - El zombie Z0013 ingresa a la zona de riesgo 1
+14/05/2025  20:37:57 - El zombie Z0016 va a la zona de riesgo 1
+14/05/2025  20:37:57 - El zombie Z0016 ingresa a la zona de riesgo 0
+14/05/2025  20:37:57 - Humano H0004 está pasando por el tunel 2
+14/05/2025  20:37:57 - El humano H0004 está descansando tras regresar del exterior.
+14/05/2025  20:37:58 - Humano H0011 terminó de comer.
+14/05/2025  20:37:58 - Humano H0011 ha entrado a la Zona Común.
+14/05/2025  20:37:58 - Humano H0011 se esta preparando para salir.
+14/05/2025  20:37:58 - Humano H0041 ha entrado a la Zona Común.
+14/05/2025  20:37:58 - Humano H0041 se esta preparando para salir.
+14/05/2025  20:37:58 - Humano H0023 se ha recuperado completamente.
+14/05/2025  20:37:58 - Humano H0023 ha entrado a la Zona Común.
+14/05/2025  20:37:58 - Humano H0023 se esta preparando para salir.
+14/05/2025  20:37:58 - Humano H0022 ha sido marcado por el zombie Z0007
+14/05/2025  20:37:58 - Humano H0022 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:58 - Humano H0032 está pasando por el tunel 1
+14/05/2025  20:37:58 - Retorna el humano H0022 marcado y sin comida.
+14/05/2025  20:37:58 - El humano H0032 ha traido 2 piezas de comida. Comida restante: 4
+14/05/2025  20:37:58 - Humano H0031 regresando por tunel 1
+14/05/2025  20:37:58 - Humano H0022 esperando entrada por túnel 0
+14/05/2025  20:37:58 - El humano H0032 está descansando tras regresar del exterior.
+14/05/2025  20:37:58 - Humano H0036 ha sido marcado por el zombie Z0027
+14/05/2025  20:37:58 - Humano H0036 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:58 - Retorna el humano H0036 marcado y sin comida.
+14/05/2025  20:37:58 - Humano H0036 esperando entrada por túnel 1
+14/05/2025  20:37:58 - Humano H0025 terminó de comer.
+14/05/2025  20:37:58 - HumanoH0025 está descansando para recuperarse.
+14/05/2025  20:37:58 - El humano H0026 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:58 - Humano H0026 ha llegado al tunel 2 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:58 - Humano H0026 está atravesando el tunel 2
+14/05/2025  20:37:58 - Humano H0001 terminó de cruzar el tunel 0
+14/05/2025  20:37:58 - Humano H0001 entró en la zona de riesgo 0
+14/05/2025  20:37:58 - Humano H0022 regresando por tunel 0
+14/05/2025  20:37:58 - El humano H0040 ha elegido el túnel 2 para salir de la Zona Común.
+14/05/2025  20:37:58 - Humano H0040 está esperando en el tunel 2 para salir. Humanos esperando: 1
+14/05/2025  20:37:58 - Humano H0002 terminó de comer.
+14/05/2025  20:37:58 - HumanoH0002 está descansando para recuperarse.
+14/05/2025  20:37:58 - Humano H0009 se ha recuperado completamente.
+14/05/2025  20:37:58 - Humano H0009 ha entrado a la Zona Común.
+14/05/2025  20:37:58 - Humano H0009 se esta preparando para salir.
+14/05/2025  20:37:58 - Humano H0021 fue eliminado por el zombie Z0013 en la zona 1. Por lo que ahora es también un zombie.
+14/05/2025  20:37:58 - El zombie Z0021 ingresa a la zona de riesgo 1
+14/05/2025  20:37:58 - Humano H0042 ha entrado a la Zona Común.
+14/05/2025  20:37:58 - Humano H0042 se esta preparando para salir.
+14/05/2025  20:37:58 - Humano H0034 ha sido marcado por el zombie Z0016
+14/05/2025  20:37:58 - Humano H0034 deja la zona de riesgo 0 y regresa al refugio
+14/05/2025  20:37:58 - Retorna el humano H0034 marcado y sin comida.
+14/05/2025  20:37:58 - Humano H0034 esperando entrada por túnel 0
+14/05/2025  20:37:59 - Humano H0020 terminó de comer.
+14/05/2025  20:37:59 - Humano H0020 ha entrado a la Zona Común.
+14/05/2025  20:37:59 - Humano H0020 se esta preparando para salir.
+14/05/2025  20:37:59 - El humano H0011 ha elegido el túnel 0 para salir de la Zona Común.
+14/05/2025  20:37:59 - Humano H0011 ha llegado al tunel 0 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:59 - Humano H0011 esperando entrada al Refugio de otro humano por el túnel 0
+14/05/2025  20:37:59 - Humano H0010 esperando entrada al Refugio de otro humano por el túnel 0
+14/05/2025  20:37:59 - Humano H0037 esperando entrada al Refugio de otro humano por el túnel 0
+14/05/2025  20:37:59 - Humano H0008 terminó de comer.
+14/05/2025  20:37:59 - HumanoH0008 está descansando para recuperarse.
+14/05/2025  20:37:59 - Humano H0031 está pasando por el tunel 1
+14/05/2025  20:37:59 - El humano H0031 está descansando tras regresar del exterior.
+14/05/2025  20:37:59 - Humano H0012 regresando por tunel 1
+14/05/2025  20:37:59 - El humano H0041 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:59 - Humano H0041 está esperando en el tunel 1 para salir. Humanos esperando: 2
+14/05/2025  20:37:59 - El zombie Z0005 va a la zona de riesgo 0
+14/05/2025  20:37:59 - El zombie Z0005 ingresa a la zona de riesgo 1
+14/05/2025  20:37:59 - Humano H0026 terminó de cruzar el tunel 2
+14/05/2025  20:37:59 - Humano H0026 entró en la zona de riesgo 2
+14/05/2025  20:37:59 - Humano H0035 está atravesando el tunel 2
+14/05/2025  20:37:59 - Humano H0022 está pasando por el tunel 0
+14/05/2025  20:37:59 - El humano H0022 está descansando tras regresar del exterior.
+14/05/2025  20:37:59 - Humano H0034 regresando por tunel 0
+14/05/2025  20:37:59 - El zombie Z0003 va a la zona de riesgo 2
+14/05/2025  20:37:59 - El zombie Z0003 ingresa a la zona de riesgo 1
+14/05/2025  20:37:59 - El zombie Z0018 va a la zona de riesgo 2
+14/05/2025  20:37:59 - El zombie Z0018 ingresa a la zona de riesgo 3
+14/05/2025  20:37:59 - El zombie Z0029 va a la zona de riesgo 2
+14/05/2025  20:37:59 - El zombie Z0029 ingresa a la zona de riesgo 3
+14/05/2025  20:37:59 - El humano H0009 ha elegido el túnel 3 para salir de la Zona Común.
+14/05/2025  20:37:59 - Humano H0009 ha llegado al tunel 3 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:59 - Humano H0009 está atravesando el tunel 3
+14/05/2025  20:37:59 - El zombie Z0019 va a la zona de riesgo 3
+14/05/2025  20:37:59 - El zombie Z0019 ingresa a la zona de riesgo 2
+14/05/2025  20:37:59 - Humano H0028 ha finalizado su descanso.
+14/05/2025  20:37:59 - Humano H0028 está comiendo. Comida restante: 3
+14/05/2025  20:37:59 - El zombie Z0000 va a la zona de riesgo 2
+14/05/2025  20:37:59 - El zombie Z0000 ingresa a la zona de riesgo 2
+14/05/2025  20:37:59 - Humano H0015 ha sido marcado por el zombie Z0021
+14/05/2025  20:37:59 - Humano H0015 deja la zona de riesgo 1 y regresa al refugio
+14/05/2025  20:37:59 - Retorna el humano H0015 marcado y sin comida.
+14/05/2025  20:37:59 - Humano H0015 esperando entrada por túnel 1
+14/05/2025  20:37:59 - El humano H0023 ha elegido el túnel 1 para salir de la Zona Común.
+14/05/2025  20:37:59 - Humano H0023 ha llegado al tunel 1 y ya son 3, así que están preparados para adentrarse en el mundo exterior.
+14/05/2025  20:37:59 - Humano H0023 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:59 - Humano H0038 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:37:59 - Humano H0041 esperando entrada al Refugio de otro humano por el túnel 1
+14/05/2025  20:38:00 - Humano H0043 ha entrado a la Zona Común.
+14/05/2025  20:38:00 - Humano H0043 se esta preparando para salir.
+14/05/2025  20:38:00 - El zombie Z0014 va a la zona de riesgo 2
+14/05/2025  20:38:00 - El zombie Z0014 ingresa a la zona de riesgo 3
