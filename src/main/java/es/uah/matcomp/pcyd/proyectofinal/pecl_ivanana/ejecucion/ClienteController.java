@@ -111,15 +111,19 @@ public class ClienteController {
     }
 
     public void iniciarConexion() {
-        try (Socket conexion = new Socket(InetAddress.getLocalHost(), 5002);
-             ObjectInputStream entrada = new ObjectInputStream(conexion.getInputStream());
-             ObjectOutputStream salida = new ObjectOutputStream(conexion.getOutputStream())) {
-
+        Socket conexion;
+        try {
+            conexion = new Socket(InetAddress.getLocalHost(), 5002); // Conectamos al servidor
+            ObjectInputStream entrada = new ObjectInputStream(conexion.getInputStream());
+            ObjectOutputStream salida = new ObjectOutputStream(conexion.getOutputStream());
             while (true) {
                 salida.writeObject(detener);
-                salida.writeObject(hayCambio);
-                if (hayCambio) {
+                if(hayCambio) {
+                    salida.writeObject(hayCambio);
                     desactivarCambio();
+                }
+                else{
+                    salida.writeObject(hayCambio);
                 }
                 salida.flush();
                 salida.reset();

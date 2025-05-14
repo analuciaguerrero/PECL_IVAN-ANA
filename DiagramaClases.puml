@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class Apocalipsis {
+  - logger : ApocalipsisLogger
+  - controlPausa : ControlPausa
+  - interfaz : InterfazServidor
+  - idZ : String[6]
+  - idH : String[6]
+  - zonas : ZonaRiesgo[4]
+  - zonaComun : ZonaComun
+  - zonaDescanso : ZonaDescanso
+  - comedor : Comedor
+  - tunel : Tunel[4]
+  - clasificacion : Clasificacion
+  - executor : ExecutorService
+
+  + Apocalipsis()
+  + getZonaRiesgo() : ZonaRiesgo[]
+  + getZonaComun() : ZonaComun
+  + getZonaDescanso() : ZonaDescanso
+  + getComedor() : Comedor
+  + getTunel() : Tunel[]
+  + getClasificacion() : Clasificacion
+  + reanudar() : void
+  + detener() : void
+  + ejecutarEnSegundoPlano() : void
+  - inicializar() : void
+}
+
+
+@enduml

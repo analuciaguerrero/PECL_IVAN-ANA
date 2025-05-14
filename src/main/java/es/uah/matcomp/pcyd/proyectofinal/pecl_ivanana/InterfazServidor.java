@@ -854,7 +854,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Zona de riesgo C");
+        jLabel13.setText("Zona de riesgo D");
 
         jScrollPaneListaRegresando3.setViewportView(jListHumanosZona3);
 
@@ -893,7 +893,7 @@ public class InterfazServidor extends javax.swing.JFrame {
         );
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("Zona de riesgo D");
+        jLabel14.setText("Zona de riesgo C");
 
         jScrollPaneListaRegresando4.setViewportView(jListHumanosZona2);
 
