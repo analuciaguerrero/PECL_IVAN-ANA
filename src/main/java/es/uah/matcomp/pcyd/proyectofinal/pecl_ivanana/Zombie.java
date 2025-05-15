@@ -1,6 +1,5 @@
 package es.uah.matcomp.pcyd.proyectofinal.pecl_ivanana;
 
-import java.util.concurrent.ThreadLocalRandom;
 
 // Clase que representa un zombie como hilo independiente
 public class Zombie extends Thread {

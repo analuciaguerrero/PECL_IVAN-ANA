@@ -8,7 +8,6 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static java.lang.Thread.sleep;
 
 public class Tunel {
     // Identificador del túnel
